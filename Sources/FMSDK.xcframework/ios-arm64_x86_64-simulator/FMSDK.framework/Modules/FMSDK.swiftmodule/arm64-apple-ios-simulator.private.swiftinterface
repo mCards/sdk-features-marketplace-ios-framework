@@ -1,0 +1,1135 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FMSDK
+import CoreGraphics
+import CoreLocation
+import CoreText
+import FirebaseCore
+import Foundation
+import MapKit
+import ModelSDK
+import NVActivityIndicatorView
+import ObjectiveC
+import Swift
+import UIKit.UIGestureRecognizerSubclass
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_Concurrency.MainActor(unsafe) public class SheetContentViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var childViewController: UIKit.UIViewController {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var contentBackgroundColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var cornerRadius: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var gripSize: CoreFoundation.CGSize {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var gripColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var pullBarBackgroundColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var treatPullBarAsClear: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var contentWrapperView: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) public var contentView: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) public var childContainerView: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) public var pullBarView: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) public var gripView: UIKit.UIView
+  @_Concurrency.MainActor(unsafe) public init(childViewController: UIKit.UIViewController, options: FMSDK.SheetOptions)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @objc deinit
+}
+extension FMSDK.SheetContentViewController : UIKit.UINavigationControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func navigationController(_ navigationController: UIKit.UINavigationController, willShow viewController: UIKit.UIViewController, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func navigationController(_ navigationController: UIKit.UINavigationController, didShow viewController: UIKit.UIViewController, animated: Swift.Bool)
+}
+public class Product : Swift.Codable {
+  public var uuid: Swift.String
+  public var name: Swift.String
+  public var description: Swift.String
+  public var display: FMSDK.ProductDisplay
+  public var prices: [FMSDK.Price]
+  public init(uuid: Swift.String = "", name: Swift.String = "", description: Swift.String = "", display: FMSDK.ProductDisplay = ProductDisplay(), prices: [FMSDK.Price] = [])
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public class ProductDisplay : Swift.Codable {
+  public var title: Swift.String
+  public var subtitle: Swift.String
+  public var buttonText: Swift.String
+  public init(title: Swift.String = "", subtitle: Swift.String = "", buttonText: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public class Price : Swift.Codable {
+  public var uuid: Swift.String
+  public var amount: Swift.Int
+  public var formattedAmount: Swift.String
+  public var description: Swift.String
+  public var display: FMSDK.PriceDisplay
+  public var status: Swift.String
+  public var formattedTotalAmountInclFee: Swift.String
+  public var fees: [FMSDK.Fee]
+  public init(uuid: Swift.String = "", amount: Swift.Int = 0, formattedAmount: Swift.String = "", description: Swift.String = "", display: FMSDK.PriceDisplay = PriceDisplay(), status: Swift.String = "", formattedTotalAmountInclFee: Swift.String = "", fees: [FMSDK.Fee] = [])
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public class Fee : Swift.Codable {
+  public var uuid: Swift.String
+  public var formattedAmount: Swift.String
+  public init(uuid: Swift.String = "", formattedAmount: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public class PriceDisplay : Swift.Codable {
+  public var title: Swift.String
+  public var shortTitle: Swift.String
+  public var subtitle: Swift.String
+  public var priceSubscript: Swift.String
+  public var offerText: Swift.String
+  public var backgroundColor: Swift.String
+  public var currencySymbol: Swift.String
+  public var iconImageUrl: Foundation.URL?
+  public init(title: Swift.String = "", shortTitle: Swift.String = "", subtitle: Swift.String = "", priceSubscript: Swift.String = "", offerText: Swift.String = "", backgroundColor: Swift.String = "", currencySymbol: Swift.String = "", iconImageUrl: Foundation.URL? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public class SendMcashRequest : Swift.Codable {
+  public var balances: [FMSDK.McashRequestBalance]?
+  public var gift: Swift.Bool?
+  public var giftDetails: FMSDK.McashRequestGiftDetails?
+  public var accountID: Swift.String?
+  public init(balances: [FMSDK.McashRequestBalance]? = nil, gift: Swift.Bool? = nil, giftDetails: FMSDK.McashRequestGiftDetails? = nil, accountID: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class McashRequestBalance : Swift.Codable {
+  public var type: Swift.String?
+  public var value: Swift.String?
+  public init(type: Swift.String? = nil, value: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class McashRequestGiftDetails : Swift.Codable {
+  public var recipient: FMSDK.McashRequestRecipient?
+  public var message: Swift.String?
+  public init(recipient: FMSDK.McashRequestRecipient? = nil, message: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class McashRequestRecipient : Swift.Codable {
+  public var name: Swift.String?
+  public var email: Swift.String?
+  public var phone: Swift.String?
+  public init(name: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SheetTransition : ObjectiveC.NSObject, UIKit.UIViewControllerAnimatedTransitioning {
+  @_Concurrency.MainActor(unsafe) @objc public func transitionDuration(using transitionContext: (any UIKit.UIViewControllerContextTransitioning)?) -> Foundation.TimeInterval
+  @_Concurrency.MainActor(unsafe) @objc public func animateTransition(using transitionContext: any UIKit.UIViewControllerContextTransitioning)
+  @objc deinit
+}
+public class LocationCustomBalance : Swift.Codable {
+  public var availableBalance: Swift.Double?
+  public var formattedAvailableBalance: Swift.String?
+  public var heldBalance: Swift.Double?
+  public var formattedHeldBalance: Swift.String?
+  public var pointsBalance: Swift.Double?
+  public var formattedPointsBalance: Swift.String?
+  public init(availableBalance: Swift.Double? = nil, formattedAvailableBalance: Swift.String? = nil, heldBalance: Swift.Double? = nil, formattedHeldBalance: Swift.String? = nil, iconImageUrl: Swift.String? = nil, pointsImageUrl: Swift.String? = nil, mcashTitle: Swift.String? = nil, pointsTitle: Swift.String? = nil, pointBalance: Swift.Double? = nil, formattedPointBalance: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class LocationFilter : Swift.Equatable, Swift.Codable {
+  public var uuid: Swift.String
+  public var value: Swift.String
+  public var displayValue: Swift.String
+  public var imageUrl: Foundation.URL?
+  public var displayType: Swift.String
+  public var url: Foundation.URL?
+  public var authenticationMethod: Swift.String
+  public var categories: [Swift.String]
+  public init(uuid: Swift.String = "", value: Swift.String = "", displayValue: Swift.String = "", imageUrl: Foundation.URL? = nil, displayType: Swift.String = "", url: Foundation.URL? = nil, authenticationMethod: Swift.String = "", categories: [Swift.String] = [])
+  required public init(from decoder: any Swift.Decoder) throws
+  public static func == (lhs: FMSDK.LocationFilter, rhs: FMSDK.LocationFilter) -> Swift.Bool
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct JWTs {
+  public var accessToken: Swift.String
+  public var idToken: Swift.String
+  public init(accessToken: Swift.String = "", idToken: Swift.String = "")
+}
+public enum ApiEnv : Swift.String {
+  case staging
+  case uat
+  case production
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol LocationsApi {
+  func getLocationsByCard(args: FMSDK.LocationArgs, completion: @escaping ((_ result: Swift.Result<FMSDK.LocationsResponse, any Swift.Error>) -> Swift.Void))
+  func getCardLocationById(uuid: Swift.String?, locationUuid: Swift.String?, latitude: Swift.String?, longitude: Swift.String?, offerType: Swift.String?, featureUuid: Swift.String?, completion: @escaping ((_ result: Swift.Result<FMSDK.LocationDetails, any Swift.Error>) -> Swift.Void))
+  func getLocationProfile(uuid: Swift.String, locationUuid: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.LocationProfile, any Swift.Error>) -> Swift.Void))
+  func redeemLocationOffer(uuid: Swift.String, locationUuid: Swift.String, offerUuid: Swift.String, featureUuid: Swift.String?, completion: @escaping ((_ result: Swift.Result<FMSDK.GenerateCodeMetadata, any Swift.Error>) -> Swift.Void))
+  func getLocationFilter(uuid: Swift.String, type: Swift.String?, completion: @escaping ((_ result: Swift.Result<FMSDK.LocationFilters, any Swift.Error>) -> Swift.Void))
+  func getLocationSubfilter(uuid: Swift.String, filterUuid: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.LocationSubFilters, any Swift.Error>) -> Swift.Void))
+  func getLocationAutocompleteSuggestions(uuid: Swift.String, text: Swift.String, type: Swift.String?, featuerUuid: Swift.String?, completion: @escaping ((_ result: Swift.Result<FMSDK.Suggestions, any Swift.Error>) -> Swift.Void))
+}
+public struct FmArgs {
+  public init(programID: Swift.String, jwts: FMSDK.JWTs, debugMode: Swift.Bool = false, tokenRefreshCallback: any FMSDK.FMSDKTokenRefreshCallback)
+}
+public class LocationOfferFullDetails : Swift.Codable {
+  public var uuid: Swift.String?
+  public var title: Swift.String?
+  public var subtitle: Swift.String?
+  public var summary: Swift.String?
+  public var imageUrl: Swift.String?
+  public var redeemed: Swift.Bool?
+  public var redeemable: Swift.Bool?
+  public var rules: [Swift.String]?
+  public var redemptionsAvailable: Swift.String?
+  public var manualRedemptionDetails: FMSDK.ManualRedemption?
+  public init(uuid: Swift.String? = nil, title: Swift.String? = nil, subtitle: Swift.String? = nil, summary: Swift.String? = nil, imageUrl: Swift.String? = nil, redeemed: Swift.Bool? = nil, redeemable: Swift.Bool? = nil, rules: [Swift.String]? = nil, manualRedemptionDetails: FMSDK.ManualRedemption? = nil, redemptionsAvailable: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class ManualRedemption : Swift.Codable {
+  public enum Action : Swift.String, Swift.Codable {
+    case webhook
+    case generateCode
+    case none
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var uuid: Swift.String?
+  public var buttonText: Swift.String?
+  public var action: FMSDK.ManualRedemption.Action?
+  public var generateCodeMetadata: FMSDK.GenerateCodeMetadata?
+  public var webhookMetadata: FMSDK.WebhookMetadata?
+  public var promoCodesMetadata: [FMSDK.PromoCodeMetadata]?
+  public var showCountdownTimer: Swift.Bool?
+  public init(uuid: Swift.String? = nil, buttonText: Swift.String? = nil, action: FMSDK.ManualRedemption.Action? = nil, generateCodeMetadata: FMSDK.GenerateCodeMetadata? = nil, webhookMetadata: FMSDK.WebhookMetadata? = nil, promoCodesMetadata: [FMSDK.PromoCodeMetadata]? = nil, showCountdownTimer: Swift.Bool? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class GenerateCodeMetadata : Swift.Codable {
+  public var uuid: Swift.String?
+  public var title: Swift.String?
+  public var barcode: FMSDK.Barcode?
+  public var iconImageUrl: Swift.String?
+  public init(uuid: Swift.String? = nil, title: Swift.String? = nil, barcode: FMSDK.Barcode? = nil, iconImageUrl: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class PromoCodeMetadata : Swift.Codable {
+  public var uuid: Swift.String?
+  public var title: Swift.String?
+  public var value: Swift.String?
+  public var iconImageUrl: Swift.String?
+  public init(uuid: Swift.String? = nil, title: Swift.String? = nil, value: Swift.String? = nil, iconImageUrl: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class WebhookMetadata : Swift.Codable {
+  public var url: Swift.String?
+  public var authenticationMethod: Swift.String?
+  public var linkText: Swift.String?
+  public init(url: Swift.String? = nil, authenticationMethod: Swift.String? = nil, linkText: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class Barcode : Swift.Codable {
+  public enum ModelType : Swift.String, Swift.Codable {
+    case qrCode
+    case barcode
+    case plainText
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var type: FMSDK.Barcode.ModelType?
+  public var text: Swift.String?
+  public var createdAt: Foundation.Date?
+  public var expiresAt: Foundation.Date?
+  public var isPromoCode: Swift.Bool?
+  public init(type: FMSDK.Barcode.ModelType? = nil, text: Swift.String? = nil, createdAt: Foundation.Date? = nil, expiresAt: Foundation.Date? = nil, isPromoCode: Swift.Bool? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public enum SheetSize : Swift.Equatable {
+  case intrinsic
+  case fixed(CoreFoundation.CGFloat)
+  case fullscreen
+  case percent(Swift.Float)
+  case marginFromTop(CoreFoundation.CGFloat)
+  public static func == (a: FMSDK.SheetSize, b: FMSDK.SheetSize) -> Swift.Bool
+}
+public enum Presentation : Swift.Int {
+  case modal
+  case push
+  case present
+  case sheet
+  case none
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public class ActivateFeatureRequest : Swift.Encodable {
+  final public let termsAccepted: Swift.Bool
+  public init(termsAccepted: Swift.Bool)
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class LocationArgs {
+  public init(uuid: Swift.String?, page: Swift.Int?, perPage: Swift.Int?, latitude: Swift.String?, longitude: Swift.String?, searchText: Swift.String?, filter: Swift.String?, subfilter: [Swift.String]?, primaryFilter: Swift.String?, tag: Swift.String?, keywords: [Swift.String]?, offersSubfilters: [Swift.String]?, locationGroupUuid: Swift.String?, city: Swift.String?, searchLatitude: Swift.String?, searchLongitude: Swift.String?, displayType: Swift.String?, offerType: Swift.String?, featureUuid: Swift.String?)
+  @objc deinit
+}
+public class Restrictable : Swift.Codable, Swift.Equatable {
+  public var uuid: Swift.String
+  public var name: Swift.String
+  public var icon: Foundation.URL?
+  public var formattedPhone: Swift.String
+  public var internationalPhone: Swift.String
+  public var formattedAddress: Swift.String
+  public var website: Swift.String
+  public var latitude: Swift.String
+  public var longitude: Swift.String
+  public var hours: [Swift.String]
+  public var googlePlaceId: Swift.String
+  public var rating: Swift.String
+  public var street: Swift.String
+  public var streetNumber: Swift.String
+  public var city: Swift.String
+  public var state: Swift.String
+  public var country: Swift.String
+  public var postalCode: Swift.String
+  public init(uuid: Swift.String = "", name: Swift.String = "", icon: Foundation.URL? = nil, formattedPhone: Swift.String = "", internationalPhone: Swift.String = "", formattedAddress: Swift.String = "", website: Swift.String = "", latitude: Swift.String = "", longitude: Swift.String = "", hours: [Swift.String] = [], googlePlaceId: Swift.String = "", rating: Swift.String = "", street: Swift.String = "", streetNumber: Swift.String = "", city: Swift.String = "", state: Swift.String = "", country: Swift.String = "", postalCode: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.Restrictable, rhs: FMSDK.Restrictable) -> Swift.Bool
+  @objc deinit
+}
+public class CardControlsRequest : Swift.Encodable {
+  final public let locked: Swift.Bool?
+  final public let autoPay: Swift.Bool
+  public init(locked: Swift.Bool?, autoPay: Swift.Bool)
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CampaignItems : Swift.Codable, Swift.Equatable {
+  public var items: [FMSDK.CampaignItem]
+  public var pagination: FMSDK.Pagination
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.CampaignItems, rhs: FMSDK.CampaignItems) -> Swift.Bool
+  @objc deinit
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var sheetViewController: FMSDK.SheetViewController? {
+    get
+  }
+}
+public class CampaignItem : Swift.Codable, Swift.Equatable {
+  public var uuid: Swift.String
+  public var originatorIdentifier: Swift.String
+  public var campaign: FMSDK.Campaign
+  public var card: FMSDK.CampaignItemCard
+  public var senderName: Swift.String
+  public var receivedDate: Foundation.Date
+  public var ownerableType: FMSDK.OwnerableType
+  public var firstName: Swift.String
+  public var lastName: Swift.String
+  public var phone: Swift.String
+  public var email: Swift.String
+  public var deliveryMethod: FMSDK.DeliveryMethod
+  public var title: Swift.String
+  public var message: Swift.String
+  public var sentAt: Foundation.Date
+  public var acceptedAt: Foundation.Date
+  public var voided: Swift.Bool?
+  public var balances: [FMSDK.CampaignBalance]
+  public var deliveryStatus: FMSDK.DeliveryStatus
+  public var processingErrors: [Swift.String]
+  public init(uuid: Swift.String = "", originatorIdentifier: Swift.String = "", campaign: FMSDK.Campaign = Campaign(), card: FMSDK.CampaignItemCard = CampaignItemCard(), senderName: Swift.String = "", receivedDate: Foundation.Date = Date(), ownerableType: FMSDK.OwnerableType = .none, firstName: Swift.String = "", lastName: Swift.String = "", phone: Swift.String = "", email: Swift.String = "", deliveryMethod: FMSDK.DeliveryMethod = .none, title: Swift.String = "", message: Swift.String = "", sentAt: Foundation.Date = Date(), acceptedAt: Foundation.Date = Date(), voided: Swift.Bool? = nil, balances: [FMSDK.CampaignBalance] = [], deliveryStatus: FMSDK.DeliveryStatus = .none, processingErrors: [Swift.String] = [])
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.CampaignItem, rhs: FMSDK.CampaignItem) -> Swift.Bool
+  @objc deinit
+}
+public enum DeliveryMethod : Swift.String, Swift.Codable {
+  case sms
+  case none
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum DeliveryStatus : Swift.String, Swift.Codable {
+  case queued
+  case delivered
+  case none
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum OwnerableType : Swift.String, Swift.Codable {
+  case sender
+  case recipient
+  case none
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum FeatureMetadataKeys : Swift.String {
+  case offerType
+  case url
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum FeaturesTypes : Swift.String, Swift.CaseIterable, Swift.Decodable, Swift.Encodable {
+  case offers
+  case points
+  case sendFund
+  case webview
+  case gift
+  case cardControls
+  case none
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [FMSDK.FeaturesTypes]
+  public typealias RawValue = Swift.String
+  public static var allCases: [FMSDK.FeaturesTypes] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class Feature : Swift.Equatable, Swift.Codable {
+  public var uuid: Swift.String
+  public var program: FMSDK.FeatureProgram
+  public var type: FMSDK.FeaturesTypes
+  public var featureMetadata: [FMSDK.FeatureMetadata]
+  public var featureDisplay: FMSDK.FeatureDisplay
+  public var productUuid: Swift.String
+  public var status: Swift.String
+  public var tandcLandingUrl: Foundation.URL?
+  public var infoLandingUrl: Swift.String
+  public var tandcAcceptanceRequired: FMSDK.TandcAcceptanceRequired?
+  public var marketerProductUuid: Swift.String
+  public var activateFeature: FMSDK.ActivateFeature
+  public var userFeature: FMSDK.UserFeature
+  public var subscriptionRequired: FMSDK.SubscriptionRequired?
+  public var bannerUrls: [Foundation.URL?]?
+  public var programMetadata: [FMSDK.FeatureMetadata]
+  public var metadataOfferType: Swift.String {
+    get
+  }
+  public init(uuid: Swift.String = "", program: FMSDK.FeatureProgram = FeatureProgram(), type: FMSDK.FeaturesTypes = .none, featureMetadata: [FMSDK.FeatureMetadata] = [], featureDisplay: FMSDK.FeatureDisplay = FeatureDisplay(), subscriptionLevel: Swift.String = "", productUuid: Swift.String = "", status: Swift.String = "", tandcLandingUrl: Foundation.URL? = nil, infoLandingUrl: Swift.String = "", tandcAcceptanceRequired: FMSDK.TandcAcceptanceRequired? = nil, userFeature: FMSDK.UserFeature = UserFeature(), subscriptionRequired: FMSDK.SubscriptionRequired? = nil, activateFeature: FMSDK.ActivateFeature = ActivateFeature(), marketerProductUuid: Swift.String = "", bannerUrls: [Foundation.URL?]? = nil, programMetadata: [FMSDK.FeatureMetadata] = [])
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.Feature, rhs: FMSDK.Feature) -> Swift.Bool
+  @objc deinit
+}
+public class TandcAcceptanceRequired : Swift.Equatable, Swift.Codable {
+  public var title: Swift.String
+  public var description: Swift.String
+  public var tandcUrls: [FMSDK.TandcUrls]
+  public init(title: Swift.String = "", description: Swift.String = "", tandcUrls: [FMSDK.TandcUrls] = [])
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.TandcAcceptanceRequired, rhs: FMSDK.TandcAcceptanceRequired) -> Swift.Bool
+  @objc deinit
+}
+public class TandcUrls : Swift.Equatable, Swift.Codable {
+  public var title: Swift.String
+  public var url: Foundation.URL?
+  public init(title: Swift.String = "", url: Foundation.URL? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.TandcUrls, rhs: FMSDK.TandcUrls) -> Swift.Bool
+  @objc deinit
+}
+public class FeatureMetadata : Swift.Equatable, Swift.Codable {
+  public var key: Swift.String
+  public var value: Swift.String
+  public init(key: Swift.String = "", value: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.FeatureMetadata, rhs: FMSDK.FeatureMetadata) -> Swift.Bool
+  @objc deinit
+}
+public class FeatureDisplay : Swift.Equatable, Swift.Codable {
+  public var icon: Foundation.URL?
+  public var title: Swift.String
+  public var subtitle: Swift.String
+  public var description: Swift.String
+  public var toggleTitle: Swift.String
+  public init(icon: Foundation.URL? = nil, title: Swift.String = "", subtitle: Swift.String = "", description: Swift.String = "", toggleTitle: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.FeatureDisplay, rhs: FMSDK.FeatureDisplay) -> Swift.Bool
+  @objc deinit
+}
+public class FeatureProgram : Swift.Equatable, Swift.Codable {
+  public var uuid: Swift.String
+  public var name: Swift.String
+  public init(uuid: Swift.String = "", name: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.FeatureProgram, rhs: FMSDK.FeatureProgram) -> Swift.Bool
+  @objc deinit
+}
+public class UserFeature : Swift.Equatable, Swift.Codable {
+  public var uuid: Swift.String
+  public init(uuid: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.UserFeature, rhs: FMSDK.UserFeature) -> Swift.Bool
+  @objc deinit
+}
+public class SubscriptionRequired : Swift.Codable {
+  public var code: Swift.String
+  public var title: Swift.String
+  public var type: Swift.String
+  public init(code: Swift.String = "", title: Swift.String = "", type: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class ActivateFeature : Swift.Codable {
+  public var tandcAcceptanceRequired: Swift.Bool
+  public var tandcUrl: Swift.String
+  public var customSignupWebviewUrl: Swift.String
+  public init(tandcAcceptanceRequired: Swift.Bool = false, tandcUrl: Swift.String = "", customSignupWebviewUrl: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class LocationFilters : Swift.Codable {
+  public var filters: [FMSDK.LocationFilter]?
+  public var primaryFilters: [FMSDK.LocationFilter]?
+  public init(filters: [FMSDK.LocationFilter]? = nil, primaryFilters: [FMSDK.LocationFilter]? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class LocationSubFilters : Swift.Codable {
+  public var locationsSubfilters: [FMSDK.LocationFilter]?
+  public var offersSubfilters: [FMSDK.LocationFilter]?
+  public var keywordsSubfilters: [FMSDK.LocationFilter]?
+  public init(locationsSubfilters: [FMSDK.LocationFilter]? = nil, offersSubfilters: [FMSDK.LocationFilter]? = nil, keywordsSubfilters: [FMSDK.LocationFilter]? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public class Pagination : Swift.Codable, Swift.Equatable {
+  public var count: Swift.Int
+  public var page: Swift.Int
+  public var perPage: Swift.Int
+  public var totalCount: Swift.Int
+  public var badge: Swift.Int
+  public init(count: Swift.Int = 0, page: Swift.Int = 0, perPage: Swift.Int = 0, totalCount: Swift.Int = 0, badge: Swift.Int = 0)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.Pagination, rhs: FMSDK.Pagination) -> Swift.Bool
+  public func shouldLoadMore(_ index: Swift.Int) -> Swift.Bool
+  @objc deinit
+}
+public protocol FmSdk {
+  var features: any FMSDK.FeaturesApi { get }
+  var locations: any FMSDK.LocationsApi { get }
+  func configure(args: FMSDK.FmArgs)
+  func getCampaignItems(uuid: Swift.String, ownerableType: FMSDK.OwnerableType, page: Swift.Int?, perPage: Swift.Int?, completion: @escaping ((_ result: Swift.Result<FMSDK.CampaignItems, any Swift.Error>) -> Swift.Void))
+  func getCampaignItemById(uuid: Swift.String, itemUuid: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.CampaignItem, any Swift.Error>) -> Swift.Void))
+  func getCampaignRestrictions(uuid: Swift.String, campaignUuid: Swift.String, page: Swift.Int?, perPage: Swift.Int?, completion: @escaping ((_ result: Swift.Result<FMSDK.CampaignRestrictions, any Swift.Error>) -> Swift.Void))
+  func launch(with controller: UIKit.UIViewController)
+  func setCard(card: ModelSDK.Card)
+  func logout()
+}
+public class CampaignItemCard : Swift.Codable, Swift.Equatable {
+  public var uuid: Swift.String
+  public var imageUrl: Foundation.URL?
+  public init(uuid: Swift.String = "", imageUrl: Foundation.URL? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.CampaignItemCard, rhs: FMSDK.CampaignItemCard) -> Swift.Bool
+  @objc deinit
+}
+public class LocationDetails : Swift.Codable {
+  public var uuid: Swift.String
+  public var name: Swift.String
+  public var address: Swift.String
+  public var phone: Swift.String
+  public var website: Swift.String
+  public var hours: [Swift.String]
+  public var smallImageUrl: Foundation.URL?
+  public var smallBannerImageUrls: [Swift.String]
+  public var latitude: Swift.Double
+  public var longitude: Swift.Double
+  public var distance: Swift.Double
+  public var editorial: Swift.String
+  public var formattedDistance: Swift.String
+  public var favourite: Swift.Bool
+  public var noPhysicalAddress: Swift.Bool
+  public var categories: [FMSDK.Category]
+  public var subCategories: [FMSDK.Category]
+  public var offers: [FMSDK.LocationOfferFullDetails]?
+  public var coordinates: CoreLocation.CLLocationCoordinate2D {
+    get
+  }
+  public init(uuid: Swift.String = "", name: Swift.String = "", address: Swift.String = "", phone: Swift.String = "", website: Swift.String = "", hours: [Swift.String] = [], latitude: Swift.Double = 0.0, longitude: Swift.Double = 0.0, distance: Swift.Double = 0.0, formattedDistance: Swift.String = "", favourite: Swift.Bool = false, offers: [FMSDK.LocationOfferFullDetails]? = nil, noPhysicalAddress: Swift.Bool = false, categories: [FMSDK.Category] = [], subCategories: [FMSDK.Category] = [], editorial: Swift.String = "", smallImageUrl: Foundation.URL? = nil, smallBannerImageUrls: [Swift.String] = [])
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class Category : Swift.Codable {
+  public var value: Swift.String?
+  public var displayValue: Swift.String?
+  public var icon: Swift.String?
+  public init(value: Swift.String? = nil, displayValue: Swift.String? = nil, icon: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class CampaignRestriction : Swift.Codable, Swift.Equatable {
+  public var type: FMSDK.RestrictionType
+  public var value: Swift.String
+  public var restrictableType: FMSDK.RestrictableType
+  public var restrictableIdentifier: Swift.String
+  public var restrictableIdentifierType: FMSDK.RestrictableIdentifierType
+  public var restrictable: FMSDK.Restrictable
+  public init(type: FMSDK.RestrictionType = .none, value: Swift.String = "", restrictableType: FMSDK.RestrictableType = .none, restrictableIdentifier: Swift.String = "", restrictableIdentifierType: FMSDK.RestrictableIdentifierType = .none, restrictable: FMSDK.Restrictable = Restrictable())
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.CampaignRestriction, rhs: FMSDK.CampaignRestriction) -> Swift.Bool
+  @objc deinit
+}
+public enum RestrictionType : Swift.String, Swift.Codable {
+  case locationRestriction
+  case locationGroupRestriction
+  case merchantTradeNameRestriction
+  case googlePlaceIdRestriction
+  case mccRestriction
+  case none
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum RestrictableType : Swift.String, Swift.Codable {
+  case location
+  case locationGroup
+  case googlePlaceID
+  case none
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum RestrictableIdentifierType : Swift.String, Swift.Codable {
+  case uuid
+  case originatorIdentifier
+  case none
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class LocationProfile : Swift.Codable {
+  public var website: Swift.String
+  public var hours: [Swift.String]
+  public var rating: Swift.Double
+  public var phone: Swift.String
+  public var reviews: [FMSDK.LocationReview]
+  public var socialMediaIdentifiers: [FMSDK.SocialMediaIdentifiers]
+  public var links: [FMSDK.MenuLink]
+  public init(website: Swift.String = "", hours: [Swift.String] = [], rating: Swift.Double = 0.0, phone: Swift.String = "", reviews: [FMSDK.LocationReview] = [], socialMediaIdentifiers: [FMSDK.SocialMediaIdentifiers] = [], links: [FMSDK.MenuLink] = [])
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public class LocationReview : Swift.Codable {
+  public var rating: Swift.Double
+  public var authorName: Swift.String
+  public var authorUrl: Foundation.URL?
+  public var text: Swift.String
+  public var formattedTimeAgo: Swift.String
+  public var profilePhotoUrl: Foundation.URL?
+  public init(rating: Swift.Double = 0.0, authorName: Swift.String = "", authorUrl: Foundation.URL? = nil, text: Swift.String = "", formattedTimeAgo: Swift.String = "", profilePhotoUrl: Foundation.URL? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class SocialMediaIdentifiers : Swift.Codable {
+  public var type: Swift.String
+  public var identifier: Swift.String
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public class MenuLink : Swift.Codable {
+  public var type: Swift.String
+  public var value: Swift.String
+  public init(type: Swift.String = "", value: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public class ConvertPointsRequest : Swift.Codable {
+  public var amount: Swift.Int
+  public init(amount: Swift.Int)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public protocol FMSDKTokenRefreshCallback {
+  func refreshJWTs(completion: @escaping (FMSDK.JWTs) -> Swift.Void)
+}
+@objc @_Concurrency.MainActor(unsafe) public class SheetViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var options: FMSDK.SheetOptions {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public static var autoAdjustToKeyboard: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var autoAdjustToKeyboard: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public static var allowPullingPastMaxHeight: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var allowPullingPastMaxHeight: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public static var allowPullingPastMinHeight: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var allowPullingPastMinHeight: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var sizes: [FMSDK.SheetSize] {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var orderedSizes: [FMSDK.SheetSize]
+  @_Concurrency.MainActor(unsafe) public var currentSize: FMSDK.SheetSize {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var dismissOnPull: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var dismissOnOverlayTap: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var shouldRecognizePanGestureWithUIControls: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var childViewController: UIKit.UIViewController {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var childForStatusBarStyle: UIKit.UIViewController? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) public static var hasBlurBackground: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var hasBlurBackground: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public static var minimumSpaceAbovePullBar: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var minimumSpaceAbovePullBar: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public static var overlayColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) public var overlayColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public static var blurEffect: UIKit.UIBlurEffect
+  @_Concurrency.MainActor(unsafe) public var blurEffect: UIKit.UIBlurEffect {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public static var allowGestureThroughOverlay: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var allowGestureThroughOverlay: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public static var cornerRadius: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var cornerRadius: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public static var gripSize: CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) public var gripSize: CoreFoundation.CGSize {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public static var gripColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) public var gripColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public static var pullBarBackgroundColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) public var pullBarBackgroundColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public static var treatPullBarAsClear: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var treatPullBarAsClear: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var shouldDismiss: ((FMSDK.SheetViewController) -> Swift.Bool)?
+  @_Concurrency.MainActor(unsafe) public var didDismiss: ((FMSDK.SheetViewController) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var sizeChanged: ((FMSDK.SheetViewController, FMSDK.SheetSize, CoreFoundation.CGFloat) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var contentViewController: FMSDK.SheetContentViewController {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var contentBackgroundColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public init(controller: UIKit.UIViewController, sizes: [FMSDK.SheetSize] = [.intrinsic], options: FMSDK.SheetOptions? = nil)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func handleScrollView(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) public func setSizes(_ sizes: [FMSDK.SheetSize], animated: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) public func resize(to size: FMSDK.SheetSize, duration: Foundation.TimeInterval = 0.2, options: UIKit.UIView.AnimationOptions = [.curveEaseOut], animated: Swift.Bool = true, complete: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func attemptDismiss(animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func animateIn(to view: UIKit.UIView, in parent: UIKit.UIViewController, size: FMSDK.SheetSize? = nil, duration: Foundation.TimeInterval = 0.3, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func animateIn(size: FMSDK.SheetSize? = nil, duration: Foundation.TimeInterval = 0.3, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func animateOut(duration: Foundation.TimeInterval = 0.3, completion: (() -> Swift.Void)? = nil)
+  @objc deinit
+}
+extension FMSDK.SheetViewController : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+}
+extension FMSDK.SheetViewController : UIKit.UIViewControllerTransitioningDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func animationController(forPresented presented: UIKit.UIViewController, presenting: UIKit.UIViewController, source: UIKit.UIViewController) -> (any UIKit.UIViewControllerAnimatedTransitioning)?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func animationController(forDismissed dismissed: UIKit.UIViewController) -> (any UIKit.UIViewControllerAnimatedTransitioning)?
+}
+public class LocationsResponse : Swift.Codable {
+  public var locations: [FMSDK.Location]?
+  public var pagination: FMSDK.Pagination?
+  public init(locations: [FMSDK.Location]? = nil, pagination: FMSDK.Pagination? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public protocol FeaturesApi {
+  func updateCardControls(uuid: Swift.String, body: FMSDK.CardControlsRequest, completion: @escaping ((_ result: Swift.Result<ModelSDK.Card, any Swift.Error>) -> Swift.Void))
+  func convertPoints(uuid: Swift.String, body: FMSDK.ConvertPointsRequest, completion: @escaping ((_ result: Swift.Result<FMSDK.ConvertPoints, any Swift.Error>) -> Swift.Void))
+  func getFeaturesByCard(uuid: Swift.String, status: Swift.String?, subscriptionLevel: Swift.String?, completion: @escaping ((_ result: Swift.Result<[FMSDK.Feature], any Swift.Error>) -> Swift.Void))
+  func acceptFeatureTermAndConditions(uuid: Swift.String, featureUuid: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void))
+  func activateFeatureByCard(uuid: Swift.String, featureUuid: Swift.String, body: FMSDK.ActivateFeatureRequest, completion: @escaping ((_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void))
+  func getProductsByCard(uuid: Swift.String, featureIdentifier: Swift.String, productIdentifier: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.Product, any Swift.Error>) -> Swift.Void))
+  func sendMCashBalance(uuid: Swift.String, featureIdentifier: Swift.String, priceUuid: Swift.String?, productIdentifier: Swift.String?, body: FMSDK.SendMcashRequest, completion: @escaping ((_ result: Swift.Result<FMSDK.McashSuccess, any Swift.Error>) -> Swift.Void))
+  func getSSOToken(cardUuid: Swift.String, userFeatureUuid: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.SSOToken, any Swift.Error>) -> Swift.Void))
+}
+public class CampaignRestrictions : Swift.Codable, Swift.Equatable {
+  public var restrictions: [FMSDK.CampaignRestriction]
+  public var pagination: FMSDK.Pagination
+  public init(restrictions: [FMSDK.CampaignRestriction] = [], pagination: FMSDK.Pagination = Pagination())
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.CampaignRestrictions, rhs: FMSDK.CampaignRestrictions) -> Swift.Bool
+  @objc deinit
+}
+public class Suggestion : Swift.Codable {
+  public var itemUuid: Swift.String?
+  public var itemType: Swift.String?
+  public var itemTitle: Swift.String?
+  public var itemSubtitle: Swift.String?
+  public var matchingText: Swift.String?
+  public var itemSearchQuery: Swift.String?
+  public var metadata: FMSDK.Metadata?
+  public init(itemUuid: Swift.String? = nil, itemType: Swift.String? = nil, itemTitle: Swift.String? = nil, itemSubtitle: Swift.String? = nil, matchingText: Swift.String? = nil, itemSearchQuery: Swift.String? = nil, metadata: FMSDK.Metadata? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class Metadata : Swift.Codable {
+  public var record: FMSDK.Suggestion?
+  public init(record: FMSDK.Suggestion? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class ConvertPoints : Swift.Codable {
+  public var balances: [ModelSDK.CardBalances]?
+  public init(balances: [ModelSDK.CardBalances]? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class McashSuccess : Swift.Codable, Swift.Equatable {
+  public var uuid: Swift.String
+  public var title: Swift.String
+  public var message: Swift.String
+  public var cardImageUrl: Foundation.URL?
+  public var balances: [FMSDK.McashBalances]
+  public var giftDetails: FMSDK.McashGiftDetails
+  public var paymentIntent: FMSDK.PaymentIntent
+  public init(uuid: Swift.String = "", title: Swift.String = "", message: Swift.String = "", cardImageUrl: Foundation.URL? = nil, balances: [FMSDK.McashBalances] = [], giftDetails: FMSDK.McashGiftDetails = McashGiftDetails(), paymentIntent: FMSDK.PaymentIntent = PaymentIntent())
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.McashSuccess, rhs: FMSDK.McashSuccess) -> Swift.Bool
+  @objc deinit
+}
+public class McashBalances : Swift.Codable, Swift.Equatable {
+  public var type: Swift.String
+  public var value: Swift.String
+  public var customTitle: Swift.String
+  public init(type: Swift.String = "", value: Swift.String = "", customTitle: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.McashBalances, rhs: FMSDK.McashBalances) -> Swift.Bool
+  @objc deinit
+}
+public class McashGiftDetails : Swift.Codable, Swift.Equatable {
+  public var name: Swift.String
+  public var message: Swift.String
+  public init(name: Swift.String = "", message: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.McashGiftDetails, rhs: FMSDK.McashGiftDetails) -> Swift.Bool
+  @objc deinit
+}
+public class PaymentIntent : Swift.Codable, Swift.Equatable {
+  public var clientSecret: Swift.String
+  public init(clientSecret: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.PaymentIntent, rhs: FMSDK.PaymentIntent) -> Swift.Bool
+  @objc deinit
+}
+public struct SheetOptions {
+  public static var `default`: FMSDK.SheetOptions
+  public enum TransitionOverflowType {
+    case color(color: UIKit.UIColor)
+    case view(view: UIKit.UIView)
+    case none
+    case automatic
+  }
+  public var pullBarHeight: CoreFoundation.CGFloat
+  public var presentingViewCornerRadius: CoreFoundation.CGFloat
+  public var shouldExtendBackground: Swift.Bool
+  public var setIntrinsicHeightOnNavigationControllers: Swift.Bool
+  public var transitionAnimationOptions: UIKit.UIView.AnimationOptions
+  public var transitionDampening: CoreFoundation.CGFloat
+  public var transitionDuration: Swift.Double
+  public var transitionVelocity: CoreFoundation.CGFloat
+  public var transitionOverflowType: FMSDK.SheetOptions.TransitionOverflowType
+  public var useFullScreenMode: Swift.Bool
+  public var shrinkPresentingViewController: Swift.Bool
+  public var useInlineMode: Swift.Bool
+  public var horizontalPadding: CoreFoundation.CGFloat
+  public var maxWidth: CoreFoundation.CGFloat?
+  public var minimumSpaceAbovePullBar: CoreFoundation.CGFloat
+  public var gripSize: CoreFoundation.CGSize
+  public var gripColor: UIKit.UIColor
+  public var pullBarBackgroundColor: UIKit.UIColor
+  public var cornerRadius: CoreFoundation.CGFloat
+  public init()
+  public init(pullBarHeight: CoreFoundation.CGFloat? = nil, presentingViewCornerRadius: CoreFoundation.CGFloat? = nil, shouldExtendBackground: Swift.Bool? = nil, setIntrinsicHeightOnNavigationControllers: Swift.Bool? = nil, useFullScreenMode: Swift.Bool? = nil, shrinkPresentingViewController: Swift.Bool? = nil, useInlineMode: Swift.Bool? = nil, horizontalPadding: CoreFoundation.CGFloat? = nil, maxWidth: CoreFoundation.CGFloat? = nil)
+  @available(*, unavailable, message: "cornerRadius, minimumSpaceAbovePullBar, gripSize and gripColor are now properties on SheetViewController. Use them instead.")
+  public init(pullBarHeight: CoreFoundation.CGFloat? = nil, gripSize: CoreFoundation.CGSize? = nil, gripColor: UIKit.UIColor? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, presentingViewCornerRadius: CoreFoundation.CGFloat? = nil, shouldExtendBackground: Swift.Bool? = nil, setIntrinsicHeightOnNavigationControllers: Swift.Bool? = nil, useFullScreenMode: Swift.Bool? = nil, shrinkPresentingViewController: Swift.Bool? = nil, useInlineMode: Swift.Bool? = nil, minimumSpaceAbovePullBar: CoreFoundation.CGFloat? = nil)
+}
+public class CampaignBalance : Swift.Codable, Swift.Equatable {
+  public var type: FMSDK.CampaignBalanceType
+  public var title: Swift.String
+  public var originalAmount: Swift.Double
+  public var formattedOriginalAmount: Swift.String
+  public var availableAmount: Swift.Double
+  public var formattedAvailableAmount: Swift.String
+  public init(type: FMSDK.CampaignBalanceType = .none, title: Swift.String = "", originalAmount: Swift.Double = 0.0, formattedOriginalAmount: Swift.String = "", availableAmount: Swift.Double = 0.0, formattedAvailableAmount: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.CampaignBalance, rhs: FMSDK.CampaignBalance) -> Swift.Bool
+  @objc deinit
+}
+public enum CampaignBalanceType : Swift.String, Swift.Codable {
+  case mcash
+  case points
+  case none
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class Location : Swift.Codable, Swift.Equatable {
+  final public let locationManager: CoreLocation.CLLocationManager
+  public var uuid: Swift.String
+  public var name: Swift.String?
+  public var address: Swift.String
+  public var phone: Swift.String?
+  public var website: Swift.String?
+  public var hours: [Swift.String]?
+  public var smallImageUrl: Foundation.URL?
+  public var editorial: Swift.String
+  public var smallBannerImageUrls: [Swift.String]
+  public var latitude: Swift.Double
+  public var longitude: Swift.Double
+  public var distance: Swift.Double
+  public var formattedDistance: Swift.String
+  public var favourite: Swift.Bool
+  public var noPhysicalAddress: Swift.Bool
+  public var city: Swift.String
+  public var featuredOffer: FMSDK.FeaturedOffer?
+  public var categories: [FMSDK.Category]
+  public var subCategories: [FMSDK.Category]
+  public var formattedDistanceAddress: Swift.String
+  public var coordinates: CoreLocation.CLLocationCoordinate2D {
+    get
+  }
+  public var annotation: FMSDK.CustomAnnotation {
+    get
+  }
+  public func getFormattedDistance(distance: Swift.String) -> Swift.String
+  public init(uuid: Swift.String = "", name: Swift.String? = nil, address: Swift.String = "", phone: Swift.String? = nil, website: Swift.String? = nil, hours: [Swift.String]? = nil, latitude: Swift.Double = 0.0, longitude: Swift.Double = 0.0, distance: Swift.Double = 0.0, formattedDistance: Swift.String = "", favourite: Swift.Bool = false, noPhysicalAddress: Swift.Bool = false, editorial: Swift.String = "", smallImageUrl: Foundation.URL? = nil, smallBannerImageUrls: [Swift.String] = [], city: Swift.String = "", featuredOffer: FMSDK.FeaturedOffer? = nil, categories: [FMSDK.Category] = [], subCategories: [FMSDK.Category] = [])
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.Location, rhs: FMSDK.Location) -> Swift.Bool
+  @objc deinit
+}
+public struct CustomBalances : Swift.Codable, Swift.Equatable {
+  public struct Balance<T> : Swift.Codable, Swift.Equatable where T : Swift.Decodable, T : Swift.Encodable, T : Swift.Equatable {
+    public static func == (a: FMSDK.CustomBalances.Balance<T>, b: FMSDK.CustomBalances.Balance<T>) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public let availible: FMSDK.CustomBalances.Balance<Swift.Double>
+  public let held: FMSDK.CustomBalances.Balance<Swift.Double>
+  public let points: FMSDK.CustomBalances.Balance<Swift.Int>
+  public init?(balance: FMSDK.LocationCustomBalance?)
+  public static func == (a: FMSDK.CustomBalances, b: FMSDK.CustomBalances) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public class FeaturedOffer : Swift.Codable {
+  public var title: Swift.String?
+  public var subtitle: Swift.String?
+  public init(title: Swift.String? = nil, subtitle: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class CustomAnnotation : MapKit.MKPointAnnotation {
+  public var imageName: Swift.String
+  public var identifier: Swift.String
+  public var distance: Swift.Double
+  @objc override dynamic public init()
+  @objc deinit
+}
+public class SSOToken : Swift.Codable {
+  public var ssoToken: Swift.String?
+  public init(ssoToken: Swift.String? = nil)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class Campaign : Swift.Codable, Swift.Equatable {
+  public init(uuid: Swift.String = "", imageUrl: Foundation.URL? = nil, restrictionsCount: Swift.Int = 0)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.Campaign, rhs: FMSDK.Campaign) -> Swift.Bool
+  @objc deinit
+}
+public class Suggestions : Swift.Codable {
+  public var suggestions: [FMSDK.Suggestion]?
+  public init(suggestions: [FMSDK.Suggestion]?)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+extension FMSDK.ApiEnv : Swift.Equatable {}
+extension FMSDK.ApiEnv : Swift.Hashable {}
+extension FMSDK.ApiEnv : Swift.RawRepresentable {}
+extension FMSDK.ManualRedemption.Action : Swift.Equatable {}
+extension FMSDK.ManualRedemption.Action : Swift.Hashable {}
+extension FMSDK.ManualRedemption.Action : Swift.RawRepresentable {}
+extension FMSDK.Barcode.ModelType : Swift.Equatable {}
+extension FMSDK.Barcode.ModelType : Swift.Hashable {}
+extension FMSDK.Barcode.ModelType : Swift.RawRepresentable {}
+extension FMSDK.Presentation : Swift.Equatable {}
+extension FMSDK.Presentation : Swift.Hashable {}
+extension FMSDK.Presentation : Swift.RawRepresentable {}
+extension FMSDK.DeliveryMethod : Swift.Equatable {}
+extension FMSDK.DeliveryMethod : Swift.Hashable {}
+extension FMSDK.DeliveryMethod : Swift.RawRepresentable {}
+extension FMSDK.DeliveryStatus : Swift.Equatable {}
+extension FMSDK.DeliveryStatus : Swift.Hashable {}
+extension FMSDK.DeliveryStatus : Swift.RawRepresentable {}
+extension FMSDK.OwnerableType : Swift.Equatable {}
+extension FMSDK.OwnerableType : Swift.Hashable {}
+extension FMSDK.OwnerableType : Swift.RawRepresentable {}
+extension FMSDK.FeatureMetadataKeys : Swift.Equatable {}
+extension FMSDK.FeatureMetadataKeys : Swift.Hashable {}
+extension FMSDK.FeatureMetadataKeys : Swift.RawRepresentable {}
+extension FMSDK.FeaturesTypes : Swift.Equatable {}
+extension FMSDK.FeaturesTypes : Swift.Hashable {}
+extension FMSDK.FeaturesTypes : Swift.RawRepresentable {}
+extension FMSDK.RestrictionType : Swift.Equatable {}
+extension FMSDK.RestrictionType : Swift.Hashable {}
+extension FMSDK.RestrictionType : Swift.RawRepresentable {}
+extension FMSDK.RestrictableType : Swift.Equatable {}
+extension FMSDK.RestrictableType : Swift.Hashable {}
+extension FMSDK.RestrictableType : Swift.RawRepresentable {}
+extension FMSDK.RestrictableIdentifierType : Swift.Equatable {}
+extension FMSDK.RestrictableIdentifierType : Swift.Hashable {}
+extension FMSDK.RestrictableIdentifierType : Swift.RawRepresentable {}
+extension FMSDK.CampaignBalanceType : Swift.Equatable {}
+extension FMSDK.CampaignBalanceType : Swift.Hashable {}
+extension FMSDK.CampaignBalanceType : Swift.RawRepresentable {}
