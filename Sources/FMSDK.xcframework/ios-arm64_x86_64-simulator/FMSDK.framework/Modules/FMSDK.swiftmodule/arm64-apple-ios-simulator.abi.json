@@ -18082,22 +18082,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK19CardControlsRequestC6lockedSbSgvp",
-            "mangledName": "$s5FMSDK19CardControlsRequestC6lockedSbSgvp",
+            "usr": "s:5FMSDK19CardControlsRequestC6lockedSbvp",
+            "mangledName": "$s5FMSDK19CardControlsRequestC6lockedSbvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "Final",
@@ -18114,22 +18106,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Bool?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK19CardControlsRequestC6lockedSbSgvg",
-                "mangledName": "$s5FMSDK19CardControlsRequestC6lockedSbSgvg",
+                "usr": "s:5FMSDK19CardControlsRequestC6lockedSbvg",
+                "mangledName": "$s5FMSDK19CardControlsRequestC6lockedSbvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -18200,17 +18184,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -18220,8 +18196,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK19CardControlsRequestC6locked7autoPayACSbSg_Sbtcfc",
-            "mangledName": "$s5FMSDK19CardControlsRequestC6locked7autoPayACSbSg_Sbtcfc",
+            "usr": "s:5FMSDK19CardControlsRequestC6locked7autoPayACSb_Sbtcfc",
+            "mangledName": "$s5FMSDK19CardControlsRequestC6locked7autoPayACSb_Sbtcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -28280,6 +28256,230 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "Paginationable",
+        "printedName": "Paginationable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "count",
+            "printedName": "count",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK14PaginationableP5countSivp",
+            "mangledName": "$s5FMSDK14PaginationableP5countSivp",
+            "moduleName": "FMSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK14PaginationableP5countSivg",
+                "mangledName": "$s5FMSDK14PaginationableP5countSivg",
+                "moduleName": "FMSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.Paginationable>",
+                "sugared_genericSig": "<Self where Self : FMSDK.Paginationable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "page",
+            "printedName": "page",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK14PaginationableP4pageSivp",
+            "mangledName": "$s5FMSDK14PaginationableP4pageSivp",
+            "moduleName": "FMSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK14PaginationableP4pageSivg",
+                "mangledName": "$s5FMSDK14PaginationableP4pageSivg",
+                "moduleName": "FMSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.Paginationable>",
+                "sugared_genericSig": "<Self where Self : FMSDK.Paginationable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "perPage",
+            "printedName": "perPage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK14PaginationableP7perPageSivp",
+            "mangledName": "$s5FMSDK14PaginationableP7perPageSivp",
+            "moduleName": "FMSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK14PaginationableP7perPageSivg",
+                "mangledName": "$s5FMSDK14PaginationableP7perPageSivg",
+                "moduleName": "FMSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.Paginationable>",
+                "sugared_genericSig": "<Self where Self : FMSDK.Paginationable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "totalCount",
+            "printedName": "totalCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK14PaginationableP10totalCountSivp",
+            "mangledName": "$s5FMSDK14PaginationableP10totalCountSivp",
+            "moduleName": "FMSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK14PaginationableP10totalCountSivg",
+                "mangledName": "$s5FMSDK14PaginationableP10totalCountSivg",
+                "moduleName": "FMSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.Paginationable>",
+                "sugared_genericSig": "<Self where Self : FMSDK.Paginationable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "badge",
+            "printedName": "badge",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK14PaginationableP5badgeSivp",
+            "mangledName": "$s5FMSDK14PaginationableP5badgeSivp",
+            "moduleName": "FMSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK14PaginationableP5badgeSivg",
+                "mangledName": "$s5FMSDK14PaginationableP5badgeSivg",
+                "moduleName": "FMSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.Paginationable>",
+                "sugared_genericSig": "<Self where Self : FMSDK.Paginationable>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:5FMSDK14PaginationableP",
+        "mangledName": "$s5FMSDK14PaginationableP",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Pagination",
         "printedName": "Pagination",
         "children": [
@@ -28892,6 +29092,13 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Paginationable",
+            "printedName": "Paginationable",
+            "usr": "s:5FMSDK14PaginationableP",
+            "mangledName": "$s5FMSDK14PaginationableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -42245,7 +42452,20 @@
         "name": "NVActivityIndicatorView",
         "printedName": "NVActivityIndicatorView",
         "declKind": "Import",
-        "moduleName": "FMSDK"
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "NVActivityIndicatorViewExtended",
+        "printedName": "NVActivityIndicatorViewExtended",
+        "declKind": "Import",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -42646,23 +42866,6 @@
             "mangledName": "$sSQ"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FMSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "FirebaseCore",
-        "printedName": "FirebaseCore",
-        "declKind": "Import",
-        "moduleName": "FMSDK"
       },
       {
         "kind": "Import",
@@ -53170,6 +53373,286 @@
         "printedName": "Campaign",
         "children": [
           {
+            "kind": "Var",
+            "name": "uuid",
+            "printedName": "uuid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK8CampaignC4uuidSSvp",
+            "mangledName": "$s5FMSDK8CampaignC4uuidSSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK8CampaignC4uuidSSvg",
+                "mangledName": "$s5FMSDK8CampaignC4uuidSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK8CampaignC4uuidSSvs",
+                "mangledName": "$s5FMSDK8CampaignC4uuidSSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK8CampaignC4uuidSSvM",
+                "mangledName": "$s5FMSDK8CampaignC4uuidSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageUrl",
+            "printedName": "imageUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK8CampaignC8imageUrl10Foundation3URLVSgvp",
+            "mangledName": "$s5FMSDK8CampaignC8imageUrl10Foundation3URLVSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK8CampaignC8imageUrl10Foundation3URLVSgvg",
+                "mangledName": "$s5FMSDK8CampaignC8imageUrl10Foundation3URLVSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK8CampaignC8imageUrl10Foundation3URLVSgvs",
+                "mangledName": "$s5FMSDK8CampaignC8imageUrl10Foundation3URLVSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK8CampaignC8imageUrl10Foundation3URLVSgvM",
+                "mangledName": "$s5FMSDK8CampaignC8imageUrl10Foundation3URLVSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "restrictionsCount",
+            "printedName": "restrictionsCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK8CampaignC17restrictionsCountSivp",
+            "mangledName": "$s5FMSDK8CampaignC17restrictionsCountSivp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK8CampaignC17restrictionsCountSivg",
+                "mangledName": "$s5FMSDK8CampaignC17restrictionsCountSivg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK8CampaignC17restrictionsCountSivs",
+                "mangledName": "$s5FMSDK8CampaignC17restrictionsCountSivs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK8CampaignC17restrictionsCountSivM",
+                "mangledName": "$s5FMSDK8CampaignC17restrictionsCountSivM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(uuid:imageUrl:restrictionsCount:)",
@@ -53342,6 +53825,84 @@
             "mangledName": "$sSQ"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FmSdkProvider",
+        "printedName": "FmSdkProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FmSdk",
+                "printedName": "any FMSDK.FmSdk",
+                "usr": "s:5FMSDK5FmSdkP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK13FmSdkProviderC6sharedAA0bC0_pvpZ",
+            "mangledName": "$s5FMSDK13FmSdkProviderC6sharedAA0bC0_pvpZ",
+            "moduleName": "FMSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FmSdk",
+                    "printedName": "any FMSDK.FmSdk",
+                    "usr": "s:5FMSDK5FmSdkP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK13FmSdkProviderC6sharedAA0bC0_pvgZ",
+                "mangledName": "$s5FMSDK13FmSdkProviderC6sharedAA0bC0_pvgZ",
+                "moduleName": "FMSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5FMSDK13FmSdkProviderC",
+        "mangledName": "$s5FMSDK13FmSdkProviderC",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
@@ -55328,14 +55889,14 @@
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/CardControlsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 479,
+      "offset": 477,
       "length": 9,
       "value": "\"autopay\""
     },
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/CardControlsRequest.swift",
       "kind": "StringLiteral",
-      "offset": 479,
+      "offset": 477,
       "length": 9,
       "value": "\"autopay\""
     },
@@ -56427,63 +56988,63 @@
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
       "kind": "IntegerLiteral",
-      "offset": 546,
+      "offset": 553,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
       "kind": "IntegerLiteral",
-      "offset": 561,
+      "offset": 568,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
       "kind": "IntegerLiteral",
-      "offset": 579,
+      "offset": 586,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
       "kind": "IntegerLiteral",
-      "offset": 600,
+      "offset": 607,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
       "kind": "IntegerLiteral",
-      "offset": 616,
+      "offset": 623,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
       "kind": "StringLiteral",
-      "offset": 894,
+      "offset": 901,
       "length": 10,
       "value": "\"per_page\""
     },
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
       "kind": "StringLiteral",
-      "offset": 931,
+      "offset": 938,
       "length": 13,
       "value": "\"total_count\""
     },
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
       "kind": "StringLiteral",
-      "offset": 894,
+      "offset": 901,
       "length": 10,
       "value": "\"per_page\""
     },
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
       "kind": "StringLiteral",
-      "offset": 931,
+      "offset": 938,
       "length": 13,
       "value": "\"total_count\""
     },
@@ -59500,42 +60061,42 @@
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Campaign.swift",
       "kind": "StringLiteral",
-      "offset": 305,
+      "offset": 326,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Campaign.swift",
       "kind": "IntegerLiteral",
-      "offset": 356,
+      "offset": 377,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Campaign.swift",
       "kind": "StringLiteral",
-      "offset": 578,
+      "offset": 599,
       "length": 11,
       "value": "\"image_url\""
     },
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Campaign.swift",
       "kind": "StringLiteral",
-      "offset": 623,
+      "offset": 644,
       "length": 19,
       "value": "\"restriction_count\""
     },
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Campaign.swift",
       "kind": "StringLiteral",
-      "offset": 578,
+      "offset": 599,
       "length": 11,
       "value": "\"image_url\""
     },
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Campaign.swift",
       "kind": "StringLiteral",
-      "offset": 623,
+      "offset": 644,
       "length": 19,
       "value": "\"restriction_count\""
     }

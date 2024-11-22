@@ -4,11 +4,9 @@
 import CoreGraphics
 import CoreLocation
 import CoreText
-import FirebaseCore
 import Foundation
 import MapKit
 import ModelSDK
-import NVActivityIndicatorView
 import ObjectiveC
 import Swift
 import UIKit.UIGestureRecognizerSubclass
@@ -356,9 +354,9 @@ public class Restrictable : Swift.Codable, Swift.Equatable {
   @objc deinit
 }
 public class CardControlsRequest : Swift.Encodable {
-  final public let locked: Swift.Bool?
+  final public let locked: Swift.Bool
   final public let autoPay: Swift.Bool
-  public init(locked: Swift.Bool?, autoPay: Swift.Bool)
+  public init(locked: Swift.Bool, autoPay: Swift.Bool)
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
@@ -576,7 +574,14 @@ public class LocationSubFilters : Swift.Codable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public class Pagination : Swift.Codable, Swift.Equatable {
+public protocol Paginationable {
+  var count: Swift.Int { get }
+  var page: Swift.Int { get }
+  var perPage: Swift.Int { get }
+  var totalCount: Swift.Int { get }
+  var badge: Swift.Int { get }
+}
+public class Pagination : FMSDK.Paginationable, Swift.Codable, Swift.Equatable {
   public var count: Swift.Int
   public var page: Swift.Int
   public var perPage: Swift.Int
@@ -1081,10 +1086,17 @@ public class SSOToken : Swift.Codable {
   required public init(from decoder: any Swift.Decoder) throws
 }
 public class Campaign : Swift.Codable, Swift.Equatable {
+  public var uuid: Swift.String
+  public var imageUrl: Foundation.URL?
+  public var restrictionsCount: Swift.Int
   public init(uuid: Swift.String = "", imageUrl: Foundation.URL? = nil, restrictionsCount: Swift.Int = 0)
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.Campaign, rhs: FMSDK.Campaign) -> Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FmSdkProvider {
+  public static let shared: any FMSDK.FmSdk
   @objc deinit
 }
 public class Suggestions : Swift.Codable {
