@@ -1,0 +1,4 @@
+framework module FMSDK {
+  header "FMSDK-Swift.h"
+  requires objc
+}
