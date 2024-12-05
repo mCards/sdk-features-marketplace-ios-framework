@@ -362,7 +362,7 @@ public class CardControlsRequest : Swift.Encodable {
 }
 @_hasMissingDesignatedInitializers public class CampaignItems : Swift.Codable, Swift.Equatable {
   public var items: [FMSDK.CampaignItem]
-  public var pagination: FMSDK.Pagination
+  public var pagination: ModelSDK.Pagination
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.CampaignItems, rhs: FMSDK.CampaignItems) -> Swift.Bool
@@ -573,26 +573,6 @@ public class LocationSubFilters : Swift.Codable {
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
-}
-public protocol Paginationable {
-  var count: Swift.Int { get }
-  var page: Swift.Int { get }
-  var perPage: Swift.Int { get }
-  var totalCount: Swift.Int { get }
-  var badge: Swift.Int { get }
-}
-public class Pagination : FMSDK.Paginationable, Swift.Codable, Swift.Equatable {
-  public var count: Swift.Int
-  public var page: Swift.Int
-  public var perPage: Swift.Int
-  public var totalCount: Swift.Int
-  public var badge: Swift.Int
-  public init(count: Swift.Int = 0, page: Swift.Int = 0, perPage: Swift.Int = 0, totalCount: Swift.Int = 0, badge: Swift.Int = 0)
-  required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-  public static func == (lhs: FMSDK.Pagination, rhs: FMSDK.Pagination) -> Swift.Bool
-  public func shouldLoadMore(_ index: Swift.Int) -> Swift.Bool
-  @objc deinit
 }
 public protocol FmSdk {
   var features: any FMSDK.FeaturesApi { get }
@@ -866,8 +846,8 @@ extension FMSDK.SheetViewController : UIKit.UIViewControllerTransitioningDelegat
 }
 public class LocationsResponse : Swift.Codable {
   public var locations: [FMSDK.Location]?
-  public var pagination: FMSDK.Pagination?
-  public init(locations: [FMSDK.Location]? = nil, pagination: FMSDK.Pagination? = nil)
+  public var pagination: ModelSDK.Pagination?
+  public init(locations: [FMSDK.Location]? = nil, pagination: ModelSDK.Pagination? = nil)
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -884,8 +864,8 @@ public protocol FeaturesApi {
 }
 public class CampaignRestrictions : Swift.Codable, Swift.Equatable {
   public var restrictions: [FMSDK.CampaignRestriction]
-  public var pagination: FMSDK.Pagination
-  public init(restrictions: [FMSDK.CampaignRestriction] = [], pagination: FMSDK.Pagination = Pagination())
+  public var pagination: ModelSDK.Pagination
+  public init(restrictions: [FMSDK.CampaignRestriction] = [], pagination: ModelSDK.Pagination = Pagination())
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.CampaignRestrictions, rhs: FMSDK.CampaignRestrictions) -> Swift.Bool

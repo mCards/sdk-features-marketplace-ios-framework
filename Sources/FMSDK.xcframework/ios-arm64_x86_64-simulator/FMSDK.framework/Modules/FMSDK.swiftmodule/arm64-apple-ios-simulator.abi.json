@@ -18308,6 +18308,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "ModelSDK",
+        "printedName": "ModelSDK",
+        "declKind": "Import",
+        "moduleName": "FMSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "CampaignItems",
         "printedName": "CampaignItems",
@@ -18429,13 +18436,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Pagination",
-                "printedName": "FMSDK.Pagination",
-                "usr": "s:5FMSDK10PaginationC"
+                "printedName": "ModelSDK.Pagination",
+                "usr": "s:8ModelSDK10PaginationC"
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK13CampaignItemsC10paginationAA10PaginationCvp",
-            "mangledName": "$s5FMSDK13CampaignItemsC10paginationAA10PaginationCvp",
+            "usr": "s:5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvp",
+            "mangledName": "$s5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasStorage",
@@ -18451,13 +18458,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Pagination",
-                    "printedName": "FMSDK.Pagination",
-                    "usr": "s:5FMSDK10PaginationC"
+                    "printedName": "ModelSDK.Pagination",
+                    "usr": "s:8ModelSDK10PaginationC"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK13CampaignItemsC10paginationAA10PaginationCvg",
-                "mangledName": "$s5FMSDK13CampaignItemsC10paginationAA10PaginationCvg",
+                "usr": "s:5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvg",
+                "mangledName": "$s5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -18475,13 +18482,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Pagination",
-                    "printedName": "FMSDK.Pagination",
-                    "usr": "s:5FMSDK10PaginationC"
+                    "printedName": "ModelSDK.Pagination",
+                    "usr": "s:8ModelSDK10PaginationC"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK13CampaignItemsC10paginationAA10PaginationCvs",
-                "mangledName": "$s5FMSDK13CampaignItemsC10paginationAA10PaginationCvs",
+                "usr": "s:5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvs",
+                "mangledName": "$s5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -18498,8 +18505,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK13CampaignItemsC10paginationAA10PaginationCvM",
-                "mangledName": "$s5FMSDK13CampaignItemsC10paginationAA10PaginationCvM",
+                "usr": "s:5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvM",
+                "mangledName": "$s5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -28242,884 +28249,6 @@
         "moduleName": "FMSDK",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FMSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Paginationable",
-        "printedName": "Paginationable",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "count",
-            "printedName": "count",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK14PaginationableP5countSivp",
-            "mangledName": "$s5FMSDK14PaginationableP5countSivp",
-            "moduleName": "FMSDK",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK14PaginationableP5countSivg",
-                "mangledName": "$s5FMSDK14PaginationableP5countSivg",
-                "moduleName": "FMSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.Paginationable>",
-                "sugared_genericSig": "<Self where Self : FMSDK.Paginationable>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "page",
-            "printedName": "page",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK14PaginationableP4pageSivp",
-            "mangledName": "$s5FMSDK14PaginationableP4pageSivp",
-            "moduleName": "FMSDK",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK14PaginationableP4pageSivg",
-                "mangledName": "$s5FMSDK14PaginationableP4pageSivg",
-                "moduleName": "FMSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.Paginationable>",
-                "sugared_genericSig": "<Self where Self : FMSDK.Paginationable>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "perPage",
-            "printedName": "perPage",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK14PaginationableP7perPageSivp",
-            "mangledName": "$s5FMSDK14PaginationableP7perPageSivp",
-            "moduleName": "FMSDK",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK14PaginationableP7perPageSivg",
-                "mangledName": "$s5FMSDK14PaginationableP7perPageSivg",
-                "moduleName": "FMSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.Paginationable>",
-                "sugared_genericSig": "<Self where Self : FMSDK.Paginationable>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "totalCount",
-            "printedName": "totalCount",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK14PaginationableP10totalCountSivp",
-            "mangledName": "$s5FMSDK14PaginationableP10totalCountSivp",
-            "moduleName": "FMSDK",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK14PaginationableP10totalCountSivg",
-                "mangledName": "$s5FMSDK14PaginationableP10totalCountSivg",
-                "moduleName": "FMSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.Paginationable>",
-                "sugared_genericSig": "<Self where Self : FMSDK.Paginationable>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "badge",
-            "printedName": "badge",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK14PaginationableP5badgeSivp",
-            "mangledName": "$s5FMSDK14PaginationableP5badgeSivp",
-            "moduleName": "FMSDK",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK14PaginationableP5badgeSivg",
-                "mangledName": "$s5FMSDK14PaginationableP5badgeSivg",
-                "moduleName": "FMSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.Paginationable>",
-                "sugared_genericSig": "<Self where Self : FMSDK.Paginationable>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:5FMSDK14PaginationableP",
-        "mangledName": "$s5FMSDK14PaginationableP",
-        "moduleName": "FMSDK",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Pagination",
-        "printedName": "Pagination",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "count",
-            "printedName": "count",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK10PaginationC5countSivp",
-            "mangledName": "$s5FMSDK10PaginationC5countSivp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK10PaginationC5countSivg",
-                "mangledName": "$s5FMSDK10PaginationC5countSivg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK10PaginationC5countSivs",
-                "mangledName": "$s5FMSDK10PaginationC5countSivs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK10PaginationC5countSivM",
-                "mangledName": "$s5FMSDK10PaginationC5countSivM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "page",
-            "printedName": "page",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK10PaginationC4pageSivp",
-            "mangledName": "$s5FMSDK10PaginationC4pageSivp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK10PaginationC4pageSivg",
-                "mangledName": "$s5FMSDK10PaginationC4pageSivg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK10PaginationC4pageSivs",
-                "mangledName": "$s5FMSDK10PaginationC4pageSivs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK10PaginationC4pageSivM",
-                "mangledName": "$s5FMSDK10PaginationC4pageSivM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "perPage",
-            "printedName": "perPage",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK10PaginationC7perPageSivp",
-            "mangledName": "$s5FMSDK10PaginationC7perPageSivp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK10PaginationC7perPageSivg",
-                "mangledName": "$s5FMSDK10PaginationC7perPageSivg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK10PaginationC7perPageSivs",
-                "mangledName": "$s5FMSDK10PaginationC7perPageSivs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK10PaginationC7perPageSivM",
-                "mangledName": "$s5FMSDK10PaginationC7perPageSivM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "totalCount",
-            "printedName": "totalCount",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK10PaginationC10totalCountSivp",
-            "mangledName": "$s5FMSDK10PaginationC10totalCountSivp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK10PaginationC10totalCountSivg",
-                "mangledName": "$s5FMSDK10PaginationC10totalCountSivg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK10PaginationC10totalCountSivs",
-                "mangledName": "$s5FMSDK10PaginationC10totalCountSivs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK10PaginationC10totalCountSivM",
-                "mangledName": "$s5FMSDK10PaginationC10totalCountSivM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "badge",
-            "printedName": "badge",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK10PaginationC5badgeSivp",
-            "mangledName": "$s5FMSDK10PaginationC5badgeSivp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK10PaginationC5badgeSivg",
-                "mangledName": "$s5FMSDK10PaginationC5badgeSivg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK10PaginationC5badgeSivs",
-                "mangledName": "$s5FMSDK10PaginationC5badgeSivs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK10PaginationC5badgeSivM",
-                "mangledName": "$s5FMSDK10PaginationC5badgeSivM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(count:page:perPage:totalCount:badge:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Pagination",
-                "printedName": "FMSDK.Pagination",
-                "usr": "s:5FMSDK10PaginationC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:5FMSDK10PaginationC5count4page7perPage10totalCount5badgeACSi_S4itcfc",
-            "mangledName": "$s5FMSDK10PaginationC5count4page7perPage10totalCount5badgeACSi_S4itcfc",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Pagination",
-                "printedName": "FMSDK.Pagination",
-                "usr": "s:5FMSDK10PaginationC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:5FMSDK10PaginationC4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s5FMSDK10PaginationC4fromACs7Decoder_p_tKcfc",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "Required",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FMSDK10PaginationC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s5FMSDK10PaginationC6encode2toys7Encoder_p_tKF",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Pagination",
-                "printedName": "FMSDK.Pagination",
-                "usr": "s:5FMSDK10PaginationC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Pagination",
-                "printedName": "FMSDK.Pagination",
-                "usr": "s:5FMSDK10PaginationC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FMSDK10PaginationC2eeoiySbAC_ACtFZ",
-            "mangledName": "$s5FMSDK10PaginationC2eeoiySbAC_ACtFZ",
-            "moduleName": "FMSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "shouldLoadMore",
-            "printedName": "shouldLoadMore(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FMSDK10PaginationC14shouldLoadMoreySbSiF",
-            "mangledName": "$s5FMSDK10PaginationC14shouldLoadMoreySbSiF",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:5FMSDK10PaginationC",
-        "mangledName": "$s5FMSDK10PaginationC",
-        "moduleName": "FMSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Paginationable",
-            "printedName": "Paginationable",
-            "usr": "s:5FMSDK14PaginationableP",
-            "mangledName": "$s5FMSDK14PaginationableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          }
         ]
       },
       {
@@ -41370,6 +40499,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "ModelSDK",
+        "printedName": "ModelSDK",
+        "declKind": "Import",
+        "moduleName": "FMSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "LocationsResponse",
         "printedName": "LocationsResponse",
@@ -41516,21 +40652,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "FMSDK.Pagination?",
+                "printedName": "ModelSDK.Pagination?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Pagination",
-                    "printedName": "FMSDK.Pagination",
-                    "usr": "s:5FMSDK10PaginationC"
+                    "printedName": "ModelSDK.Pagination",
+                    "usr": "s:8ModelSDK10PaginationC"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK17LocationsResponseC10paginationAA10PaginationCSgvp",
-            "mangledName": "$s5FMSDK17LocationsResponseC10paginationAA10PaginationCSgvp",
+            "usr": "s:5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvp",
+            "mangledName": "$s5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -41547,21 +40683,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "FMSDK.Pagination?",
+                    "printedName": "ModelSDK.Pagination?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Pagination",
-                        "printedName": "FMSDK.Pagination",
-                        "usr": "s:5FMSDK10PaginationC"
+                        "printedName": "ModelSDK.Pagination",
+                        "usr": "s:8ModelSDK10PaginationC"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK17LocationsResponseC10paginationAA10PaginationCSgvg",
-                "mangledName": "$s5FMSDK17LocationsResponseC10paginationAA10PaginationCSgvg",
+                "usr": "s:5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvg",
+                "mangledName": "$s5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -41579,21 +40715,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "FMSDK.Pagination?",
+                    "printedName": "ModelSDK.Pagination?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Pagination",
-                        "printedName": "FMSDK.Pagination",
-                        "usr": "s:5FMSDK10PaginationC"
+                        "printedName": "ModelSDK.Pagination",
+                        "usr": "s:8ModelSDK10PaginationC"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK17LocationsResponseC10paginationAA10PaginationCSgvs",
-                "mangledName": "$s5FMSDK17LocationsResponseC10paginationAA10PaginationCSgvs",
+                "usr": "s:5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvs",
+                "mangledName": "$s5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -41610,8 +40746,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK17LocationsResponseC10paginationAA10PaginationCSgvM",
-                "mangledName": "$s5FMSDK17LocationsResponseC10paginationAA10PaginationCSgvM",
+                "usr": "s:5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvM",
+                "mangledName": "$s5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -41655,13 +40791,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "FMSDK.Pagination?",
+                "printedName": "ModelSDK.Pagination?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Pagination",
-                    "printedName": "FMSDK.Pagination",
-                    "usr": "s:5FMSDK10PaginationC"
+                    "printedName": "ModelSDK.Pagination",
+                    "usr": "s:8ModelSDK10PaginationC"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -41669,8 +40805,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK17LocationsResponseC9locations10paginationACSayAA8LocationCGSg_AA10PaginationCSgtcfc",
-            "mangledName": "$s5FMSDK17LocationsResponseC9locations10paginationACSayAA8LocationCGSg_AA10PaginationCSgtcfc",
+            "usr": "s:5FMSDK17LocationsResponseC9locations10paginationACSayAA8LocationCGSg_8ModelSDK10PaginationCSgtcfc",
+            "mangledName": "$s5FMSDK17LocationsResponseC9locations10paginationACSayAA8LocationCGSg_8ModelSDK10PaginationCSgtcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -42502,6 +41638,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "ModelSDK",
+        "printedName": "ModelSDK",
+        "declKind": "Import",
+        "moduleName": "FMSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "CampaignRestrictions",
         "printedName": "CampaignRestrictions",
@@ -42623,13 +41766,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Pagination",
-                "printedName": "FMSDK.Pagination",
-                "usr": "s:5FMSDK10PaginationC"
+                "printedName": "ModelSDK.Pagination",
+                "usr": "s:8ModelSDK10PaginationC"
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK20CampaignRestrictionsC10paginationAA10PaginationCvp",
-            "mangledName": "$s5FMSDK20CampaignRestrictionsC10paginationAA10PaginationCvp",
+            "usr": "s:5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvp",
+            "mangledName": "$s5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasStorage",
@@ -42645,13 +41788,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Pagination",
-                    "printedName": "FMSDK.Pagination",
-                    "usr": "s:5FMSDK10PaginationC"
+                    "printedName": "ModelSDK.Pagination",
+                    "usr": "s:8ModelSDK10PaginationC"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK20CampaignRestrictionsC10paginationAA10PaginationCvg",
-                "mangledName": "$s5FMSDK20CampaignRestrictionsC10paginationAA10PaginationCvg",
+                "usr": "s:5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvg",
+                "mangledName": "$s5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -42669,13 +41812,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Pagination",
-                    "printedName": "FMSDK.Pagination",
-                    "usr": "s:5FMSDK10PaginationC"
+                    "printedName": "ModelSDK.Pagination",
+                    "usr": "s:8ModelSDK10PaginationC"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK20CampaignRestrictionsC10paginationAA10PaginationCvs",
-                "mangledName": "$s5FMSDK20CampaignRestrictionsC10paginationAA10PaginationCvs",
+                "usr": "s:5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvs",
+                "mangledName": "$s5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -42692,8 +41835,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK20CampaignRestrictionsC10paginationAA10PaginationCvM",
-                "mangledName": "$s5FMSDK20CampaignRestrictionsC10paginationAA10PaginationCvM",
+                "usr": "s:5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvM",
+                "mangledName": "$s5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -42729,14 +41872,14 @@
               {
                 "kind": "TypeNominal",
                 "name": "Pagination",
-                "printedName": "FMSDK.Pagination",
+                "printedName": "ModelSDK.Pagination",
                 "hasDefaultArg": true,
-                "usr": "s:5FMSDK10PaginationC"
+                "usr": "s:8ModelSDK10PaginationC"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK20CampaignRestrictionsC12restrictions10paginationACSayAA0B11RestrictionCG_AA10PaginationCtcfc",
-            "mangledName": "$s5FMSDK20CampaignRestrictionsC12restrictions10paginationACSayAA0B11RestrictionCG_AA10PaginationCtcfc",
+            "usr": "s:5FMSDK20CampaignRestrictionsC12restrictions10paginationACSayAA0B11RestrictionCG_8ModelSDK10PaginationCtcfc",
+            "mangledName": "$s5FMSDK20CampaignRestrictionsC12restrictions10paginationACSayAA0B11RestrictionCG_8ModelSDK10PaginationCtcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -55917,7 +55060,7 @@
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/CampaignItems.swift",
       "kind": "Array",
-      "offset": 321,
+      "offset": 337,
       "length": 2,
       "value": "[]"
     },
@@ -56986,69 +56129,6 @@
       "value": "\"keyword_subfilters\""
     },
     {
-      "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
-      "kind": "IntegerLiteral",
-      "offset": 553,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
-      "kind": "IntegerLiteral",
-      "offset": 568,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
-      "kind": "IntegerLiteral",
-      "offset": 586,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
-      "kind": "IntegerLiteral",
-      "offset": 607,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
-      "kind": "IntegerLiteral",
-      "offset": 623,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
-      "kind": "StringLiteral",
-      "offset": 901,
-      "length": 10,
-      "value": "\"per_page\""
-    },
-    {
-      "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
-      "kind": "StringLiteral",
-      "offset": 938,
-      "length": 13,
-      "value": "\"total_count\""
-    },
-    {
-      "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
-      "kind": "StringLiteral",
-      "offset": 901,
-      "length": 10,
-      "value": "\"per_page\""
-    },
-    {
-      "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/Pagination.swift",
-      "kind": "StringLiteral",
-      "offset": 938,
-      "length": 13,
-      "value": "\"total_count\""
-    },
-    {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Scenes\/Parent\/ParentViewController.swift",
       "kind": "StringLiteral",
       "offset": 113,
@@ -58045,7 +57125,7 @@
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/CampaignRestrictions.swift",
       "kind": "Array",
-      "offset": 375,
+      "offset": 391,
       "length": 2,
       "value": "[]"
     },
