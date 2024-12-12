@@ -33,13 +33,10 @@
       },
       {
         "kind": "Import",
-        "name": "NetworkSDK",
-        "printedName": "NetworkSDK",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
         "declKind": "Import",
-        "moduleName": "FMSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "FMSDK"
       },
       {
         "kind": "Import",
@@ -8526,235 +8523,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "FMSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "JWTs",
-        "printedName": "JWTs",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "accessToken",
-            "printedName": "accessToken",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK4JWTsV11accessTokenSSvp",
-            "mangledName": "$s5FMSDK4JWTsV11accessTokenSSvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK4JWTsV11accessTokenSSvg",
-                "mangledName": "$s5FMSDK4JWTsV11accessTokenSSvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK4JWTsV11accessTokenSSvs",
-                "mangledName": "$s5FMSDK4JWTsV11accessTokenSSvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK4JWTsV11accessTokenSSvM",
-                "mangledName": "$s5FMSDK4JWTsV11accessTokenSSvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "idToken",
-            "printedName": "idToken",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK4JWTsV7idTokenSSvp",
-            "mangledName": "$s5FMSDK4JWTsV7idTokenSSvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK4JWTsV7idTokenSSvg",
-                "mangledName": "$s5FMSDK4JWTsV7idTokenSSvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK4JWTsV7idTokenSSvs",
-                "mangledName": "$s5FMSDK4JWTsV7idTokenSSvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK4JWTsV7idTokenSSvM",
-                "mangledName": "$s5FMSDK4JWTsV7idTokenSSvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(accessToken:idToken:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "JWTs",
-                "printedName": "FMSDK.JWTs",
-                "usr": "s:5FMSDK4JWTsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:5FMSDK4JWTsV11accessToken02idD0ACSS_SStcfc",
-            "mangledName": "$s5FMSDK4JWTsV11accessToken02idD0ACSS_SStcfc",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:5FMSDK4JWTsV",
-        "mangledName": "$s5FMSDK4JWTsV",
-        "moduleName": "FMSDK",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -8765,20 +8533,10 @@
       },
       {
         "kind": "Import",
-        "name": "ModelSDK",
-        "printedName": "ModelSDK",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
         "declKind": "Import",
         "moduleName": "FMSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "NetworkSDK",
-        "printedName": "NetworkSDK",
-        "declKind": "Import",
-        "moduleName": "FMSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
       },
       {
         "kind": "Import",
@@ -9659,6 +9417,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
+        "declKind": "Import",
+        "moduleName": "FMSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "FmArgs",
         "printedName": "FmArgs",
@@ -9666,7 +9431,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(programID:jwts:debugMode:tokenRefreshCallback:)",
+            "printedName": "init(programID:jwts:debugMode:tokenRefreshCallback:loggingCallback:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9683,8 +9448,8 @@
               {
                 "kind": "TypeNominal",
                 "name": "JWTs",
-                "printedName": "FMSDK.JWTs",
-                "usr": "s:5FMSDK4JWTsV"
+                "printedName": "CoreSDK.JWTs",
+                "usr": "s:7CoreSDK4JWTsV"
               },
               {
                 "kind": "TypeNominal",
@@ -9698,11 +9463,26 @@
                 "name": "FMSDKTokenRefreshCallback",
                 "printedName": "any FMSDK.FMSDKTokenRefreshCallback",
                 "usr": "s:5FMSDK25FMSDKTokenRefreshCallbackP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any CoreSDK.LoggingCallback)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggingCallback",
+                    "printedName": "any CoreSDK.LoggingCallback",
+                    "usr": "s:7CoreSDK15LoggingCallbackP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK6FmArgsV9programID4jwts9debugMode20tokenRefreshCallbackACSS_AA4JWTsVSbAA010FMSDKTokenjK0_ptcfc",
-            "mangledName": "$s5FMSDK6FmArgsV9programID4jwts9debugMode20tokenRefreshCallbackACSS_AA4JWTsVSbAA010FMSDKTokenjK0_ptcfc",
+            "usr": "s:5FMSDK6FmArgsV9programID4jwts9debugMode20tokenRefreshCallback07loggingK0ACSS_7CoreSDK4JWTsVSbAA010FMSDKTokenjK0_pAI07LoggingK0_pSgtcfc",
+            "mangledName": "$s5FMSDK6FmArgsV9programID4jwts9debugMode20tokenRefreshCallback07loggingK0ACSS_7CoreSDK4JWTsVSbAA010FMSDKTokenjK0_pAI07LoggingK0_pSgtcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -15699,13 +15479,10 @@
       },
       {
         "kind": "Import",
-        "name": "NetworkSDK",
-        "printedName": "NetworkSDK",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
         "declKind": "Import",
-        "moduleName": "FMSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "FMSDK"
       },
       {
         "kind": "Import",
@@ -18289,13 +18066,10 @@
       },
       {
         "kind": "Import",
-        "name": "NetworkSDK",
-        "printedName": "NetworkSDK",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
         "declKind": "Import",
-        "moduleName": "FMSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "FMSDK"
       },
       {
         "kind": "Import",
@@ -18309,8 +18083,8 @@
       },
       {
         "kind": "Import",
-        "name": "ModelSDK",
-        "printedName": "ModelSDK",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
         "declKind": "Import",
         "moduleName": "FMSDK"
       },
@@ -18436,13 +18210,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Pagination",
-                "printedName": "ModelSDK.Pagination",
-                "usr": "s:8ModelSDK10PaginationC"
+                "printedName": "CoreSDK.Pagination",
+                "usr": "s:7CoreSDK10PaginationC"
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvp",
-            "mangledName": "$s5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvp",
+            "usr": "s:5FMSDK13CampaignItemsC10pagination7CoreSDK10PaginationCvp",
+            "mangledName": "$s5FMSDK13CampaignItemsC10pagination7CoreSDK10PaginationCvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasStorage",
@@ -18458,13 +18232,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Pagination",
-                    "printedName": "ModelSDK.Pagination",
-                    "usr": "s:8ModelSDK10PaginationC"
+                    "printedName": "CoreSDK.Pagination",
+                    "usr": "s:7CoreSDK10PaginationC"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvg",
-                "mangledName": "$s5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvg",
+                "usr": "s:5FMSDK13CampaignItemsC10pagination7CoreSDK10PaginationCvg",
+                "mangledName": "$s5FMSDK13CampaignItemsC10pagination7CoreSDK10PaginationCvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -18482,13 +18256,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Pagination",
-                    "printedName": "ModelSDK.Pagination",
-                    "usr": "s:8ModelSDK10PaginationC"
+                    "printedName": "CoreSDK.Pagination",
+                    "usr": "s:7CoreSDK10PaginationC"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvs",
-                "mangledName": "$s5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvs",
+                "usr": "s:5FMSDK13CampaignItemsC10pagination7CoreSDK10PaginationCvs",
+                "mangledName": "$s5FMSDK13CampaignItemsC10pagination7CoreSDK10PaginationCvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -18505,8 +18279,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvM",
-                "mangledName": "$s5FMSDK13CampaignItemsC10pagination8ModelSDK10PaginationCvM",
+                "usr": "s:5FMSDK13CampaignItemsC10pagination7CoreSDK10PaginationCvM",
+                "mangledName": "$s5FMSDK13CampaignItemsC10pagination7CoreSDK10PaginationCvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -28280,8 +28054,8 @@
       },
       {
         "kind": "Import",
-        "name": "ModelSDK",
-        "printedName": "ModelSDK",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
         "declKind": "Import",
         "moduleName": "FMSDK"
       },
@@ -28713,13 +28487,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Card",
-                "printedName": "ModelSDK.Card",
-                "usr": "s:8ModelSDK4CardC"
+                "printedName": "CoreSDK.Card",
+                "usr": "s:7CoreSDK4CardC"
               }
             ],
             "declKind": "Func",
-            "usr": "s:5FMSDK5FmSdkP7setCard4cardy8ModelSDK0E0C_tF",
-            "mangledName": "$s5FMSDK5FmSdkP7setCard4cardy8ModelSDK0E0C_tF",
+            "usr": "s:5FMSDK5FmSdkP7setCard4cardy7CoreSDK0E0C_tF",
+            "mangledName": "$s5FMSDK5FmSdkP7setCard4cardy7CoreSDK0E0C_tF",
             "moduleName": "FMSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.FmSdk>",
             "sugared_genericSig": "<Self where Self : FMSDK.FmSdk>",
@@ -35665,6 +35439,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
+        "declKind": "Import",
+        "moduleName": "FMSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "FMSDKTokenRefreshCallback",
         "printedName": "FMSDKTokenRefreshCallback",
@@ -35682,7 +35463,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(FMSDK.JWTs) -> ()",
+                "printedName": "(CoreSDK.JWTs) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -35692,15 +35473,15 @@
                   {
                     "kind": "TypeNominal",
                     "name": "JWTs",
-                    "printedName": "FMSDK.JWTs",
-                    "usr": "s:5FMSDK4JWTsV"
+                    "printedName": "CoreSDK.JWTs",
+                    "usr": "s:7CoreSDK4JWTsV"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:5FMSDK25FMSDKTokenRefreshCallbackP11refreshJWTs10completionyyAA0F0Vc_tF",
-            "mangledName": "$s5FMSDK25FMSDKTokenRefreshCallbackP11refreshJWTs10completionyyAA0F0Vc_tF",
+            "usr": "s:5FMSDK25FMSDKTokenRefreshCallbackP11refreshJWTs10completionyy7CoreSDK0F0Vc_tF",
+            "mangledName": "$s5FMSDK25FMSDKTokenRefreshCallbackP11refreshJWTs10completionyy7CoreSDK0F0Vc_tF",
             "moduleName": "FMSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.FMSDKTokenRefreshCallback>",
             "sugared_genericSig": "<Self where Self : FMSDK.FMSDKTokenRefreshCallback>",
@@ -40500,8 +40281,8 @@
       },
       {
         "kind": "Import",
-        "name": "ModelSDK",
-        "printedName": "ModelSDK",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
         "declKind": "Import",
         "moduleName": "FMSDK"
       },
@@ -40652,21 +40433,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "ModelSDK.Pagination?",
+                "printedName": "CoreSDK.Pagination?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Pagination",
-                    "printedName": "ModelSDK.Pagination",
-                    "usr": "s:8ModelSDK10PaginationC"
+                    "printedName": "CoreSDK.Pagination",
+                    "usr": "s:7CoreSDK10PaginationC"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvp",
-            "mangledName": "$s5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvp",
+            "usr": "s:5FMSDK17LocationsResponseC10pagination7CoreSDK10PaginationCSgvp",
+            "mangledName": "$s5FMSDK17LocationsResponseC10pagination7CoreSDK10PaginationCSgvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -40683,21 +40464,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "ModelSDK.Pagination?",
+                    "printedName": "CoreSDK.Pagination?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Pagination",
-                        "printedName": "ModelSDK.Pagination",
-                        "usr": "s:8ModelSDK10PaginationC"
+                        "printedName": "CoreSDK.Pagination",
+                        "usr": "s:7CoreSDK10PaginationC"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvg",
-                "mangledName": "$s5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvg",
+                "usr": "s:5FMSDK17LocationsResponseC10pagination7CoreSDK10PaginationCSgvg",
+                "mangledName": "$s5FMSDK17LocationsResponseC10pagination7CoreSDK10PaginationCSgvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -40715,21 +40496,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "ModelSDK.Pagination?",
+                    "printedName": "CoreSDK.Pagination?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Pagination",
-                        "printedName": "ModelSDK.Pagination",
-                        "usr": "s:8ModelSDK10PaginationC"
+                        "printedName": "CoreSDK.Pagination",
+                        "usr": "s:7CoreSDK10PaginationC"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvs",
-                "mangledName": "$s5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvs",
+                "usr": "s:5FMSDK17LocationsResponseC10pagination7CoreSDK10PaginationCSgvs",
+                "mangledName": "$s5FMSDK17LocationsResponseC10pagination7CoreSDK10PaginationCSgvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -40746,8 +40527,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvM",
-                "mangledName": "$s5FMSDK17LocationsResponseC10pagination8ModelSDK10PaginationCSgvM",
+                "usr": "s:5FMSDK17LocationsResponseC10pagination7CoreSDK10PaginationCSgvM",
+                "mangledName": "$s5FMSDK17LocationsResponseC10pagination7CoreSDK10PaginationCSgvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -40791,13 +40572,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "ModelSDK.Pagination?",
+                "printedName": "CoreSDK.Pagination?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Pagination",
-                    "printedName": "ModelSDK.Pagination",
-                    "usr": "s:8ModelSDK10PaginationC"
+                    "printedName": "CoreSDK.Pagination",
+                    "usr": "s:7CoreSDK10PaginationC"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -40805,8 +40586,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK17LocationsResponseC9locations10paginationACSayAA8LocationCGSg_8ModelSDK10PaginationCSgtcfc",
-            "mangledName": "$s5FMSDK17LocationsResponseC9locations10paginationACSayAA8LocationCGSg_8ModelSDK10PaginationCSgtcfc",
+            "usr": "s:5FMSDK17LocationsResponseC9locations10paginationACSayAA8LocationCGSg_7CoreSDK10PaginationCSgtcfc",
+            "mangledName": "$s5FMSDK17LocationsResponseC9locations10paginationACSayAA8LocationCGSg_7CoreSDK10PaginationCSgtcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -40907,8 +40688,8 @@
       },
       {
         "kind": "Import",
-        "name": "ModelSDK",
-        "printedName": "ModelSDK",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
         "declKind": "Import",
         "moduleName": "FMSDK"
       },
@@ -40942,7 +40723,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<ModelSDK.Card, any Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<CoreSDK.Card, any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -40952,13 +40733,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<ModelSDK.Card, any Swift.Error>",
+                    "printedName": "Swift.Result<CoreSDK.Card, any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Card",
-                        "printedName": "ModelSDK.Card",
-                        "usr": "s:8ModelSDK4CardC"
+                        "printedName": "CoreSDK.Card",
+                        "usr": "s:7CoreSDK4CardC"
                       },
                       {
                         "kind": "TypeNominal",
@@ -40973,8 +40754,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:5FMSDK11FeaturesApiP18updateCardControls4uuid4body10completionySS_AA0eF7RequestCys6ResultOy8ModelSDK0E0Cs5Error_pGctF",
-            "mangledName": "$s5FMSDK11FeaturesApiP18updateCardControls4uuid4body10completionySS_AA0eF7RequestCys6ResultOy8ModelSDK0E0Cs5Error_pGctF",
+            "usr": "s:5FMSDK11FeaturesApiP18updateCardControls4uuid4body10completionySS_AA0eF7RequestCys6ResultOy7CoreSDK0E0Cs5Error_pGctF",
+            "mangledName": "$s5FMSDK11FeaturesApiP18updateCardControls4uuid4body10completionySS_AA0eF7RequestCys6ResultOy7CoreSDK0E0Cs5Error_pGctF",
             "moduleName": "FMSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.FeaturesApi>",
             "sugared_genericSig": "<Self where Self : FMSDK.FeaturesApi>",
@@ -41558,20 +41339,10 @@
       },
       {
         "kind": "Import",
-        "name": "ModelSDK",
-        "printedName": "ModelSDK",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
         "declKind": "Import",
         "moduleName": "FMSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "NetworkSDK",
-        "printedName": "NetworkSDK",
-        "declKind": "Import",
-        "moduleName": "FMSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
       },
       {
         "kind": "Import",
@@ -41639,8 +41410,8 @@
       },
       {
         "kind": "Import",
-        "name": "ModelSDK",
-        "printedName": "ModelSDK",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
         "declKind": "Import",
         "moduleName": "FMSDK"
       },
@@ -41766,13 +41537,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Pagination",
-                "printedName": "ModelSDK.Pagination",
-                "usr": "s:8ModelSDK10PaginationC"
+                "printedName": "CoreSDK.Pagination",
+                "usr": "s:7CoreSDK10PaginationC"
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvp",
-            "mangledName": "$s5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvp",
+            "usr": "s:5FMSDK20CampaignRestrictionsC10pagination7CoreSDK10PaginationCvp",
+            "mangledName": "$s5FMSDK20CampaignRestrictionsC10pagination7CoreSDK10PaginationCvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasStorage",
@@ -41788,13 +41559,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Pagination",
-                    "printedName": "ModelSDK.Pagination",
-                    "usr": "s:8ModelSDK10PaginationC"
+                    "printedName": "CoreSDK.Pagination",
+                    "usr": "s:7CoreSDK10PaginationC"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvg",
-                "mangledName": "$s5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvg",
+                "usr": "s:5FMSDK20CampaignRestrictionsC10pagination7CoreSDK10PaginationCvg",
+                "mangledName": "$s5FMSDK20CampaignRestrictionsC10pagination7CoreSDK10PaginationCvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -41812,13 +41583,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Pagination",
-                    "printedName": "ModelSDK.Pagination",
-                    "usr": "s:8ModelSDK10PaginationC"
+                    "printedName": "CoreSDK.Pagination",
+                    "usr": "s:7CoreSDK10PaginationC"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvs",
-                "mangledName": "$s5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvs",
+                "usr": "s:5FMSDK20CampaignRestrictionsC10pagination7CoreSDK10PaginationCvs",
+                "mangledName": "$s5FMSDK20CampaignRestrictionsC10pagination7CoreSDK10PaginationCvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -41835,8 +41606,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvM",
-                "mangledName": "$s5FMSDK20CampaignRestrictionsC10pagination8ModelSDK10PaginationCvM",
+                "usr": "s:5FMSDK20CampaignRestrictionsC10pagination7CoreSDK10PaginationCvM",
+                "mangledName": "$s5FMSDK20CampaignRestrictionsC10pagination7CoreSDK10PaginationCvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -41872,14 +41643,14 @@
               {
                 "kind": "TypeNominal",
                 "name": "Pagination",
-                "printedName": "ModelSDK.Pagination",
+                "printedName": "CoreSDK.Pagination",
                 "hasDefaultArg": true,
-                "usr": "s:8ModelSDK10PaginationC"
+                "usr": "s:7CoreSDK10PaginationC"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK20CampaignRestrictionsC12restrictions10paginationACSayAA0B11RestrictionCG_8ModelSDK10PaginationCtcfc",
-            "mangledName": "$s5FMSDK20CampaignRestrictionsC12restrictions10paginationACSayAA0B11RestrictionCG_8ModelSDK10PaginationCtcfc",
+            "usr": "s:5FMSDK20CampaignRestrictionsC12restrictions10paginationACSayAA0B11RestrictionCG_7CoreSDK10PaginationCtcfc",
+            "mangledName": "$s5FMSDK20CampaignRestrictionsC12restrictions10paginationACSayAA0B11RestrictionCG_7CoreSDK10PaginationCtcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -43247,8 +43018,8 @@
       },
       {
         "kind": "Import",
-        "name": "ModelSDK",
-        "printedName": "ModelSDK",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
         "declKind": "Import",
         "moduleName": "FMSDK"
       },
@@ -43265,18 +43036,18 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[ModelSDK.CardBalances]?",
+                "printedName": "[CoreSDK.CardBalances]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[ModelSDK.CardBalances]",
+                    "printedName": "[CoreSDK.CardBalances]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "CardBalances",
-                        "printedName": "ModelSDK.CardBalances",
-                        "usr": "s:8ModelSDK12CardBalancesC"
+                        "printedName": "CoreSDK.CardBalances",
+                        "usr": "s:7CoreSDK12CardBalancesC"
                       }
                     ],
                     "usr": "s:Sa"
@@ -43286,8 +43057,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK13ConvertPointsC8balancesSay8ModelSDK12CardBalancesCGSgvp",
-            "mangledName": "$s5FMSDK13ConvertPointsC8balancesSay8ModelSDK12CardBalancesCGSgvp",
+            "usr": "s:5FMSDK13ConvertPointsC8balancesSay7CoreSDK12CardBalancesCGSgvp",
+            "mangledName": "$s5FMSDK13ConvertPointsC8balancesSay7CoreSDK12CardBalancesCGSgvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -43304,18 +43075,18 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[ModelSDK.CardBalances]?",
+                    "printedName": "[CoreSDK.CardBalances]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Array",
-                        "printedName": "[ModelSDK.CardBalances]",
+                        "printedName": "[CoreSDK.CardBalances]",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "CardBalances",
-                            "printedName": "ModelSDK.CardBalances",
-                            "usr": "s:8ModelSDK12CardBalancesC"
+                            "printedName": "CoreSDK.CardBalances",
+                            "usr": "s:7CoreSDK12CardBalancesC"
                           }
                         ],
                         "usr": "s:Sa"
@@ -43325,8 +43096,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK13ConvertPointsC8balancesSay8ModelSDK12CardBalancesCGSgvg",
-                "mangledName": "$s5FMSDK13ConvertPointsC8balancesSay8ModelSDK12CardBalancesCGSgvg",
+                "usr": "s:5FMSDK13ConvertPointsC8balancesSay7CoreSDK12CardBalancesCGSgvg",
+                "mangledName": "$s5FMSDK13ConvertPointsC8balancesSay7CoreSDK12CardBalancesCGSgvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -43344,18 +43115,18 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[ModelSDK.CardBalances]?",
+                    "printedName": "[CoreSDK.CardBalances]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Array",
-                        "printedName": "[ModelSDK.CardBalances]",
+                        "printedName": "[CoreSDK.CardBalances]",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "CardBalances",
-                            "printedName": "ModelSDK.CardBalances",
-                            "usr": "s:8ModelSDK12CardBalancesC"
+                            "printedName": "CoreSDK.CardBalances",
+                            "usr": "s:7CoreSDK12CardBalancesC"
                           }
                         ],
                         "usr": "s:Sa"
@@ -43365,8 +43136,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK13ConvertPointsC8balancesSay8ModelSDK12CardBalancesCGSgvs",
-                "mangledName": "$s5FMSDK13ConvertPointsC8balancesSay8ModelSDK12CardBalancesCGSgvs",
+                "usr": "s:5FMSDK13ConvertPointsC8balancesSay7CoreSDK12CardBalancesCGSgvs",
+                "mangledName": "$s5FMSDK13ConvertPointsC8balancesSay7CoreSDK12CardBalancesCGSgvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -43383,8 +43154,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK13ConvertPointsC8balancesSay8ModelSDK12CardBalancesCGSgvM",
-                "mangledName": "$s5FMSDK13ConvertPointsC8balancesSay8ModelSDK12CardBalancesCGSgvM",
+                "usr": "s:5FMSDK13ConvertPointsC8balancesSay7CoreSDK12CardBalancesCGSgvM",
+                "mangledName": "$s5FMSDK13ConvertPointsC8balancesSay7CoreSDK12CardBalancesCGSgvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -43405,18 +43176,18 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[ModelSDK.CardBalances]?",
+                "printedName": "[CoreSDK.CardBalances]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[ModelSDK.CardBalances]",
+                    "printedName": "[CoreSDK.CardBalances]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "CardBalances",
-                        "printedName": "ModelSDK.CardBalances",
-                        "usr": "s:8ModelSDK12CardBalancesC"
+                        "printedName": "CoreSDK.CardBalances",
+                        "usr": "s:7CoreSDK12CardBalancesC"
                       }
                     ],
                     "usr": "s:Sa"
@@ -43427,8 +43198,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK13ConvertPointsC8balancesACSay8ModelSDK12CardBalancesCGSg_tcfc",
-            "mangledName": "$s5FMSDK13ConvertPointsC8balancesACSay8ModelSDK12CardBalancesCGSg_tcfc",
+            "usr": "s:5FMSDK13ConvertPointsC8balancesACSay7CoreSDK12CardBalancesCGSg_tcfc",
+            "mangledName": "$s5FMSDK13ConvertPointsC8balancesACSay7CoreSDK12CardBalancesCGSg_tcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -54386,23 +54157,9 @@
       "value": "\"authentication_method\""
     },
     {
-      "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Models\/JWTs.swift",
-      "kind": "StringLiteral",
-      "offset": 226,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Models\/JWTs.swift",
-      "kind": "StringLiteral",
-      "offset": 248,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Models\/FmArgs.swift",
       "kind": "BooleanLiteral",
-      "offset": 649,
+      "offset": 899,
       "length": 5,
       "value": "false"
     },
@@ -55060,7 +54817,7 @@
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/CampaignItems.swift",
       "kind": "Array",
-      "offset": 337,
+      "offset": 336,
       "length": 2,
       "value": "[]"
     },
@@ -57125,7 +56882,7 @@
     {
       "filePath": "\/Users\/mukhtaryusuf\/Documents\/GitHub2\/sdk-features-marketplace-ios\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/CampaignRestrictions.swift",
       "kind": "Array",
-      "offset": 391,
+      "offset": 390,
       "length": 2,
       "value": "[]"
     },
