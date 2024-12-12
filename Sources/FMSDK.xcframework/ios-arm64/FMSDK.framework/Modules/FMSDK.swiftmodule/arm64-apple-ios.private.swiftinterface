@@ -3,10 +3,10 @@
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FMSDK
 import CoreGraphics
 import CoreLocation
+import CoreSDK
 import CoreText
 import Foundation
 import MapKit
-import ModelSDK
 import ObjectiveC
 import Swift
 import UIKit.UIGestureRecognizerSubclass
@@ -182,11 +182,6 @@ public class LocationFilter : Swift.Equatable, Swift.Codable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public struct JWTs {
-  public var accessToken: Swift.String
-  public var idToken: Swift.String
-  public init(accessToken: Swift.String = "", idToken: Swift.String = "")
-}
 public enum ApiEnv : Swift.String {
   case staging
   case uat
@@ -207,7 +202,7 @@ public protocol LocationsApi {
   func getLocationAutocompleteSuggestions(uuid: Swift.String, text: Swift.String, type: Swift.String?, featuerUuid: Swift.String?, completion: @escaping ((_ result: Swift.Result<FMSDK.Suggestions, any Swift.Error>) -> Swift.Void))
 }
 public struct FmArgs {
-  public init(programID: Swift.String, jwts: FMSDK.JWTs, debugMode: Swift.Bool = false, tokenRefreshCallback: any FMSDK.FMSDKTokenRefreshCallback)
+  public init(programID: Swift.String, jwts: CoreSDK.JWTs, debugMode: Swift.Bool = false, tokenRefreshCallback: any FMSDK.FMSDKTokenRefreshCallback, loggingCallback: (any CoreSDK.LoggingCallback)? = nil)
 }
 public class LocationOfferFullDetails : Swift.Codable {
   public var uuid: Swift.String?
@@ -362,7 +357,7 @@ public class CardControlsRequest : Swift.Encodable {
 }
 @_hasMissingDesignatedInitializers public class CampaignItems : Swift.Codable, Swift.Equatable {
   public var items: [FMSDK.CampaignItem]
-  public var pagination: ModelSDK.Pagination
+  public var pagination: CoreSDK.Pagination
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.CampaignItems, rhs: FMSDK.CampaignItems) -> Swift.Bool
@@ -582,7 +577,7 @@ public protocol FmSdk {
   func getCampaignItemById(uuid: Swift.String, itemUuid: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.CampaignItem, any Swift.Error>) -> Swift.Void))
   func getCampaignRestrictions(uuid: Swift.String, campaignUuid: Swift.String, page: Swift.Int?, perPage: Swift.Int?, completion: @escaping ((_ result: Swift.Result<FMSDK.CampaignRestrictions, any Swift.Error>) -> Swift.Void))
   func launch(with controller: UIKit.UIViewController)
-  func setCard(card: ModelSDK.Card)
+  func setCard(card: CoreSDK.Card)
   func logout()
 }
 public class CampaignItemCard : Swift.Codable, Swift.Equatable {
@@ -725,7 +720,7 @@ public class ConvertPointsRequest : Swift.Codable {
   @objc deinit
 }
 public protocol FMSDKTokenRefreshCallback {
-  func refreshJWTs(completion: @escaping (FMSDK.JWTs) -> Swift.Void)
+  func refreshJWTs(completion: @escaping (CoreSDK.JWTs) -> Swift.Void)
 }
 @objc @_Concurrency.MainActor(unsafe) public class SheetViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public var options: FMSDK.SheetOptions {
@@ -846,14 +841,14 @@ extension FMSDK.SheetViewController : UIKit.UIViewControllerTransitioningDelegat
 }
 public class LocationsResponse : Swift.Codable {
   public var locations: [FMSDK.Location]?
-  public var pagination: ModelSDK.Pagination?
-  public init(locations: [FMSDK.Location]? = nil, pagination: ModelSDK.Pagination? = nil)
+  public var pagination: CoreSDK.Pagination?
+  public init(locations: [FMSDK.Location]? = nil, pagination: CoreSDK.Pagination? = nil)
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public protocol FeaturesApi {
-  func updateCardControls(uuid: Swift.String, body: FMSDK.CardControlsRequest, completion: @escaping ((_ result: Swift.Result<ModelSDK.Card, any Swift.Error>) -> Swift.Void))
+  func updateCardControls(uuid: Swift.String, body: FMSDK.CardControlsRequest, completion: @escaping ((_ result: Swift.Result<CoreSDK.Card, any Swift.Error>) -> Swift.Void))
   func convertPoints(uuid: Swift.String, body: FMSDK.ConvertPointsRequest, completion: @escaping ((_ result: Swift.Result<FMSDK.ConvertPoints, any Swift.Error>) -> Swift.Void))
   func getFeaturesByCard(uuid: Swift.String, status: Swift.String?, subscriptionLevel: Swift.String?, completion: @escaping ((_ result: Swift.Result<[FMSDK.Feature], any Swift.Error>) -> Swift.Void))
   func acceptFeatureTermAndConditions(uuid: Swift.String, featureUuid: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void))
@@ -864,8 +859,8 @@ public protocol FeaturesApi {
 }
 public class CampaignRestrictions : Swift.Codable, Swift.Equatable {
   public var restrictions: [FMSDK.CampaignRestriction]
-  public var pagination: ModelSDK.Pagination
-  public init(restrictions: [FMSDK.CampaignRestriction] = [], pagination: ModelSDK.Pagination = Pagination())
+  public var pagination: CoreSDK.Pagination
+  public init(restrictions: [FMSDK.CampaignRestriction] = [], pagination: CoreSDK.Pagination = Pagination())
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.CampaignRestrictions, rhs: FMSDK.CampaignRestrictions) -> Swift.Bool
@@ -892,8 +887,8 @@ public class Metadata : Swift.Codable {
   @objc deinit
 }
 public class ConvertPoints : Swift.Codable {
-  public var balances: [ModelSDK.CardBalances]?
-  public init(balances: [ModelSDK.CardBalances]? = nil)
+  public var balances: [CoreSDK.CardBalances]?
+  public init(balances: [CoreSDK.CardBalances]? = nil)
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
