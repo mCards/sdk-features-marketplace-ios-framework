@@ -92,6 +92,10 @@
 		<data>
 		XzZUB/NjSXsALZikGaYDc9fFK0M=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		Kk6MIwCTFQILcjJ07iPTg+nmyDc=
+		</data>
 		<key>Roboto-Black.ttf</key>
 		<data>
 		7lL3z45U8+4q+8R0o1LVwZUU2cE=
@@ -436,6 +440,13 @@
 			<key>hash2</key>
 			<data>
 			Cp6yH9oKv39/pkVQYFXKU2+B1coBHDz826SSupBAyD0=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l+MvRzKE33A6X8khB2lW74SnZcqee6LnumE1BlLRJyc=
 			</data>
 		</dict>
 		<key>Roboto-Black.ttf</key>
