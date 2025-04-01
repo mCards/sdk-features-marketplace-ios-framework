@@ -854,6 +854,7 @@ public protocol FeaturesApi {
   func getFeaturesByCard(uuid: Swift.String, status: Swift.String?, subscriptionLevel: Swift.String?, completion: @escaping ((_ result: Swift.Result<[FMSDK.Feature], any Swift.Error>) -> Swift.Void))
   func acceptFeatureTermAndConditions(uuid: Swift.String, featureUuid: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void))
   func activateFeatureByCard(uuid: Swift.String, featureUuid: Swift.String, body: FMSDK.ActivateFeatureRequest, completion: @escaping ((_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void))
+  func reorderFeatures(cardId: Swift.String, featureIds: [Swift.String], completion: @escaping (_ result: Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
   func getProductsByCard(uuid: Swift.String, featureIdentifier: Swift.String, productIdentifier: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.Product, any Swift.Error>) -> Swift.Void))
   func sendMCashBalance(uuid: Swift.String, featureIdentifier: Swift.String, priceUuid: Swift.String?, productIdentifier: Swift.String?, body: FMSDK.SendMcashRequest, completion: @escaping ((_ result: Swift.Result<FMSDK.McashSuccess, any Swift.Error>) -> Swift.Void))
   func getSSOToken(cardUuid: Swift.String, userFeatureUuid: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.SSOToken, any Swift.Error>) -> Swift.Void))

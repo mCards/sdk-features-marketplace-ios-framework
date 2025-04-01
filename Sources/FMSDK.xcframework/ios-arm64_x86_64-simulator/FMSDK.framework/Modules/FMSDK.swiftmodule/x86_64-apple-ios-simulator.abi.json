@@ -42071,6 +42071,82 @@
           },
           {
             "kind": "Function",
+            "name": "reorderFeatures",
+            "printedName": "reorderFeatures(cardId:featureIds:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FMSDK11FeaturesApiP07reorderB06cardId10featureIds10completionySS_SaySSGys6ResultOySbs5Error_pGctF",
+            "mangledName": "$s5FMSDK11FeaturesApiP07reorderB06cardId10featureIds10completionySS_SaySSGys6ResultOySbs5Error_pGctF",
+            "moduleName": "FMSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.FeaturesApi>",
+            "sugared_genericSig": "<Self where Self : FMSDK.FeaturesApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getProductsByCard",
             "printedName": "getProductsByCard(uuid:featureIdentifier:productIdentifier:completion:)",
             "children": [
