@@ -41929,6 +41929,74 @@
           },
           {
             "kind": "Function",
+            "name": "deactivateFeature",
+            "printedName": "deactivateFeature(cardId:featureId:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<FMSDK.Feature, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<FMSDK.Feature, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Feature",
+                        "printedName": "FMSDK.Feature",
+                        "usr": "s:5FMSDK7FeatureC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FMSDK11FeaturesApiP17deactivateFeature6cardId07featureG010completionySS_SSys6ResultOyAA0E0Cs5Error_pGctF",
+            "mangledName": "$s5FMSDK11FeaturesApiP17deactivateFeature6cardId07featureG010completionySS_SSys6ResultOyAA0E0Cs5Error_pGctF",
+            "moduleName": "FMSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.FeaturesApi>",
+            "sugared_genericSig": "<Self where Self : FMSDK.FeaturesApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "acceptFeatureTermAndConditions",
             "printedName": "acceptFeatureTermAndConditions(uuid:featureUuid:completion:)",
             "children": [
@@ -44445,6 +44513,13 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FMSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "FMSDK"
       },
@@ -57395,6 +57470,20 @@
       "offset": 374,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/DeactivateFeatureBody.swift",
+      "kind": "StringLiteral",
+      "offset": 98,
+      "length": 10,
+      "value": "\"inactive\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/DeactivateFeatureBody.swift",
+      "kind": "StringLiteral",
+      "offset": 212,
+      "length": 10,
+      "value": "\"inactive\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/McashSuccess.swift",

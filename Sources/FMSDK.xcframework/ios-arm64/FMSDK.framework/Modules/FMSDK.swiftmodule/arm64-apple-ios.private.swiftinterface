@@ -852,6 +852,7 @@ public protocol FeaturesApi {
   func updateCardControls(uuid: Swift.String, body: FMSDK.CardControlsRequest, completion: @escaping ((_ result: Swift.Result<CoreSDK.Card, any Swift.Error>) -> Swift.Void))
   func convertPoints(uuid: Swift.String, body: FMSDK.ConvertPointsRequest, completion: @escaping ((_ result: Swift.Result<FMSDK.ConvertPoints, any Swift.Error>) -> Swift.Void))
   func getFeaturesByCard(uuid: Swift.String, status: Swift.String?, subscriptionLevel: Swift.String?, completion: @escaping ((_ result: Swift.Result<[FMSDK.Feature], any Swift.Error>) -> Swift.Void))
+  func deactivateFeature(cardId: Swift.String, featureId: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void))
   func acceptFeatureTermAndConditions(uuid: Swift.String, featureUuid: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void))
   func activateFeatureByCard(uuid: Swift.String, featureUuid: Swift.String, body: FMSDK.ActivateFeatureRequest, completion: @escaping ((_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void))
   func reorderFeatures(cardId: Swift.String, featureIds: [Swift.String], completion: @escaping (_ result: Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
