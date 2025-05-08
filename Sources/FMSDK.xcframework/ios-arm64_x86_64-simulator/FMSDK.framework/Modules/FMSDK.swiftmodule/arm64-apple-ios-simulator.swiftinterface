@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FMSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FMSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import CoreGraphics
 import CoreLocation
 import CoreSDK
@@ -194,13 +194,13 @@ public enum ApiEnv : Swift.String {
   }
 }
 public protocol LocationsApi {
-  func getLocationsByCard(args: FMSDK.LocationArgs, completion: @escaping ((_ result: Swift.Result<FMSDK.LocationsResponse, any Swift.Error>) -> Swift.Void))
-  func getCardLocationById(uuid: Swift.String?, locationUuid: Swift.String?, latitude: Swift.String?, longitude: Swift.String?, offerType: Swift.String?, featureUuid: Swift.String?, completion: @escaping ((_ result: Swift.Result<FMSDK.LocationDetails, any Swift.Error>) -> Swift.Void))
-  func getLocationProfile(uuid: Swift.String, locationUuid: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.LocationProfile, any Swift.Error>) -> Swift.Void))
-  func redeemLocationOffer(uuid: Swift.String, locationUuid: Swift.String, offerUuid: Swift.String, featureUuid: Swift.String?, completion: @escaping ((_ result: Swift.Result<FMSDK.GenerateCodeMetadata, any Swift.Error>) -> Swift.Void))
-  func getLocationFilter(uuid: Swift.String, type: Swift.String?, completion: @escaping ((_ result: Swift.Result<FMSDK.LocationFilters, any Swift.Error>) -> Swift.Void))
-  func getLocationSubfilter(uuid: Swift.String, filterUuid: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.LocationSubFilters, any Swift.Error>) -> Swift.Void))
-  func getLocationAutocompleteSuggestions(uuid: Swift.String, text: Swift.String, type: Swift.String?, featuerUuid: Swift.String?, completion: @escaping ((_ result: Swift.Result<FMSDK.Suggestions, any Swift.Error>) -> Swift.Void))
+  func getLocationsByCard(args: FMSDK.LocationArgs, completion: @escaping (_ result: Swift.Result<FMSDK.LocationsResponse, any Swift.Error>) -> Swift.Void)
+  func getCardLocationById(uuid: Swift.String?, locationUuid: Swift.String?, latitude: Swift.String?, longitude: Swift.String?, offerType: Swift.String?, featureUuid: Swift.String?, completion: @escaping (_ result: Swift.Result<FMSDK.LocationDetails, any Swift.Error>) -> Swift.Void)
+  func getLocationProfile(uuid: Swift.String, locationUuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.LocationProfile, any Swift.Error>) -> Swift.Void)
+  func redeemLocationOffer(uuid: Swift.String, locationUuid: Swift.String, offerUuid: Swift.String, featureUuid: Swift.String?, completion: @escaping (_ result: Swift.Result<FMSDK.GenerateCodeMetadata, any Swift.Error>) -> Swift.Void)
+  func getLocationFilter(uuid: Swift.String, type: Swift.String?, completion: @escaping (_ result: Swift.Result<FMSDK.LocationFilters, any Swift.Error>) -> Swift.Void)
+  func getLocationSubfilter(uuid: Swift.String, filterUuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.LocationSubFilters, any Swift.Error>) -> Swift.Void)
+  func getLocationAutocompleteSuggestions(uuid: Swift.String, text: Swift.String, type: Swift.String?, featuerUuid: Swift.String?, completion: @escaping (_ result: Swift.Result<FMSDK.Suggestions, any Swift.Error>) -> Swift.Void)
 }
 public struct FmArgs {
   public init(programID: Swift.String, jwts: CoreSDK.JWTs, debugMode: Swift.Bool = false, tokenRefreshCallback: any FMSDK.FMSDKTokenRefreshCallback, loggingCallback: (any CoreSDK.LoggingCallback)? = nil)
@@ -508,11 +508,15 @@ public class FeatureMetadata : Swift.Equatable, Swift.Codable {
 }
 public class FeatureDisplay : Swift.Equatable, Swift.Codable {
   public var icon: Foundation.URL?
+  public var secondaryIconURL: Foundation.URL?
+  public var iconColor: Swift.String
+  public var iconToUse: Swift.String
+  public var featureCampaignImageURL: Foundation.URL?
   public var title: Swift.String
   public var subtitle: Swift.String
   public var description: Swift.String
   public var toggleTitle: Swift.String
-  public init(icon: Foundation.URL? = nil, title: Swift.String = "", subtitle: Swift.String = "", description: Swift.String = "", toggleTitle: Swift.String = "")
+  public init(icon: Foundation.URL? = nil, secondaryIconURL: Foundation.URL? = nil, iconToUse: Swift.String = "", featureCampaignImageURL: Foundation.URL? = nil, title: Swift.String = "", subtitle: Swift.String = "", description: Swift.String = "", toggleTitle: Swift.String = "", iconColor: Swift.String = "#000000")
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.FeatureDisplay, rhs: FMSDK.FeatureDisplay) -> Swift.Bool
@@ -574,9 +578,9 @@ public protocol FmSdk {
   var features: any FMSDK.FeaturesApi { get }
   var locations: any FMSDK.LocationsApi { get }
   func configure(args: FMSDK.FmArgs)
-  func getCampaignItems(uuid: Swift.String, ownerableType: FMSDK.OwnerableType, page: Swift.Int?, perPage: Swift.Int?, completion: @escaping ((_ result: Swift.Result<FMSDK.CampaignItems, any Swift.Error>) -> Swift.Void))
-  func getCampaignItemById(uuid: Swift.String, itemUuid: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.CampaignItem, any Swift.Error>) -> Swift.Void))
-  func getCampaignRestrictions(uuid: Swift.String, campaignUuid: Swift.String, page: Swift.Int?, perPage: Swift.Int?, completion: @escaping ((_ result: Swift.Result<FMSDK.CampaignRestrictions, any Swift.Error>) -> Swift.Void))
+  func getCampaignItems(uuid: Swift.String, ownerableType: FMSDK.OwnerableType, page: Swift.Int?, perPage: Swift.Int?, completion: @escaping (_ result: Swift.Result<FMSDK.CampaignItems, any Swift.Error>) -> Swift.Void)
+  func getCampaignItemById(uuid: Swift.String, itemUuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.CampaignItem, any Swift.Error>) -> Swift.Void)
+  func getCampaignRestrictions(uuid: Swift.String, campaignUuid: Swift.String, page: Swift.Int?, perPage: Swift.Int?, completion: @escaping (_ result: Swift.Result<FMSDK.CampaignRestrictions, any Swift.Error>) -> Swift.Void)
   func launch(with controller: UIKit.UIViewController)
   func setCard(card: CoreSDK.Card)
   func logout()
@@ -849,16 +853,16 @@ public class LocationsResponse : Swift.Codable {
   @objc deinit
 }
 public protocol FeaturesApi {
-  func updateCardControls(uuid: Swift.String, body: FMSDK.CardControlsRequest, completion: @escaping ((_ result: Swift.Result<CoreSDK.Card, any Swift.Error>) -> Swift.Void))
-  func convertPoints(uuid: Swift.String, body: FMSDK.ConvertPointsRequest, completion: @escaping ((_ result: Swift.Result<FMSDK.ConvertPoints, any Swift.Error>) -> Swift.Void))
-  func getFeaturesByCard(uuid: Swift.String, status: Swift.String?, subscriptionLevel: Swift.String?, completion: @escaping ((_ result: Swift.Result<[FMSDK.Feature], any Swift.Error>) -> Swift.Void))
-  func deactivateFeature(cardId: Swift.String, featureId: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void))
-  func acceptFeatureTermAndConditions(uuid: Swift.String, featureUuid: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void))
-  func activateFeatureByCard(uuid: Swift.String, featureUuid: Swift.String, body: FMSDK.ActivateFeatureRequest, completion: @escaping ((_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void))
+  func updateCardControls(uuid: Swift.String, body: FMSDK.CardControlsRequest, completion: @escaping (_ result: Swift.Result<CoreSDK.Card, any Swift.Error>) -> Swift.Void)
+  func convertPoints(uuid: Swift.String, body: FMSDK.ConvertPointsRequest, completion: @escaping (_ result: Swift.Result<FMSDK.ConvertPoints, any Swift.Error>) -> Swift.Void)
+  func getFeaturesByCard(uuid: Swift.String, status: Swift.String?, subscriptionLevel: Swift.String?, completion: @escaping (_ result: Swift.Result<[FMSDK.Feature], any Swift.Error>) -> Swift.Void)
+  func deactivateFeature(cardId: Swift.String, featureId: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void)
+  func acceptFeatureTermAndConditions(uuid: Swift.String, featureUuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void)
+  func activateFeatureByCard(uuid: Swift.String, featureUuid: Swift.String, body: FMSDK.ActivateFeatureRequest, completion: @escaping (_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void)
   func reorderFeatures(cardId: Swift.String, featureIds: [Swift.String], completion: @escaping (_ result: Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  func getProductsByCard(uuid: Swift.String, featureIdentifier: Swift.String, productIdentifier: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.Product, any Swift.Error>) -> Swift.Void))
-  func sendMCashBalance(uuid: Swift.String, featureIdentifier: Swift.String, priceUuid: Swift.String?, productIdentifier: Swift.String?, body: FMSDK.SendMcashRequest, completion: @escaping ((_ result: Swift.Result<FMSDK.McashSuccess, any Swift.Error>) -> Swift.Void))
-  func getSSOToken(cardUuid: Swift.String, userFeatureUuid: Swift.String, completion: @escaping ((_ result: Swift.Result<FMSDK.SSOToken, any Swift.Error>) -> Swift.Void))
+  func getProductsByCard(uuid: Swift.String, featureIdentifier: Swift.String, productIdentifier: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.Product, any Swift.Error>) -> Swift.Void)
+  func sendMCashBalance(uuid: Swift.String, featureIdentifier: Swift.String, priceUuid: Swift.String?, productIdentifier: Swift.String?, body: FMSDK.SendMcashRequest, completion: @escaping (_ result: Swift.Result<FMSDK.McashSuccess, any Swift.Error>) -> Swift.Void)
+  func getSSOToken(cardUuid: Swift.String, userFeatureUuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.SSOToken, any Swift.Error>) -> Swift.Void)
 }
 public class CampaignRestrictions : Swift.Codable, Swift.Equatable {
   public var restrictions: [FMSDK.CampaignRestriction]
