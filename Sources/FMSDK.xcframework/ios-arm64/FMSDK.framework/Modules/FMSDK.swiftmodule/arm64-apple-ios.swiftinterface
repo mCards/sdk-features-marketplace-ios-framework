@@ -459,6 +459,7 @@ public class Feature : Swift.Equatable, Swift.Codable {
   public var featureMetadata: [FMSDK.FeatureMetadata]
   public var featureDisplay: FMSDK.FeatureDisplay
   public var productUuid: Swift.String
+  public var category: Swift.String
   public var status: Swift.String
   public var tandcLandingUrl: Foundation.URL?
   public var infoLandingUrl: Swift.String
@@ -472,7 +473,7 @@ public class Feature : Swift.Equatable, Swift.Codable {
   public var metadataOfferType: Swift.String {
     get
   }
-  public init(uuid: Swift.String = "", program: FMSDK.FeatureProgram = FeatureProgram(), type: FMSDK.FeaturesTypes = .none, featureMetadata: [FMSDK.FeatureMetadata] = [], featureDisplay: FMSDK.FeatureDisplay = FeatureDisplay(), subscriptionLevel: Swift.String = "", productUuid: Swift.String = "", status: Swift.String = "", tandcLandingUrl: Foundation.URL? = nil, infoLandingUrl: Swift.String = "", tandcAcceptanceRequired: FMSDK.TandcAcceptanceRequired? = nil, userFeature: FMSDK.UserFeature = UserFeature(), subscriptionRequired: FMSDK.SubscriptionRequired? = nil, activateFeature: FMSDK.ActivateFeature = ActivateFeature(), marketerProductUuid: Swift.String = "", bannerUrls: [Foundation.URL?]? = nil, programMetadata: [FMSDK.FeatureMetadata] = [])
+  public init(uuid: Swift.String = "", program: FMSDK.FeatureProgram = FeatureProgram(), type: FMSDK.FeaturesTypes = .none, featureMetadata: [FMSDK.FeatureMetadata] = [], featureDisplay: FMSDK.FeatureDisplay = FeatureDisplay(), subscriptionLevel: Swift.String = "", productUuid: Swift.String = "", status: Swift.String = "", category: Swift.String = "", tandcLandingUrl: Foundation.URL? = nil, infoLandingUrl: Swift.String = "", tandcAcceptanceRequired: FMSDK.TandcAcceptanceRequired? = nil, userFeature: FMSDK.UserFeature = UserFeature(), subscriptionRequired: FMSDK.SubscriptionRequired? = nil, activateFeature: FMSDK.ActivateFeature = ActivateFeature(), marketerProductUuid: Swift.String = "", bannerUrls: [Foundation.URL?]? = nil, programMetadata: [FMSDK.FeatureMetadata] = [])
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.Feature, rhs: FMSDK.Feature) -> Swift.Bool

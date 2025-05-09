@@ -23041,6 +23041,91 @@
           },
           {
             "kind": "Var",
+            "name": "category",
+            "printedName": "category",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK7FeatureC8categorySSvp",
+            "mangledName": "$s5FMSDK7FeatureC8categorySSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7FeatureC8categorySSvg",
+                "mangledName": "$s5FMSDK7FeatureC8categorySSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7FeatureC8categorySSvs",
+                "mangledName": "$s5FMSDK7FeatureC8categorySSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7FeatureC8categorySSvM",
+                "mangledName": "$s5FMSDK7FeatureC8categorySSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "status",
             "printedName": "status",
             "children": [
@@ -24104,7 +24189,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(uuid:program:type:featureMetadata:featureDisplay:subscriptionLevel:productUuid:status:tandcLandingUrl:infoLandingUrl:tandcAcceptanceRequired:userFeature:subscriptionRequired:activateFeature:marketerProductUuid:bannerUrls:programMetadata:)",
+            "printedName": "init(uuid:program:type:featureMetadata:featureDisplay:subscriptionLevel:productUuid:status:category:tandcLandingUrl:infoLandingUrl:tandcAcceptanceRequired:userFeature:subscriptionRequired:activateFeature:marketerProductUuid:bannerUrls:programMetadata:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -24154,6 +24239,13 @@
                 "printedName": "FMSDK.FeatureDisplay",
                 "hasDefaultArg": true,
                 "usr": "s:5FMSDK14FeatureDisplayC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -24297,8 +24389,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK7FeatureC4uuid7program4type15featureMetadata0F7Display17subscriptionLevel11productUuid6status15tandcLandingUrl04infooP00N18AcceptanceRequired04userB00iS008activateB0015marketerProductL010bannerUrls0dG0ACSS_AA0B7ProgramCAA13FeaturesTypesOSayAA0bG0CGAA0bH0CS3S10Foundation3URLVSgSSAA05TandcrS0CSgAA04UserB0CAA012SubscriptionS0CSgAA08ActivateB0CSSSayA5_GSgA_tcfc",
-            "mangledName": "$s5FMSDK7FeatureC4uuid7program4type15featureMetadata0F7Display17subscriptionLevel11productUuid6status15tandcLandingUrl04infooP00N18AcceptanceRequired04userB00iS008activateB0015marketerProductL010bannerUrls0dG0ACSS_AA0B7ProgramCAA13FeaturesTypesOSayAA0bG0CGAA0bH0CS3S10Foundation3URLVSgSSAA05TandcrS0CSgAA04UserB0CAA012SubscriptionS0CSgAA08ActivateB0CSSSayA5_GSgA_tcfc",
+            "usr": "s:5FMSDK7FeatureC4uuid7program4type15featureMetadata0F7Display17subscriptionLevel11productUuid6status8category15tandcLandingUrl04infopQ00O18AcceptanceRequired04userB00iT008activateB0015marketerProductL010bannerUrls0dG0ACSS_AA0B7ProgramCAA13FeaturesTypesOSayAA0bG0CGAA0bH0CS4S10Foundation3URLVSgSSAA05TandcsT0CSgAA04UserB0CAA012SubscriptionT0CSgAA08ActivateB0CSSSayA6_GSgA0_tcfc",
+            "mangledName": "$s5FMSDK7FeatureC4uuid7program4type15featureMetadata0F7Display17subscriptionLevel11productUuid6status8category15tandcLandingUrl04infopQ00O18AcceptanceRequired04userB00iT008activateB0015marketerProductL010bannerUrls0dG0ACSS_AA0B7ProgramCAA13FeaturesTypesOSayAA0bG0CGAA0bH0CS4S10Foundation3URLVSgSSAA05TandcsT0CSgAA04UserB0CAA012SubscriptionT0CSgAA08ActivateB0CSSSayA6_GSgA0_tcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -56718,343 +56810,350 @@
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 1489,
+      "offset": 1521,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "Array",
-      "offset": 1619,
+      "offset": 1651,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 1718,
+      "offset": 1750,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 1752,
+      "offset": 1784,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 1781,
+      "offset": 1813,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 1855,
+      "offset": 1844,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 2117,
+      "offset": 1918,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 2180,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "Array",
-      "offset": 2193,
+      "offset": 2256,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 2989,
+      "offset": 3085,
       "length": 20,
       "value": "\"originator_program\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3098,
+      "offset": 3194,
       "length": 23,
       "value": "\"marketer_product_uuid\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3173,
+      "offset": 3291,
       "length": 19,
       "value": "\"tandc_landing_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3223,
+      "offset": 3341,
       "length": 18,
       "value": "\"info_landing_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3281,
+      "offset": 3399,
       "length": 27,
       "value": "\"tandc_acceptance_required\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3340,
+      "offset": 3458,
       "length": 23,
       "value": "\"activate_feature_flow\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3391,
+      "offset": 3509,
       "length": 14,
       "value": "\"user_feature\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3442,
+      "offset": 3560,
       "length": 23,
       "value": "\"subscription_required\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3492,
+      "offset": 3610,
       "length": 19,
       "value": "\"banner_image_urls\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3543,
+      "offset": 3661,
       "length": 18,
       "value": "\"program_metadata\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 7253,
+      "offset": 7525,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 7279,
+      "offset": 7551,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "Array",
-      "offset": 7308,
+      "offset": 7580,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 7550,
+      "offset": 7822,
       "length": 12,
       "value": "\"tandc_urls\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 8639,
+      "offset": 8911,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 9682,
+      "offset": 9954,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 9702,
+      "offset": 9974,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 10983,
+      "offset": 11255,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 11048,
+      "offset": 11320,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 11079,
+      "offset": 11351,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 11105,
+      "offset": 11377,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 11139,
+      "offset": 11411,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 11163,
+      "offset": 11435,
       "length": 9,
       "value": "\"#000000\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 11612,
+      "offset": 11884,
       "length": 10,
       "value": "\"icon_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 11655,
+      "offset": 11927,
       "length": 20,
       "value": "\"secondary_icon_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 11701,
+      "offset": 11973,
       "length": 13,
       "value": "\"icon_to_use\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 11740,
+      "offset": 12012,
       "length": 15,
       "value": "\"icon_bg_color\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 11795,
+      "offset": 12067,
       "length": 28,
       "value": "\"feature_campaign_image_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 11917,
+      "offset": 12189,
       "length": 25,
       "value": "\"activation_toggle_title\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 14230,
+      "offset": 14502,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 14249,
+      "offset": 14521,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 15185,
+      "offset": 15457,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 15989,
+      "offset": 16261,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 16009,
+      "offset": 16281,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 16028,
+      "offset": 16300,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "BooleanLiteral",
-      "offset": 17147,
+      "offset": 17419,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 17173,
+      "offset": 17445,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 17210,
+      "offset": 17482,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 17478,
+      "offset": 17750,
       "length": 27,
       "value": "\"tandc_acceptance_required\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 17530,
+      "offset": 17802,
       "length": 11,
       "value": "\"tandc_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 17580,
+      "offset": 17852,
       "length": 27,
       "value": "\"custom_signup_webview_url\""
     },
