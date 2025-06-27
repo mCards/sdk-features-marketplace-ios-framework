@@ -2,64 +2,15 @@
 // swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FMSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
-import CoreGraphics
 import CoreLocation
 import CoreSDK
-import CoreText
 import Foundation
 import MapKit
-import ObjectiveC
 import Swift
-import UIKit.UIGestureRecognizerSubclass
 import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_Concurrency.MainActor @preconcurrency public class SheetContentViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor @preconcurrency public var childViewController: UIKit.UIViewController {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var contentBackgroundColor: UIKit.UIColor? {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var cornerRadius: CoreFoundation.CGFloat {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var gripSize: CoreFoundation.CGSize {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var gripColor: UIKit.UIColor? {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var pullBarBackgroundColor: UIKit.UIColor? {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var treatPullBarAsClear: Swift.Bool {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var contentWrapperView: UIKit.UIView
-  @_Concurrency.MainActor @preconcurrency public var contentView: UIKit.UIView
-  @_Concurrency.MainActor @preconcurrency public var childContainerView: UIKit.UIView
-  @_Concurrency.MainActor @preconcurrency public var pullBarView: UIKit.UIView
-  @_Concurrency.MainActor @preconcurrency public var gripView: UIKit.UIView
-  @_Concurrency.MainActor @preconcurrency public init(childViewController: UIKit.UIViewController, options: FMSDK.SheetOptions)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLayoutSubviews()
-  @objc deinit
-}
-extension FMSDK.SheetContentViewController : UIKit.UINavigationControllerDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func navigationController(_ navigationController: UIKit.UINavigationController, willShow viewController: UIKit.UIViewController, animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func navigationController(_ navigationController: UIKit.UINavigationController, didShow viewController: UIKit.UIViewController, animated: Swift.Bool)
-}
 public class Product : Swift.Codable {
   public var uuid: Swift.String
   public var name: Swift.String
@@ -151,11 +102,6 @@ public class McashRequestRecipient : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class SheetTransition : ObjectiveC.NSObject, UIKit.UIViewControllerAnimatedTransitioning {
-  @_Concurrency.MainActor @preconcurrency @objc public func transitionDuration(using transitionContext: (any UIKit.UIViewControllerContextTransitioning)?) -> Foundation.TimeInterval
-  @_Concurrency.MainActor @preconcurrency @objc public func animateTransition(using transitionContext: any UIKit.UIViewControllerContextTransitioning)
-  @objc deinit
-}
 public class LocationCustomBalance : Swift.Codable {
   public var availableBalance: Swift.Double?
   public var formattedAvailableBalance: Swift.String?
@@ -198,7 +144,7 @@ public protocol LocationsApi {
   func getCardLocationById(uuid: Swift.String?, locationUuid: Swift.String?, latitude: Swift.String?, longitude: Swift.String?, offerType: Swift.String?, featureUuid: Swift.String?, completion: @escaping (_ result: Swift.Result<FMSDK.LocationDetails, any Swift.Error>) -> Swift.Void)
   func getLocationProfile(uuid: Swift.String, locationUuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.LocationProfile, any Swift.Error>) -> Swift.Void)
   func redeemLocationOffer(uuid: Swift.String, locationUuid: Swift.String, offerUuid: Swift.String, featureUuid: Swift.String?, completion: @escaping (_ result: Swift.Result<FMSDK.GenerateCodeMetadata, any Swift.Error>) -> Swift.Void)
-  func getLocationFilter(uuid: Swift.String, type: Swift.String?, completion: @escaping (_ result: Swift.Result<FMSDK.LocationFilters, any Swift.Error>) -> Swift.Void)
+  func getLocationFilter(uuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.LocationFilters, any Swift.Error>) -> Swift.Void)
   func getLocationSubfilter(uuid: Swift.String, filterUuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.LocationSubFilters, any Swift.Error>) -> Swift.Void)
   func getLocationAutocompleteSuggestions(uuid: Swift.String, text: Swift.String, type: Swift.String?, featuerUuid: Swift.String?, completion: @escaping (_ result: Swift.Result<FMSDK.Suggestions, any Swift.Error>) -> Swift.Void)
 }
@@ -294,26 +240,6 @@ public class Barcode : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
-public enum SheetSize : Swift.Equatable {
-  case intrinsic
-  case fixed(CoreFoundation.CGFloat)
-  case fullscreen
-  case percent(Swift.Float)
-  case marginFromTop(CoreFoundation.CGFloat)
-  public static func == (a: FMSDK.SheetSize, b: FMSDK.SheetSize) -> Swift.Bool
-}
-public enum Presentation : Swift.Int {
-  case modal
-  case push
-  case present
-  case sheet
-  case none
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 public class ActivateFeatureRequest : Swift.Encodable {
   final public let termsAccepted: Swift.Bool
   public init(termsAccepted: Swift.Bool)
@@ -356,20 +282,15 @@ public class CardControlsRequest : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class CampaignItems : Swift.Codable, Swift.Equatable {
-  public var items: [FMSDK.CampaignItem]
+@_hasMissingDesignatedInitializers public class GiftCampaignItemsResponse : Swift.Codable, Swift.Equatable {
+  public var items: [FMSDK.Gift]
   public var pagination: CoreSDK.Pagination
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
-  public static func == (lhs: FMSDK.CampaignItems, rhs: FMSDK.CampaignItems) -> Swift.Bool
+  public static func == (lhs: FMSDK.GiftCampaignItemsResponse, rhs: FMSDK.GiftCampaignItemsResponse) -> Swift.Bool
   @objc deinit
 }
-extension UIKit.UIViewController {
-  @_Concurrency.MainActor @preconcurrency public var sheetViewController: FMSDK.SheetViewController? {
-    get
-  }
-}
-public class CampaignItem : Swift.Codable, Swift.Equatable {
+public class Gift : Swift.Codable, Swift.Equatable {
   public var uuid: Swift.String
   public var originatorIdentifier: Swift.String
   public var campaign: FMSDK.Campaign
@@ -393,7 +314,7 @@ public class CampaignItem : Swift.Codable, Swift.Equatable {
   public init(uuid: Swift.String = "", originatorIdentifier: Swift.String = "", campaign: FMSDK.Campaign = Campaign(), card: FMSDK.CampaignItemCard = CampaignItemCard(), senderName: Swift.String = "", receivedDate: Foundation.Date = Date(), ownerableType: FMSDK.OwnerableType = .none, firstName: Swift.String = "", lastName: Swift.String = "", phone: Swift.String = "", email: Swift.String = "", deliveryMethod: FMSDK.DeliveryMethod = .none, title: Swift.String = "", message: Swift.String = "", sentAt: Foundation.Date = Date(), acceptedAt: Foundation.Date = Date(), voided: Swift.Bool? = nil, balances: [FMSDK.CampaignBalance] = [], deliveryStatus: FMSDK.DeliveryStatus = .none, processingErrors: [Swift.String] = [])
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
-  public static func == (lhs: FMSDK.CampaignItem, rhs: FMSDK.CampaignItem) -> Swift.Bool
+  public static func == (lhs: FMSDK.Gift, rhs: FMSDK.Gift) -> Swift.Bool
   @objc deinit
 }
 public enum DeliveryMethod : Swift.String, Swift.Codable {
@@ -474,6 +395,25 @@ public class Feature : Swift.Equatable, Swift.Codable {
     get
   }
   public init(uuid: Swift.String = "", program: FMSDK.FeatureProgram = FeatureProgram(), type: FMSDK.FeaturesTypes = .none, featureMetadata: [FMSDK.FeatureMetadata] = [], featureDisplay: FMSDK.FeatureDisplay = FeatureDisplay(), subscriptionLevel: Swift.String = "", productUuid: Swift.String = "", status: Swift.String = "", category: Swift.String = "", tandcLandingUrl: Foundation.URL? = nil, infoLandingUrl: Swift.String = "", tandcAcceptanceRequired: FMSDK.TandcAcceptanceRequired? = nil, userFeature: FMSDK.UserFeature = UserFeature(), subscriptionRequired: FMSDK.SubscriptionRequired? = nil, activateFeature: FMSDK.ActivateFeature = ActivateFeature(), marketerProductUuid: Swift.String = "", bannerUrls: [Foundation.URL?]? = nil, programMetadata: [FMSDK.FeatureMetadata] = [])
+  public enum Sort : Swift.String, Swift.Codable {
+    case category
+    case user
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Status : Swift.String, Swift.Codable {
+    case active
+    case inactive
+    case all
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.Feature, rhs: FMSDK.Feature) -> Swift.Bool
@@ -579,11 +519,7 @@ public protocol FmSdk {
   var features: any FMSDK.FeaturesApi { get }
   var locations: any FMSDK.LocationsApi { get }
   func configure(args: FMSDK.FmArgs)
-  func getCampaignItems(uuid: Swift.String, ownerableType: FMSDK.OwnerableType, page: Swift.Int?, perPage: Swift.Int?, completion: @escaping (_ result: Swift.Result<FMSDK.CampaignItems, any Swift.Error>) -> Swift.Void)
-  func getCampaignItemById(uuid: Swift.String, itemUuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.CampaignItem, any Swift.Error>) -> Swift.Void)
-  func getCampaignRestrictions(uuid: Swift.String, campaignUuid: Swift.String, page: Swift.Int?, perPage: Swift.Int?, completion: @escaping (_ result: Swift.Result<FMSDK.CampaignRestrictions, any Swift.Error>) -> Swift.Void)
-  func launch(with controller: UIKit.UIViewController)
-  func setCard(card: CoreSDK.Card)
+  func getCampaignItems(uuid: Swift.String, ownerableType: FMSDK.OwnerableType, page: Swift.Int?, completion: @escaping (_ result: Swift.Result<FMSDK.GiftCampaignItemsResponse, any Swift.Error>) -> Swift.Void)
   func logout()
 }
 public class CampaignItemCard : Swift.Codable, Swift.Equatable {
@@ -728,123 +664,6 @@ public class ConvertPointsRequest : Swift.Codable {
 public protocol FMSDKTokenRefreshCallback {
   func refreshJWTs(completion: @escaping (CoreSDK.JWTs) -> Swift.Void)
 }
-@objc @_Concurrency.MainActor @preconcurrency public class SheetViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor @preconcurrency public var options: FMSDK.SheetOptions {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var autoAdjustToKeyboard: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public var autoAdjustToKeyboard: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public static var allowPullingPastMaxHeight: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public var allowPullingPastMaxHeight: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public static var allowPullingPastMinHeight: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public var allowPullingPastMinHeight: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public var sizes: [FMSDK.SheetSize] {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var orderedSizes: [FMSDK.SheetSize]
-  @_Concurrency.MainActor @preconcurrency public var currentSize: FMSDK.SheetSize {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var dismissOnPull: Swift.Bool {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var dismissOnOverlayTap: Swift.Bool {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var shouldRecognizePanGestureWithUIControls: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public var childViewController: UIKit.UIViewController {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var childForStatusBarStyle: UIKit.UIViewController? {
-    @objc get
-  }
-  @_Concurrency.MainActor @preconcurrency public static var hasBlurBackground: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public var hasBlurBackground: Swift.Bool {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public static var minimumSpaceAbovePullBar: CoreFoundation.CGFloat
-  @_Concurrency.MainActor @preconcurrency public var minimumSpaceAbovePullBar: CoreFoundation.CGFloat {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public static var overlayColor: UIKit.UIColor
-  @_Concurrency.MainActor @preconcurrency public var overlayColor: UIKit.UIColor {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public static var blurEffect: UIKit.UIBlurEffect
-  @_Concurrency.MainActor @preconcurrency public var blurEffect: UIKit.UIBlurEffect {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public static var allowGestureThroughOverlay: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public var allowGestureThroughOverlay: Swift.Bool {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public static var cornerRadius: CoreFoundation.CGFloat
-  @_Concurrency.MainActor @preconcurrency public var cornerRadius: CoreFoundation.CGFloat {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public static var gripSize: CoreFoundation.CGSize
-  @_Concurrency.MainActor @preconcurrency public var gripSize: CoreFoundation.CGSize {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public static var gripColor: UIKit.UIColor
-  @_Concurrency.MainActor @preconcurrency public var gripColor: UIKit.UIColor? {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public static var pullBarBackgroundColor: UIKit.UIColor
-  @_Concurrency.MainActor @preconcurrency public var pullBarBackgroundColor: UIKit.UIColor? {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public static var treatPullBarAsClear: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public var treatPullBarAsClear: Swift.Bool {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var shouldDismiss: ((FMSDK.SheetViewController) -> Swift.Bool)?
-  @_Concurrency.MainActor @preconcurrency public var didDismiss: ((FMSDK.SheetViewController) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency public var sizeChanged: ((FMSDK.SheetViewController, FMSDK.SheetSize, CoreFoundation.CGFloat) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency public var contentViewController: FMSDK.SheetContentViewController {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var contentBackgroundColor: UIKit.UIColor? {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public init(controller: UIKit.UIViewController, sizes: [FMSDK.SheetSize] = [.intrinsic], options: FMSDK.SheetOptions? = nil)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func loadView()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency public func handleScrollView(_ scrollView: UIKit.UIScrollView)
-  @_Concurrency.MainActor @preconcurrency public func setSizes(_ sizes: [FMSDK.SheetSize], animated: Swift.Bool = true)
-  @_Concurrency.MainActor @preconcurrency public func resize(to size: FMSDK.SheetSize, duration: Foundation.TimeInterval = 0.2, options: UIKit.UIView.AnimationOptions = [.curveEaseOut], animated: Swift.Bool = true, complete: (() -> Swift.Void)? = nil)
-  @_Concurrency.MainActor @preconcurrency public func attemptDismiss(animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency public func animateIn(to view: UIKit.UIView, in parent: UIKit.UIViewController, size: FMSDK.SheetSize? = nil, duration: Foundation.TimeInterval = 0.3, completion: (() -> Swift.Void)? = nil)
-  @_Concurrency.MainActor @preconcurrency public func animateIn(size: FMSDK.SheetSize? = nil, duration: Foundation.TimeInterval = 0.3, completion: (() -> Swift.Void)? = nil)
-  @_Concurrency.MainActor @preconcurrency public func animateOut(duration: Foundation.TimeInterval = 0.3, completion: (() -> Swift.Void)? = nil)
-  @objc deinit
-}
-extension FMSDK.SheetViewController : UIKit.UIGestureRecognizerDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-}
-extension FMSDK.SheetViewController : UIKit.UIViewControllerTransitioningDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func animationController(forPresented presented: UIKit.UIViewController, presenting: UIKit.UIViewController, source: UIKit.UIViewController) -> (any UIKit.UIViewControllerAnimatedTransitioning)?
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func animationController(forDismissed dismissed: UIKit.UIViewController) -> (any UIKit.UIViewControllerAnimatedTransitioning)?
-}
 public class LocationsResponse : Swift.Codable {
   public var locations: [FMSDK.Location]?
   public var pagination: CoreSDK.Pagination?
@@ -854,25 +673,28 @@ public class LocationsResponse : Swift.Codable {
   @objc deinit
 }
 public protocol FeaturesApi {
-  func updateCardControls(uuid: Swift.String, body: FMSDK.CardControlsRequest, completion: @escaping (_ result: Swift.Result<CoreSDK.Card, any Swift.Error>) -> Swift.Void)
-  func convertPoints(uuid: Swift.String, body: FMSDK.ConvertPointsRequest, completion: @escaping (_ result: Swift.Result<FMSDK.ConvertPoints, any Swift.Error>) -> Swift.Void)
-  func getFeaturesByCard(uuid: Swift.String, status: Swift.String?, subscriptionLevel: Swift.String?, completion: @escaping (_ result: Swift.Result<[FMSDK.Feature], any Swift.Error>) -> Swift.Void)
+  func updateCardControls(cardId: Swift.String, body: FMSDK.CardControlsRequest, completion: @escaping (_ result: Swift.Result<CoreSDK.Card, any Swift.Error>) -> Swift.Void)
+  func convertPoints(cardId: Swift.String, body: FMSDK.ConvertPointsRequest, completion: @escaping (_ result: Swift.Result<FMSDK.ConvertPoints, any Swift.Error>) -> Swift.Void)
+  func getFeatures(cardId: Swift.String, status: FMSDK.Feature.Status, sort: FMSDK.Feature.Sort, completion: @escaping (_ result: Swift.Result<[FMSDK.Feature], any Swift.Error>) -> Swift.Void)
   func getFeatureCampaign(cardId: Swift.String, completion: @escaping (_ result: Swift.Result<[FMSDK.Feature], any Swift.Error>) -> Swift.Void)
   func deactivateFeature(cardId: Swift.String, featureId: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void)
-  func acceptFeatureTermAndConditions(uuid: Swift.String, featureUuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void)
-  func activateFeatureByCard(uuid: Swift.String, featureUuid: Swift.String, body: FMSDK.ActivateFeatureRequest, completion: @escaping (_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void)
+  func acceptFeatureTermAndConditions(cardId: Swift.String, featureId: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void)
+  func activateFeatureByCard(cardId: Swift.String, featureId: Swift.String, body: FMSDK.ActivateFeatureRequest, completion: @escaping (_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void)
   func reorderFeatures(cardId: Swift.String, featureIds: [Swift.String], completion: @escaping (_ result: Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  func getProductsByCard(uuid: Swift.String, featureIdentifier: Swift.String, productIdentifier: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.Product, any Swift.Error>) -> Swift.Void)
-  func sendMCashBalance(uuid: Swift.String, featureIdentifier: Swift.String, priceUuid: Swift.String?, productIdentifier: Swift.String?, body: FMSDK.SendMcashRequest, completion: @escaping (_ result: Swift.Result<FMSDK.McashSuccess, any Swift.Error>) -> Swift.Void)
-  func getSSOToken(cardUuid: Swift.String, userFeatureUuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.SSOToken, any Swift.Error>) -> Swift.Void)
+  func getProductsByCard(cardId: Swift.String, featureId: Swift.String, productId: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.Product, any Swift.Error>) -> Swift.Void)
+  func sendMCashBalance(cardId: Swift.String, featureId: Swift.String, priceId: Swift.String?, productId: Swift.String?, body: FMSDK.SendMcashRequest, completion: @escaping (_ result: Swift.Result<FMSDK.McashSuccess, any Swift.Error>) -> Swift.Void)
+  func sendMoney(cardId: Swift.String, accountId: Swift.String, recipientPhone: Swift.String, recipientName: Swift.String, amount: Swift.Int, completion: @escaping (_ result: Swift.Result<FMSDK.McashSuccess, any Swift.Error>) -> Swift.Void)
+  func getSSOToken(cardId: Swift.String, userFeatureId: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.SSOToken, any Swift.Error>) -> Swift.Void)
+  func getCampaignItem(cardId: Swift.String, itemId: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.Gift, any Swift.Error>) -> Swift.Void)
+  func getCampaignRestrictions(cardId: Swift.String, campaignId: Swift.String, sourceIndex: Swift.Int, completion: @escaping (_ result: Swift.Result<FMSDK.GiftRestrictionsResponse, any Swift.Error>) -> Swift.Void)
 }
-public class CampaignRestrictions : Swift.Codable, Swift.Equatable {
+public class GiftRestrictionsResponse : Swift.Codable, Swift.Equatable {
   public var restrictions: [FMSDK.CampaignRestriction]
   public var pagination: CoreSDK.Pagination
   public init(restrictions: [FMSDK.CampaignRestriction] = [], pagination: CoreSDK.Pagination = Pagination())
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
-  public static func == (lhs: FMSDK.CampaignRestrictions, rhs: FMSDK.CampaignRestrictions) -> Swift.Bool
+  public static func == (lhs: FMSDK.GiftRestrictionsResponse, rhs: FMSDK.GiftRestrictionsResponse) -> Swift.Bool
   @objc deinit
 }
 public class Suggestion : Swift.Codable {
@@ -942,38 +764,6 @@ public class PaymentIntent : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.PaymentIntent, rhs: FMSDK.PaymentIntent) -> Swift.Bool
   @objc deinit
-}
-public struct SheetOptions {
-  public static var `default`: FMSDK.SheetOptions
-  public enum TransitionOverflowType {
-    case color(color: UIKit.UIColor)
-    case view(view: UIKit.UIView)
-    case none
-    case automatic
-  }
-  public var pullBarHeight: CoreFoundation.CGFloat
-  public var presentingViewCornerRadius: CoreFoundation.CGFloat
-  public var shouldExtendBackground: Swift.Bool
-  public var setIntrinsicHeightOnNavigationControllers: Swift.Bool
-  public var transitionAnimationOptions: UIKit.UIView.AnimationOptions
-  public var transitionDampening: CoreFoundation.CGFloat
-  public var transitionDuration: Swift.Double
-  public var transitionVelocity: CoreFoundation.CGFloat
-  public var transitionOverflowType: FMSDK.SheetOptions.TransitionOverflowType
-  public var useFullScreenMode: Swift.Bool
-  public var shrinkPresentingViewController: Swift.Bool
-  public var useInlineMode: Swift.Bool
-  public var horizontalPadding: CoreFoundation.CGFloat
-  public var maxWidth: CoreFoundation.CGFloat?
-  public var minimumSpaceAbovePullBar: CoreFoundation.CGFloat
-  public var gripSize: CoreFoundation.CGSize
-  public var gripColor: UIKit.UIColor
-  public var pullBarBackgroundColor: UIKit.UIColor
-  public var cornerRadius: CoreFoundation.CGFloat
-  public init()
-  public init(pullBarHeight: CoreFoundation.CGFloat? = nil, presentingViewCornerRadius: CoreFoundation.CGFloat? = nil, shouldExtendBackground: Swift.Bool? = nil, setIntrinsicHeightOnNavigationControllers: Swift.Bool? = nil, useFullScreenMode: Swift.Bool? = nil, shrinkPresentingViewController: Swift.Bool? = nil, useInlineMode: Swift.Bool? = nil, horizontalPadding: CoreFoundation.CGFloat? = nil, maxWidth: CoreFoundation.CGFloat? = nil)
-  @available(*, unavailable, message: "cornerRadius, minimumSpaceAbovePullBar, gripSize and gripColor are now properties on SheetViewController. Use them instead.")
-  public init(pullBarHeight: CoreFoundation.CGFloat? = nil, gripSize: CoreFoundation.CGSize? = nil, gripColor: UIKit.UIColor? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, presentingViewCornerRadius: CoreFoundation.CGFloat? = nil, shouldExtendBackground: Swift.Bool? = nil, setIntrinsicHeightOnNavigationControllers: Swift.Bool? = nil, useFullScreenMode: Swift.Bool? = nil, shrinkPresentingViewController: Swift.Bool? = nil, useInlineMode: Swift.Bool? = nil, minimumSpaceAbovePullBar: CoreFoundation.CGFloat? = nil)
 }
 public class CampaignBalance : Swift.Codable, Swift.Equatable {
   public var type: FMSDK.CampaignBalanceType
@@ -1090,7 +880,6 @@ public class Suggestions : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
-extension FMSDK.SheetTransition : Swift.Sendable {}
 extension FMSDK.ApiEnv : Swift.Equatable {}
 extension FMSDK.ApiEnv : Swift.Hashable {}
 extension FMSDK.ApiEnv : Swift.RawRepresentable {}
@@ -1100,9 +889,6 @@ extension FMSDK.ManualRedemption.Action : Swift.RawRepresentable {}
 extension FMSDK.Barcode.ModelType : Swift.Equatable {}
 extension FMSDK.Barcode.ModelType : Swift.Hashable {}
 extension FMSDK.Barcode.ModelType : Swift.RawRepresentable {}
-extension FMSDK.Presentation : Swift.Equatable {}
-extension FMSDK.Presentation : Swift.Hashable {}
-extension FMSDK.Presentation : Swift.RawRepresentable {}
 extension FMSDK.DeliveryMethod : Swift.Equatable {}
 extension FMSDK.DeliveryMethod : Swift.Hashable {}
 extension FMSDK.DeliveryMethod : Swift.RawRepresentable {}
@@ -1118,6 +904,12 @@ extension FMSDK.FeatureMetadataKeys : Swift.RawRepresentable {}
 extension FMSDK.FeaturesTypes : Swift.Equatable {}
 extension FMSDK.FeaturesTypes : Swift.Hashable {}
 extension FMSDK.FeaturesTypes : Swift.RawRepresentable {}
+extension FMSDK.Feature.Sort : Swift.Equatable {}
+extension FMSDK.Feature.Sort : Swift.Hashable {}
+extension FMSDK.Feature.Sort : Swift.RawRepresentable {}
+extension FMSDK.Feature.Status : Swift.Equatable {}
+extension FMSDK.Feature.Status : Swift.Hashable {}
+extension FMSDK.Feature.Status : Swift.RawRepresentable {}
 extension FMSDK.RestrictionType : Swift.Equatable {}
 extension FMSDK.RestrictionType : Swift.Hashable {}
 extension FMSDK.RestrictionType : Swift.RawRepresentable {}
