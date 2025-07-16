@@ -20409,6 +20409,116 @@
           },
           {
             "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK7FeatureC3urlSSSgvp",
+            "mangledName": "$s5FMSDK7FeatureC3urlSSSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7FeatureC3urlSSSgvg",
+                "mangledName": "$s5FMSDK7FeatureC3urlSSSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7FeatureC3urlSSSgvs",
+                "mangledName": "$s5FMSDK7FeatureC3urlSSSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7FeatureC3urlSSSgvM",
+                "mangledName": "$s5FMSDK7FeatureC3urlSSSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "featureDisplay",
             "printedName": "featureDisplay",
             "children": [
@@ -20486,91 +20596,6 @@
                 "declKind": "Accessor",
                 "usr": "s:5FMSDK7FeatureC14featureDisplayAA0bD0CvM",
                 "mangledName": "$s5FMSDK7FeatureC14featureDisplayAA0bD0CvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "productUuid",
-            "printedName": "productUuid",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK7FeatureC11productUuidSSvp",
-            "mangledName": "$s5FMSDK7FeatureC11productUuidSSvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC11productUuidSSvg",
-                "mangledName": "$s5FMSDK7FeatureC11productUuidSSvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC11productUuidSSvs",
-                "mangledName": "$s5FMSDK7FeatureC11productUuidSSvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC11productUuidSSvM",
-                "mangledName": "$s5FMSDK7FeatureC11productUuidSSvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -20749,27 +20774,27 @@
           },
           {
             "kind": "Var",
-            "name": "tandcLandingUrl",
-            "printedName": "tandcLandingUrl",
+            "name": "termsUrl",
+            "printedName": "termsUrl",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Foundation.URL?",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK7FeatureC15tandcLandingUrl10Foundation3URLVSgvp",
-            "mangledName": "$s5FMSDK7FeatureC15tandcLandingUrl10Foundation3URLVSgvp",
+            "usr": "s:5FMSDK7FeatureC8termsUrlSSSgvp",
+            "mangledName": "$s5FMSDK7FeatureC8termsUrlSSSgvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -20786,21 +20811,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Foundation.URL?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "URL",
-                        "printedName": "Foundation.URL",
-                        "usr": "s:10Foundation3URLV"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC15tandcLandingUrl10Foundation3URLVSgvg",
-                "mangledName": "$s5FMSDK7FeatureC15tandcLandingUrl10Foundation3URLVSgvg",
+                "usr": "s:5FMSDK7FeatureC8termsUrlSSSgvg",
+                "mangledName": "$s5FMSDK7FeatureC8termsUrlSSSgvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -20818,21 +20843,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Foundation.URL?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "URL",
-                        "printedName": "Foundation.URL",
-                        "usr": "s:10Foundation3URLV"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC15tandcLandingUrl10Foundation3URLVSgvs",
-                "mangledName": "$s5FMSDK7FeatureC15tandcLandingUrl10Foundation3URLVSgvs",
+                "usr": "s:5FMSDK7FeatureC8termsUrlSSSgvs",
+                "mangledName": "$s5FMSDK7FeatureC8termsUrlSSSgvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -20849,8 +20874,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC15tandcLandingUrl10Foundation3URLVSgvM",
-                "mangledName": "$s5FMSDK7FeatureC15tandcLandingUrl10Foundation3URLVSgvM",
+                "usr": "s:5FMSDK7FeatureC8termsUrlSSSgvM",
+                "mangledName": "$s5FMSDK7FeatureC8termsUrlSSSgvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -20859,8 +20884,8 @@
           },
           {
             "kind": "Var",
-            "name": "infoLandingUrl",
-            "printedName": "infoLandingUrl",
+            "name": "infoUrl",
+            "printedName": "infoUrl",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -20870,8 +20895,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK7FeatureC14infoLandingUrlSSvp",
-            "mangledName": "$s5FMSDK7FeatureC14infoLandingUrlSSvp",
+            "usr": "s:5FMSDK7FeatureC7infoUrlSSvp",
+            "mangledName": "$s5FMSDK7FeatureC7infoUrlSSvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasStorage",
@@ -20892,8 +20917,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC14infoLandingUrlSSvg",
-                "mangledName": "$s5FMSDK7FeatureC14infoLandingUrlSSvg",
+                "usr": "s:5FMSDK7FeatureC7infoUrlSSvg",
+                "mangledName": "$s5FMSDK7FeatureC7infoUrlSSvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -20916,8 +20941,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC14infoLandingUrlSSvs",
-                "mangledName": "$s5FMSDK7FeatureC14infoLandingUrlSSvs",
+                "usr": "s:5FMSDK7FeatureC7infoUrlSSvs",
+                "mangledName": "$s5FMSDK7FeatureC7infoUrlSSvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -20934,118 +20959,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC14infoLandingUrlSSvM",
-                "mangledName": "$s5FMSDK7FeatureC14infoLandingUrlSSvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "tandcAcceptanceRequired",
-            "printedName": "tandcAcceptanceRequired",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "FMSDK.TandcAcceptanceRequired?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TandcAcceptanceRequired",
-                    "printedName": "FMSDK.TandcAcceptanceRequired",
-                    "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvp",
-            "mangledName": "$s5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "FMSDK.TandcAcceptanceRequired?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TandcAcceptanceRequired",
-                        "printedName": "FMSDK.TandcAcceptanceRequired",
-                        "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvg",
-                "mangledName": "$s5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "FMSDK.TandcAcceptanceRequired?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TandcAcceptanceRequired",
-                        "printedName": "FMSDK.TandcAcceptanceRequired",
-                        "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvs",
-                "mangledName": "$s5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvM",
-                "mangledName": "$s5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvM",
+                "usr": "s:5FMSDK7FeatureC7infoUrlSSvM",
+                "mangledName": "$s5FMSDK7FeatureC7infoUrlSSvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -21059,16 +20974,25 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK7FeatureC19marketerProductUuidSSvp",
-            "mangledName": "$s5FMSDK7FeatureC19marketerProductUuidSSvp",
+            "usr": "s:5FMSDK7FeatureC19marketerProductUuidSSSgvp",
+            "mangledName": "$s5FMSDK7FeatureC19marketerProductUuidSSSgvp",
             "moduleName": "FMSDK",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
@@ -21081,14 +21005,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC19marketerProductUuidSSvg",
-                "mangledName": "$s5FMSDK7FeatureC19marketerProductUuidSSvg",
+                "usr": "s:5FMSDK7FeatureC19marketerProductUuidSSSgvg",
+                "mangledName": "$s5FMSDK7FeatureC19marketerProductUuidSSSgvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -21105,14 +21037,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC19marketerProductUuidSSvs",
-                "mangledName": "$s5FMSDK7FeatureC19marketerProductUuidSSvs",
+                "usr": "s:5FMSDK7FeatureC19marketerProductUuidSSSgvs",
+                "mangledName": "$s5FMSDK7FeatureC19marketerProductUuidSSSgvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -21129,93 +21069,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC19marketerProductUuidSSvM",
-                "mangledName": "$s5FMSDK7FeatureC19marketerProductUuidSSvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "activateFeature",
-            "printedName": "activateFeature",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ActivateFeature",
-                "printedName": "FMSDK.ActivateFeature",
-                "usr": "s:5FMSDK15ActivateFeatureC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK7FeatureC08activateB0AA08ActivateB0Cvp",
-            "mangledName": "$s5FMSDK7FeatureC08activateB0AA08ActivateB0Cvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ActivateFeature",
-                    "printedName": "FMSDK.ActivateFeature",
-                    "usr": "s:5FMSDK15ActivateFeatureC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC08activateB0AA08ActivateB0Cvg",
-                "mangledName": "$s5FMSDK7FeatureC08activateB0AA08ActivateB0Cvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ActivateFeature",
-                    "printedName": "FMSDK.ActivateFeature",
-                    "usr": "s:5FMSDK15ActivateFeatureC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC08activateB0AA08ActivateB0Cvs",
-                "mangledName": "$s5FMSDK7FeatureC08activateB0AA08ActivateB0Cvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC08activateB0AA08ActivateB0CvM",
-                "mangledName": "$s5FMSDK7FeatureC08activateB0AA08ActivateB0CvM",
+                "usr": "s:5FMSDK7FeatureC19marketerProductUuidSSSgvM",
+                "mangledName": "$s5FMSDK7FeatureC19marketerProductUuidSSSgvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -21301,116 +21156,6 @@
                 "declKind": "Accessor",
                 "usr": "s:5FMSDK7FeatureC04userB0AA04UserB0CvM",
                 "mangledName": "$s5FMSDK7FeatureC04userB0AA04UserB0CvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "subscriptionRequired",
-            "printedName": "subscriptionRequired",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "FMSDK.SubscriptionRequired?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SubscriptionRequired",
-                    "printedName": "FMSDK.SubscriptionRequired",
-                    "usr": "s:5FMSDK20SubscriptionRequiredC"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvp",
-            "mangledName": "$s5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "FMSDK.SubscriptionRequired?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "SubscriptionRequired",
-                        "printedName": "FMSDK.SubscriptionRequired",
-                        "usr": "s:5FMSDK20SubscriptionRequiredC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvg",
-                "mangledName": "$s5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "FMSDK.SubscriptionRequired?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "SubscriptionRequired",
-                        "printedName": "FMSDK.SubscriptionRequired",
-                        "usr": "s:5FMSDK20SubscriptionRequiredC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvs",
-                "mangledName": "$s5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvM",
-                "mangledName": "$s5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -21686,6 +21431,226 @@
           },
           {
             "kind": "Var",
+            "name": "subscriptionRequired",
+            "printedName": "subscriptionRequired",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.SubscriptionRequired?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SubscriptionRequired",
+                    "printedName": "FMSDK.SubscriptionRequired",
+                    "usr": "s:5FMSDK20SubscriptionRequiredC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvp",
+            "mangledName": "$s5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FMSDK.SubscriptionRequired?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SubscriptionRequired",
+                        "printedName": "FMSDK.SubscriptionRequired",
+                        "usr": "s:5FMSDK20SubscriptionRequiredC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvg",
+                "mangledName": "$s5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FMSDK.SubscriptionRequired?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SubscriptionRequired",
+                        "printedName": "FMSDK.SubscriptionRequired",
+                        "usr": "s:5FMSDK20SubscriptionRequiredC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvs",
+                "mangledName": "$s5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvM",
+                "mangledName": "$s5FMSDK7FeatureC20subscriptionRequiredAA012SubscriptionD0CSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tandcAcceptanceRequired",
+            "printedName": "tandcAcceptanceRequired",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.TandcAcceptanceRequired?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TandcAcceptanceRequired",
+                    "printedName": "FMSDK.TandcAcceptanceRequired",
+                    "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvp",
+            "mangledName": "$s5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FMSDK.TandcAcceptanceRequired?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TandcAcceptanceRequired",
+                        "printedName": "FMSDK.TandcAcceptanceRequired",
+                        "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvg",
+                "mangledName": "$s5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FMSDK.TandcAcceptanceRequired?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TandcAcceptanceRequired",
+                        "printedName": "FMSDK.TandcAcceptanceRequired",
+                        "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvs",
+                "mangledName": "$s5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvM",
+                "mangledName": "$s5FMSDK7FeatureC23tandcAcceptanceRequiredAA05TandcdE0CSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "metadataOfferType",
             "printedName": "metadataOfferType",
             "children": [
@@ -21727,7 +21692,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(uuid:program:type:featureMetadata:featureDisplay:subscriptionLevel:productUuid:status:category:tandcLandingUrl:infoLandingUrl:tandcAcceptanceRequired:userFeature:subscriptionRequired:activateFeature:marketerProductUuid:bannerUrls:programMetadata:)",
+            "printedName": "init(uuid:program:type:featureMetadata:url:featureDisplay:category:status:termsUrl:infoUrl:marketerProductUuid:userFeature:bannerUrls:programMetadata:subscriptionRequired:tandcAcceptanceRequired:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -21773,6 +21738,21 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "FeatureDisplay",
                 "printedName": "FMSDK.FeatureDisplay",
                 "hasDefaultArg": true,
@@ -21794,28 +21774,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Foundation.URL?",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -21831,13 +21797,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "FMSDK.TandcAcceptanceRequired?",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "TandcAcceptanceRequired",
-                    "printedName": "FMSDK.TandcAcceptanceRequired",
-                    "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -21849,35 +21815,6 @@
                 "printedName": "FMSDK.UserFeature",
                 "hasDefaultArg": true,
                 "usr": "s:5FMSDK11UserFeatureC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "FMSDK.SubscriptionRequired?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SubscriptionRequired",
-                    "printedName": "FMSDK.SubscriptionRequired",
-                    "usr": "s:5FMSDK20SubscriptionRequiredC"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ActivateFeature",
-                "printedName": "FMSDK.ActivateFeature",
-                "hasDefaultArg": true,
-                "usr": "s:5FMSDK15ActivateFeatureC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -21924,11 +21861,41 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.SubscriptionRequired?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SubscriptionRequired",
+                    "printedName": "FMSDK.SubscriptionRequired",
+                    "usr": "s:5FMSDK20SubscriptionRequiredC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.TandcAcceptanceRequired?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TandcAcceptanceRequired",
+                    "printedName": "FMSDK.TandcAcceptanceRequired",
+                    "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK7FeatureC4uuid7program4type15featureMetadata0F7Display17subscriptionLevel11productUuid6status8category15tandcLandingUrl04infopQ00O18AcceptanceRequired04userB00iT008activateB0015marketerProductL010bannerUrls0dG0ACSS_AA0B7ProgramCAA13FeaturesTypesOSayAA0bG0CGAA0bH0CS4S10Foundation3URLVSgSSAA05TandcsT0CSgAA04UserB0CAA012SubscriptionT0CSgAA08ActivateB0CSSSayA6_GSgA0_tcfc",
-            "mangledName": "$s5FMSDK7FeatureC4uuid7program4type15featureMetadata0F7Display17subscriptionLevel11productUuid6status8category15tandcLandingUrl04infopQ00O18AcceptanceRequired04userB00iT008activateB0015marketerProductL010bannerUrls0dG0ACSS_AA0B7ProgramCAA13FeaturesTypesOSayAA0bG0CGAA0bH0CS4S10Foundation3URLVSgSSAA05TandcsT0CSgAA04UserB0CAA012SubscriptionT0CSgAA08ActivateB0CSSSayA6_GSgA0_tcfc",
+            "usr": "s:5FMSDK7FeatureC4uuid7program4type15featureMetadata3url0F7Display8category6status8termsUrl04infoM019marketerProductUuid04userB010bannerUrls0dG020subscriptionRequired015tandcAcceptanceV0ACSS_AA0B7ProgramCAA13FeaturesTypesOSayAA0bG0CGSSSgAA0bI0CS2SA_SSA_AA04UserB0CSay10Foundation3URLVSgGSgAzA012SubscriptionV0CSgAA05TandcxV0CSgtcfc",
+            "mangledName": "$s5FMSDK7FeatureC4uuid7program4type15featureMetadata3url0F7Display8category6status8termsUrl04infoM019marketerProductUuid04userB010bannerUrls0dG020subscriptionRequired015tandcAcceptanceV0ACSS_AA0B7ProgramCAA13FeaturesTypesOSayAA0bG0CGSSSgAA0bI0CS2SA_SSA_AA04UserB0CSay10Foundation3URLVSgGSgAzA012SubscriptionV0CSgAA05TandcxV0CSgtcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -22531,857 +22498,6 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TandcAcceptanceRequired",
-        "printedName": "TandcAcceptanceRequired",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "title",
-            "printedName": "title",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK23TandcAcceptanceRequiredC5titleSSvp",
-            "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC5titleSSvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK23TandcAcceptanceRequiredC5titleSSvg",
-                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC5titleSSvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK23TandcAcceptanceRequiredC5titleSSvs",
-                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC5titleSSvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK23TandcAcceptanceRequiredC5titleSSvM",
-                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC5titleSSvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "description",
-            "printedName": "description",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK23TandcAcceptanceRequiredC11descriptionSSvp",
-            "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC11descriptionSSvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK23TandcAcceptanceRequiredC11descriptionSSvg",
-                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC11descriptionSSvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK23TandcAcceptanceRequiredC11descriptionSSvs",
-                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC11descriptionSSvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK23TandcAcceptanceRequiredC11descriptionSSvM",
-                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC11descriptionSSvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "tandcUrls",
-            "printedName": "tandcUrls",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[FMSDK.TandcUrls]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TandcUrls",
-                    "printedName": "FMSDK.TandcUrls",
-                    "usr": "s:5FMSDK9TandcUrlsC"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvp",
-            "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[FMSDK.TandcUrls]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TandcUrls",
-                        "printedName": "FMSDK.TandcUrls",
-                        "usr": "s:5FMSDK9TandcUrlsC"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvg",
-                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[FMSDK.TandcUrls]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TandcUrls",
-                        "printedName": "FMSDK.TandcUrls",
-                        "usr": "s:5FMSDK9TandcUrlsC"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvs",
-                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvM",
-                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(title:description:tandcUrls:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TandcAcceptanceRequired",
-                "printedName": "FMSDK.TandcAcceptanceRequired",
-                "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[FMSDK.TandcUrls]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TandcUrls",
-                    "printedName": "FMSDK.TandcUrls",
-                    "usr": "s:5FMSDK9TandcUrlsC"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:5FMSDK23TandcAcceptanceRequiredC5title11description9tandcUrlsACSS_SSSayAA0bH0CGtcfc",
-            "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC5title11description9tandcUrlsACSS_SSSayAA0bH0CGtcfc",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TandcAcceptanceRequired",
-                "printedName": "FMSDK.TandcAcceptanceRequired",
-                "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:5FMSDK23TandcAcceptanceRequiredC4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC4fromACs7Decoder_p_tKcfc",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "Required",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FMSDK23TandcAcceptanceRequiredC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC6encode2toys7Encoder_p_tKF",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TandcAcceptanceRequired",
-                "printedName": "FMSDK.TandcAcceptanceRequired",
-                "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TandcAcceptanceRequired",
-                "printedName": "FMSDK.TandcAcceptanceRequired",
-                "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FMSDK23TandcAcceptanceRequiredC2eeoiySbAC_ACtFZ",
-            "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC2eeoiySbAC_ACtFZ",
-            "moduleName": "FMSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:5FMSDK23TandcAcceptanceRequiredC",
-        "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC",
-        "moduleName": "FMSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TandcUrls",
-        "printedName": "TandcUrls",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "title",
-            "printedName": "title",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK9TandcUrlsC5titleSSvp",
-            "mangledName": "$s5FMSDK9TandcUrlsC5titleSSvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK9TandcUrlsC5titleSSvg",
-                "mangledName": "$s5FMSDK9TandcUrlsC5titleSSvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK9TandcUrlsC5titleSSvs",
-                "mangledName": "$s5FMSDK9TandcUrlsC5titleSSvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK9TandcUrlsC5titleSSvM",
-                "mangledName": "$s5FMSDK9TandcUrlsC5titleSSvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "url",
-            "printedName": "url",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.URL?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK9TandcUrlsC3url10Foundation3URLVSgvp",
-            "mangledName": "$s5FMSDK9TandcUrlsC3url10Foundation3URLVSgvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.URL?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "URL",
-                        "printedName": "Foundation.URL",
-                        "usr": "s:10Foundation3URLV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK9TandcUrlsC3url10Foundation3URLVSgvg",
-                "mangledName": "$s5FMSDK9TandcUrlsC3url10Foundation3URLVSgvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.URL?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "URL",
-                        "printedName": "Foundation.URL",
-                        "usr": "s:10Foundation3URLV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK9TandcUrlsC3url10Foundation3URLVSgvs",
-                "mangledName": "$s5FMSDK9TandcUrlsC3url10Foundation3URLVSgvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK9TandcUrlsC3url10Foundation3URLVSgvM",
-                "mangledName": "$s5FMSDK9TandcUrlsC3url10Foundation3URLVSgvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(title:url:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TandcUrls",
-                "printedName": "FMSDK.TandcUrls",
-                "usr": "s:5FMSDK9TandcUrlsC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.URL?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:5FMSDK9TandcUrlsC5title3urlACSS_10Foundation3URLVSgtcfc",
-            "mangledName": "$s5FMSDK9TandcUrlsC5title3urlACSS_10Foundation3URLVSgtcfc",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TandcUrls",
-                "printedName": "FMSDK.TandcUrls",
-                "usr": "s:5FMSDK9TandcUrlsC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:5FMSDK9TandcUrlsC4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s5FMSDK9TandcUrlsC4fromACs7Decoder_p_tKcfc",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "Required",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FMSDK9TandcUrlsC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s5FMSDK9TandcUrlsC6encode2toys7Encoder_p_tKF",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TandcUrls",
-                "printedName": "FMSDK.TandcUrls",
-                "usr": "s:5FMSDK9TandcUrlsC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TandcUrls",
-                "printedName": "FMSDK.TandcUrls",
-                "usr": "s:5FMSDK9TandcUrlsC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FMSDK9TandcUrlsC2eeoiySbAC_ACtFZ",
-            "mangledName": "$s5FMSDK9TandcUrlsC2eeoiySbAC_ACtFZ",
-            "moduleName": "FMSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:5FMSDK9TandcUrlsC",
-        "mangledName": "$s5FMSDK9TandcUrlsC",
-        "moduleName": "FMSDK",
-        "declAttributes": [
-          "AccessControl"
         ],
         "conformances": [
           {
@@ -25817,6 +24933,41 @@
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionRequired",
+                "printedName": "FMSDK.SubscriptionRequired",
+                "usr": "s:5FMSDK20SubscriptionRequiredC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionRequired",
+                "printedName": "FMSDK.SubscriptionRequired",
+                "usr": "s:5FMSDK20SubscriptionRequiredC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FMSDK20SubscriptionRequiredC2eeoiySbAC_ACtFZ",
+            "mangledName": "$s5FMSDK20SubscriptionRequiredC2eeoiySbAC_ACtFZ",
+            "moduleName": "FMSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -25843,6 +24994,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -25859,98 +25017,13 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "ActivateFeature",
-        "printedName": "ActivateFeature",
+        "name": "TandcAcceptanceRequired",
+        "printedName": "TandcAcceptanceRequired",
         "children": [
           {
             "kind": "Var",
-            "name": "tandcAcceptanceRequired",
-            "printedName": "tandcAcceptanceRequired",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK15ActivateFeatureC23tandcAcceptanceRequiredSbvp",
-            "mangledName": "$s5FMSDK15ActivateFeatureC23tandcAcceptanceRequiredSbvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK15ActivateFeatureC23tandcAcceptanceRequiredSbvg",
-                "mangledName": "$s5FMSDK15ActivateFeatureC23tandcAcceptanceRequiredSbvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK15ActivateFeatureC23tandcAcceptanceRequiredSbvs",
-                "mangledName": "$s5FMSDK15ActivateFeatureC23tandcAcceptanceRequiredSbvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK15ActivateFeatureC23tandcAcceptanceRequiredSbvM",
-                "mangledName": "$s5FMSDK15ActivateFeatureC23tandcAcceptanceRequiredSbvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "tandcUrl",
-            "printedName": "tandcUrl",
+            "name": "title",
+            "printedName": "title",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -25960,8 +25033,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK15ActivateFeatureC8tandcUrlSSvp",
-            "mangledName": "$s5FMSDK15ActivateFeatureC8tandcUrlSSvp",
+            "usr": "s:5FMSDK23TandcAcceptanceRequiredC5titleSSvp",
+            "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC5titleSSvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasStorage",
@@ -25982,8 +25055,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK15ActivateFeatureC8tandcUrlSSvg",
-                "mangledName": "$s5FMSDK15ActivateFeatureC8tandcUrlSSvg",
+                "usr": "s:5FMSDK23TandcAcceptanceRequiredC5titleSSvg",
+                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC5titleSSvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -26006,8 +25079,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK15ActivateFeatureC8tandcUrlSSvs",
-                "mangledName": "$s5FMSDK15ActivateFeatureC8tandcUrlSSvs",
+                "usr": "s:5FMSDK23TandcAcceptanceRequiredC5titleSSvs",
+                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC5titleSSvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -26024,8 +25097,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK15ActivateFeatureC8tandcUrlSSvM",
-                "mangledName": "$s5FMSDK15ActivateFeatureC8tandcUrlSSvM",
+                "usr": "s:5FMSDK23TandcAcceptanceRequiredC5titleSSvM",
+                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC5titleSSvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -26034,8 +25107,8 @@
           },
           {
             "kind": "Var",
-            "name": "customSignupWebviewUrl",
-            "printedName": "customSignupWebviewUrl",
+            "name": "description",
+            "printedName": "description",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -26045,8 +25118,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK15ActivateFeatureC22customSignupWebviewUrlSSvp",
-            "mangledName": "$s5FMSDK15ActivateFeatureC22customSignupWebviewUrlSSvp",
+            "usr": "s:5FMSDK23TandcAcceptanceRequiredC11descriptionSSvp",
+            "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC11descriptionSSvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasStorage",
@@ -26067,8 +25140,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK15ActivateFeatureC22customSignupWebviewUrlSSvg",
-                "mangledName": "$s5FMSDK15ActivateFeatureC22customSignupWebviewUrlSSvg",
+                "usr": "s:5FMSDK23TandcAcceptanceRequiredC11descriptionSSvg",
+                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC11descriptionSSvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -26091,8 +25164,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK15ActivateFeatureC22customSignupWebviewUrlSSvs",
-                "mangledName": "$s5FMSDK15ActivateFeatureC22customSignupWebviewUrlSSvs",
+                "usr": "s:5FMSDK23TandcAcceptanceRequiredC11descriptionSSvs",
+                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC11descriptionSSvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -26109,8 +25182,117 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK15ActivateFeatureC22customSignupWebviewUrlSSvM",
-                "mangledName": "$s5FMSDK15ActivateFeatureC22customSignupWebviewUrlSSvM",
+                "usr": "s:5FMSDK23TandcAcceptanceRequiredC11descriptionSSvM",
+                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC11descriptionSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tandcUrls",
+            "printedName": "tandcUrls",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[FMSDK.TandcUrls]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TandcUrls",
+                    "printedName": "FMSDK.TandcUrls",
+                    "usr": "s:5FMSDK9TandcUrlsC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvp",
+            "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[FMSDK.TandcUrls]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TandcUrls",
+                        "printedName": "FMSDK.TandcUrls",
+                        "usr": "s:5FMSDK9TandcUrlsC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvg",
+                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[FMSDK.TandcUrls]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TandcUrls",
+                        "printedName": "FMSDK.TandcUrls",
+                        "usr": "s:5FMSDK9TandcUrlsC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvs",
+                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvM",
+                "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC9tandcUrlsSayAA0bF0CGvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -26120,20 +25302,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(tandcAcceptanceRequired:tandcUrl:customSignupWebviewUrl:)",
+            "printedName": "init(title:description:tandcUrls:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ActivateFeature",
-                "printedName": "FMSDK.ActivateFeature",
-                "usr": "s:5FMSDK15ActivateFeatureC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
+                "name": "TandcAcceptanceRequired",
+                "printedName": "FMSDK.TandcAcceptanceRequired",
+                "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
               },
               {
                 "kind": "TypeNominal",
@@ -26148,11 +25323,26 @@
                 "printedName": "Swift.String",
                 "hasDefaultArg": true,
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[FMSDK.TandcUrls]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TandcUrls",
+                    "printedName": "FMSDK.TandcUrls",
+                    "usr": "s:5FMSDK9TandcUrlsC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK15ActivateFeatureC23tandcAcceptanceRequired0D3Url019customSignupWebviewG0ACSb_S2Stcfc",
-            "mangledName": "$s5FMSDK15ActivateFeatureC23tandcAcceptanceRequired0D3Url019customSignupWebviewG0ACSb_S2Stcfc",
+            "usr": "s:5FMSDK23TandcAcceptanceRequiredC5title11description9tandcUrlsACSS_SSSayAA0bH0CGtcfc",
+            "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC5title11description9tandcUrlsACSS_SSSayAA0bH0CGtcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -26166,9 +25356,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ActivateFeature",
-                "printedName": "FMSDK.ActivateFeature",
-                "usr": "s:5FMSDK15ActivateFeatureC"
+                "name": "TandcAcceptanceRequired",
+                "printedName": "FMSDK.TandcAcceptanceRequired",
+                "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
               },
               {
                 "kind": "TypeNominal",
@@ -26178,8 +25368,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK15ActivateFeatureC4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s5FMSDK15ActivateFeatureC4fromACs7Decoder_p_tKcfc",
+            "usr": "s:5FMSDK23TandcAcceptanceRequiredC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC4fromACs7Decoder_p_tKcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "Required",
@@ -26206,19 +25396,54 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:5FMSDK15ActivateFeatureC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s5FMSDK15ActivateFeatureC6encode2toys7Encoder_p_tKF",
+            "usr": "s:5FMSDK23TandcAcceptanceRequiredC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC6encode2toys7Encoder_p_tKF",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TandcAcceptanceRequired",
+                "printedName": "FMSDK.TandcAcceptanceRequired",
+                "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TandcAcceptanceRequired",
+                "printedName": "FMSDK.TandcAcceptanceRequired",
+                "usr": "s:5FMSDK23TandcAcceptanceRequiredC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FMSDK23TandcAcceptanceRequiredC2eeoiySbAC_ACtFZ",
+            "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC2eeoiySbAC_ACtFZ",
+            "moduleName": "FMSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "s:5FMSDK15ActivateFeatureC",
-        "mangledName": "$s5FMSDK15ActivateFeatureC",
+        "usr": "s:5FMSDK23TandcAcceptanceRequiredC",
+        "mangledName": "$s5FMSDK23TandcAcceptanceRequiredC",
         "moduleName": "FMSDK",
         "declAttributes": [
           "AccessControl"
@@ -26237,6 +25462,393 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TandcUrls",
+        "printedName": "TandcUrls",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK9TandcUrlsC5titleSSvp",
+            "mangledName": "$s5FMSDK9TandcUrlsC5titleSSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK9TandcUrlsC5titleSSvg",
+                "mangledName": "$s5FMSDK9TandcUrlsC5titleSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK9TandcUrlsC5titleSSvs",
+                "mangledName": "$s5FMSDK9TandcUrlsC5titleSSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK9TandcUrlsC5titleSSvM",
+                "mangledName": "$s5FMSDK9TandcUrlsC5titleSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK9TandcUrlsC3url10Foundation3URLVSgvp",
+            "mangledName": "$s5FMSDK9TandcUrlsC3url10Foundation3URLVSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK9TandcUrlsC3url10Foundation3URLVSgvg",
+                "mangledName": "$s5FMSDK9TandcUrlsC3url10Foundation3URLVSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK9TandcUrlsC3url10Foundation3URLVSgvs",
+                "mangledName": "$s5FMSDK9TandcUrlsC3url10Foundation3URLVSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK9TandcUrlsC3url10Foundation3URLVSgvM",
+                "mangledName": "$s5FMSDK9TandcUrlsC3url10Foundation3URLVSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(title:url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TandcUrls",
+                "printedName": "FMSDK.TandcUrls",
+                "usr": "s:5FMSDK9TandcUrlsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK9TandcUrlsC5title3urlACSS_10Foundation3URLVSgtcfc",
+            "mangledName": "$s5FMSDK9TandcUrlsC5title3urlACSS_10Foundation3URLVSgtcfc",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TandcUrls",
+                "printedName": "FMSDK.TandcUrls",
+                "usr": "s:5FMSDK9TandcUrlsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK9TandcUrlsC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5FMSDK9TandcUrlsC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FMSDK9TandcUrlsC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5FMSDK9TandcUrlsC6encode2toys7Encoder_p_tKF",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TandcUrls",
+                "printedName": "FMSDK.TandcUrls",
+                "usr": "s:5FMSDK9TandcUrlsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TandcUrls",
+                "printedName": "FMSDK.TandcUrls",
+                "usr": "s:5FMSDK9TandcUrlsC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FMSDK9TandcUrlsC2eeoiySbAC_ACtFZ",
+            "mangledName": "$s5FMSDK9TandcUrlsC2eeoiySbAC_ACtFZ",
+            "moduleName": "FMSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5FMSDK9TandcUrlsC",
+        "mangledName": "$s5FMSDK9TandcUrlsC",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -46976,387 +46588,317 @@
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 1521,
+      "offset": 1456,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "Array",
-      "offset": 1651,
+      "offset": 1594,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 1750,
+      "offset": 1712,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 1784,
+      "offset": 1741,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 1813,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 1844,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 1918,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 2180,
+      "offset": 1804,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "Array",
-      "offset": 2256,
+      "offset": 1982,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3120,
+      "offset": 2879,
       "length": 10,
       "value": "\"category\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3236,
+      "offset": 2995,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3404,
+      "offset": 3163,
       "length": 8,
       "value": "\"active\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3437,
+      "offset": 3196,
       "length": 10,
       "value": "\"inactive\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3467,
+      "offset": 3226,
       "length": 5,
       "value": "\"all\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3580,
+      "offset": 3339,
       "length": 20,
       "value": "\"originator_program\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3689,
+      "offset": 3473,
       "length": 23,
       "value": "\"marketer_product_uuid\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3786,
+      "offset": 3563,
       "length": 19,
       "value": "\"tandc_landing_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3836,
+      "offset": 3606,
       "length": 18,
       "value": "\"info_landing_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3894,
-      "length": 27,
-      "value": "\"tandc_acceptance_required\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 3953,
-      "length": 23,
-      "value": "\"activate_feature_flow\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 4004,
+      "offset": 3652,
       "length": 14,
       "value": "\"user_feature\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 4055,
-      "length": 23,
-      "value": "\"subscription_required\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 4105,
+      "offset": 3693,
       "length": 19,
       "value": "\"banner_image_urls\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 4156,
+      "offset": 3744,
       "length": 18,
       "value": "\"program_metadata\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 8020,
-      "length": 2,
-      "value": "\"\""
+      "offset": 3799,
+      "length": 23,
+      "value": "\"subscription_required\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 8046,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "Array",
-      "offset": 8075,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 8317,
-      "length": 12,
-      "value": "\"tandc_urls\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 9406,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 10449,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 10469,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 11750,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 11815,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 11846,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 11872,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 11906,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 11930,
-      "length": 9,
-      "value": "\"#000000\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 12379,
-      "length": 10,
-      "value": "\"icon_url\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 12422,
-      "length": 20,
-      "value": "\"secondary_icon_url\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 12468,
-      "length": 13,
-      "value": "\"icon_to_use\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 12507,
-      "length": 15,
-      "value": "\"icon_bg_color\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 12562,
-      "length": 28,
-      "value": "\"feature_campaign_image_url\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 12684,
-      "length": 25,
-      "value": "\"activation_toggle_title\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 14997,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 15016,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 15952,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 16756,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 16776,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 16795,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17914,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 17940,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 17977,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 18245,
+      "offset": 3862,
       "length": 27,
       "value": "\"tandc_acceptance_required\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 18297,
-      "length": 11,
-      "value": "\"tandc_url\""
+      "offset": 7308,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 18347,
-      "length": 27,
-      "value": "\"custom_signup_webview_url\""
+      "offset": 7328,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 8609,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 8674,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 8705,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 8731,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 8765,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 8789,
+      "length": 9,
+      "value": "\"#000000\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 9238,
+      "length": 10,
+      "value": "\"icon_url\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 9281,
+      "length": 20,
+      "value": "\"secondary_icon_url\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 9327,
+      "length": 13,
+      "value": "\"icon_to_use\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 9366,
+      "length": 15,
+      "value": "\"icon_bg_color\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 9421,
+      "length": 28,
+      "value": "\"feature_campaign_image_url\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 9543,
+      "length": 25,
+      "value": "\"activation_toggle_title\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 11856,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 11875,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 12811,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 13626,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 13646,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 13665,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 14888,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 14914,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "Array",
+      "offset": 14943,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 15185,
+      "length": 12,
+      "value": "\"tandc_urls\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 16214,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationFilters.swift",
