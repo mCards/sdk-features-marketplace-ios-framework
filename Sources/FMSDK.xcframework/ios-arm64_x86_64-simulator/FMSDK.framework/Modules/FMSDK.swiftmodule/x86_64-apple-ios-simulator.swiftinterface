@@ -378,23 +378,22 @@ public class Feature : Swift.Equatable, Swift.Codable {
   public var program: FMSDK.FeatureProgram
   public var type: FMSDK.FeaturesTypes
   public var featureMetadata: [FMSDK.FeatureMetadata]
+  public var url: Swift.String?
   public var featureDisplay: FMSDK.FeatureDisplay
-  public var productUuid: Swift.String
   public var category: Swift.String
   public var status: Swift.String
-  public var tandcLandingUrl: Foundation.URL?
-  public var infoLandingUrl: Swift.String
-  public var tandcAcceptanceRequired: FMSDK.TandcAcceptanceRequired?
-  public var marketerProductUuid: Swift.String
-  public var activateFeature: FMSDK.ActivateFeature
+  public var termsUrl: Swift.String?
+  public var infoUrl: Swift.String
+  public var marketerProductUuid: Swift.String?
   public var userFeature: FMSDK.UserFeature
-  public var subscriptionRequired: FMSDK.SubscriptionRequired?
   public var bannerUrls: [Foundation.URL?]?
   public var programMetadata: [FMSDK.FeatureMetadata]
+  public var subscriptionRequired: FMSDK.SubscriptionRequired?
+  public var tandcAcceptanceRequired: FMSDK.TandcAcceptanceRequired?
   public var metadataOfferType: Swift.String {
     get
   }
-  public init(uuid: Swift.String = "", program: FMSDK.FeatureProgram = FeatureProgram(), type: FMSDK.FeaturesTypes = .none, featureMetadata: [FMSDK.FeatureMetadata] = [], featureDisplay: FMSDK.FeatureDisplay = FeatureDisplay(), subscriptionLevel: Swift.String = "", productUuid: Swift.String = "", status: Swift.String = "", category: Swift.String = "", tandcLandingUrl: Foundation.URL? = nil, infoLandingUrl: Swift.String = "", tandcAcceptanceRequired: FMSDK.TandcAcceptanceRequired? = nil, userFeature: FMSDK.UserFeature = UserFeature(), subscriptionRequired: FMSDK.SubscriptionRequired? = nil, activateFeature: FMSDK.ActivateFeature = ActivateFeature(), marketerProductUuid: Swift.String = "", bannerUrls: [Foundation.URL?]? = nil, programMetadata: [FMSDK.FeatureMetadata] = [])
+  public init(uuid: Swift.String = "", program: FMSDK.FeatureProgram = FeatureProgram(), type: FMSDK.FeaturesTypes = .none, featureMetadata: [FMSDK.FeatureMetadata] = [], url: Swift.String? = nil, featureDisplay: FMSDK.FeatureDisplay = FeatureDisplay(), category: Swift.String = "", status: Swift.String = "", termsUrl: Swift.String? = nil, infoUrl: Swift.String = "", marketerProductUuid: Swift.String? = nil, userFeature: FMSDK.UserFeature = UserFeature(), bannerUrls: [Foundation.URL?]? = nil, programMetadata: [FMSDK.FeatureMetadata] = [], subscriptionRequired: FMSDK.SubscriptionRequired? = nil, tandcAcceptanceRequired: FMSDK.TandcAcceptanceRequired? = nil)
   public enum Sort : Swift.String, Swift.Codable {
     case category
     case user
@@ -417,25 +416,6 @@ public class Feature : Swift.Equatable, Swift.Codable {
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.Feature, rhs: FMSDK.Feature) -> Swift.Bool
-  @objc deinit
-}
-public class TandcAcceptanceRequired : Swift.Equatable, Swift.Codable {
-  public var title: Swift.String
-  public var description: Swift.String
-  public var tandcUrls: [FMSDK.TandcUrls]
-  public init(title: Swift.String = "", description: Swift.String = "", tandcUrls: [FMSDK.TandcUrls] = [])
-  required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-  public static func == (lhs: FMSDK.TandcAcceptanceRequired, rhs: FMSDK.TandcAcceptanceRequired) -> Swift.Bool
-  @objc deinit
-}
-public class TandcUrls : Swift.Equatable, Swift.Codable {
-  public var title: Swift.String
-  public var url: Foundation.URL?
-  public init(title: Swift.String = "", url: Foundation.URL? = nil)
-  required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-  public static func == (lhs: FMSDK.TandcUrls, rhs: FMSDK.TandcUrls) -> Swift.Bool
   @objc deinit
 }
 public class FeatureMetadata : Swift.Equatable, Swift.Codable {
@@ -480,22 +460,33 @@ public class UserFeature : Swift.Equatable, Swift.Codable {
   public static func == (lhs: FMSDK.UserFeature, rhs: FMSDK.UserFeature) -> Swift.Bool
   @objc deinit
 }
-public class SubscriptionRequired : Swift.Codable {
+public class SubscriptionRequired : Swift.Equatable, Swift.Codable {
   public var code: Swift.String
   public var title: Swift.String
   public var type: Swift.String
   public init(code: Swift.String = "", title: Swift.String = "", type: Swift.String = "")
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.SubscriptionRequired, rhs: FMSDK.SubscriptionRequired) -> Swift.Bool
   @objc deinit
 }
-public class ActivateFeature : Swift.Codable {
-  public var tandcAcceptanceRequired: Swift.Bool
-  public var tandcUrl: Swift.String
-  public var customSignupWebviewUrl: Swift.String
-  public init(tandcAcceptanceRequired: Swift.Bool = false, tandcUrl: Swift.String = "", customSignupWebviewUrl: Swift.String = "")
+public class TandcAcceptanceRequired : Swift.Equatable, Swift.Codable {
+  public var title: Swift.String
+  public var description: Swift.String
+  public var tandcUrls: [FMSDK.TandcUrls]
+  public init(title: Swift.String = "", description: Swift.String = "", tandcUrls: [FMSDK.TandcUrls] = [])
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.TandcAcceptanceRequired, rhs: FMSDK.TandcAcceptanceRequired) -> Swift.Bool
+  @objc deinit
+}
+public class TandcUrls : Swift.Equatable, Swift.Codable {
+  public var title: Swift.String
+  public var url: Foundation.URL?
+  public init(title: Swift.String = "", url: Foundation.URL? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (lhs: FMSDK.TandcUrls, rhs: FMSDK.TandcUrls) -> Swift.Bool
   @objc deinit
 }
 public class LocationFilters : Swift.Codable {
