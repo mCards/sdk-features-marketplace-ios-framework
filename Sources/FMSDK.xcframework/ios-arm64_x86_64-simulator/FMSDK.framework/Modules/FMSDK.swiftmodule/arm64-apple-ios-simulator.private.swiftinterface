@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FMSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import CoreLocation
 import CoreSDK
 import Foundation
@@ -146,10 +146,10 @@ public protocol LocationsApi {
   func redeemLocationOffer(uuid: Swift.String, locationUuid: Swift.String, offerUuid: Swift.String, featureUuid: Swift.String?, completion: @escaping (_ result: Swift.Result<FMSDK.GenerateCodeMetadata, any Swift.Error>) -> Swift.Void)
   func getLocationFilter(uuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.LocationFilters, any Swift.Error>) -> Swift.Void)
   func getLocationSubfilter(uuid: Swift.String, filterUuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.LocationSubFilters, any Swift.Error>) -> Swift.Void)
-  func getLocationAutocompleteSuggestions(uuid: Swift.String, text: Swift.String, type: Swift.String?, featuerUuid: Swift.String?, completion: @escaping (_ result: Swift.Result<FMSDK.Suggestions, any Swift.Error>) -> Swift.Void)
+  func getLocationSuggestions(cardId: Swift.String, featureId: Swift.String, searchText: Swift.String, city: Swift.String?, suggestionType: FMSDK.SuggestionType?, offerType: FMSDK.OfferType?, locationSubscriptionTags: Swift.String?, completion: @escaping (_ result: Swift.Result<FMSDK.Suggestions, any Swift.Error>) -> Swift.Void)
 }
 public struct FmArgs {
-  public init(programID: Swift.String, jwts: CoreSDK.JWTs, debugMode: Swift.Bool = false, tokenRefreshCallback: any FMSDK.FMSDKTokenRefreshCallback, loggingCallback: (any CoreSDK.LoggingCallback)? = nil)
+  public init(jwts: CoreSDK.JWTs, debugMode: Swift.Bool = false, tokenRefreshCallback: any FMSDK.FMSDKTokenRefreshCallback, loggingCallback: (any CoreSDK.LoggingCallback)? = nil)
 }
 public class LocationOfferFullDetails : Swift.Codable {
   public var uuid: Swift.String?
@@ -346,11 +346,61 @@ public enum OwnerableType : Swift.String, Swift.Codable {
     get
   }
 }
+public class BuyResponse : Swift.Codable {
+  public var uuid: Swift.String
+  public var title: Swift.String
+  public var message: Swift.String
+  public var cardImageUrl: Swift.String
+  public var balances: [FMSDK.Balance]?
+  public var giftDetails: FMSDK.GiftDetails?
+  public var paymentIntent: FMSDK.PaymentIntentResponse?
+  public init(uuid: Swift.String = "", title: Swift.String = "", message: Swift.String = "", cardImageUrl: Swift.String = "", balances: [FMSDK.Balance]? = nil, giftDetails: FMSDK.GiftDetails? = nil, paymentIntent: FMSDK.PaymentIntentResponse? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public class Balance : Swift.Codable {
+  public var type: Swift.String
+  public var value: Swift.String
+  public var customTitle: Swift.String?
+  public init(type: Swift.String = "", value: Swift.String = "", customTitle: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public class GiftDetails : Swift.Codable {
+  public var name: Swift.String
+  public var message: Swift.String
+  public init(name: Swift.String = "", message: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public class PaymentIntentResponse : Swift.Codable {
+  public var clientSecret: Swift.String
+  public init(clientSecret: Swift.String = "")
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
 public enum FeatureMetadataKeys : Swift.String {
   case offerType
   case url
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum OfferType : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case showGo
+  case cardLinked
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [FMSDK.OfferType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [FMSDK.OfferType] {
+    get
+  }
   public var rawValue: Swift.String {
     get
   }
@@ -509,7 +559,7 @@ public class LocationSubFilters : Swift.Codable {
 public protocol FmSdk {
   var features: any FMSDK.FeaturesApi { get }
   var locations: any FMSDK.LocationsApi { get }
-  func configure(args: FMSDK.FmArgs)
+  func configure(jwts: CoreSDK.JWTs, debugMode: Swift.Bool, tokenRefreshCallback: any FMSDK.FMSDKTokenRefreshCallback)
   func getCampaignItems(uuid: Swift.String, ownerableType: FMSDK.OwnerableType, page: Swift.Int?, completion: @escaping (_ result: Swift.Result<FMSDK.GiftCampaignItemsResponse, any Swift.Error>) -> Swift.Void)
   func logout()
 }
@@ -645,13 +695,6 @@ public class MenuLink : Swift.Codable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public class ConvertPointsRequest : Swift.Codable {
-  public var amount: Swift.Int
-  public init(amount: Swift.Int)
-  required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
-}
 public protocol FMSDKTokenRefreshCallback {
   func refreshJWTs(completion: @escaping (CoreSDK.JWTs) -> Swift.Void)
 }
@@ -664,8 +707,8 @@ public class LocationsResponse : Swift.Codable {
   @objc deinit
 }
 public protocol FeaturesApi {
-  func updateCardControls(cardId: Swift.String, body: FMSDK.CardControlsRequest, completion: @escaping (_ result: Swift.Result<CoreSDK.Card, any Swift.Error>) -> Swift.Void)
-  func convertPoints(cardId: Swift.String, body: FMSDK.ConvertPointsRequest, completion: @escaping (_ result: Swift.Result<FMSDK.ConvertPoints, any Swift.Error>) -> Swift.Void)
+  func updateCardControls(cardId: Swift.String, isLocked: Swift.Bool, autopay: Swift.Bool, completion: @escaping (_ result: Swift.Result<CoreSDK.Card, any Swift.Error>) -> Swift.Void)
+  func convertPoints(cardId: Swift.String, numPointsToConvert: Swift.Int, completion: @escaping (_ result: Swift.Result<FMSDK.ConvertPoints, any Swift.Error>) -> Swift.Void)
   func getFeatures(cardId: Swift.String, status: FMSDK.Feature.Status, sort: FMSDK.Feature.Sort, completion: @escaping (_ result: Swift.Result<[FMSDK.Feature], any Swift.Error>) -> Swift.Void)
   func getFeatureCampaign(cardId: Swift.String, completion: @escaping (_ result: Swift.Result<[FMSDK.Feature], any Swift.Error>) -> Swift.Void)
   func deactivateFeature(cardId: Swift.String, featureId: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void)
@@ -678,6 +721,7 @@ public protocol FeaturesApi {
   func getSSOToken(cardId: Swift.String, userFeatureId: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.SSOToken, any Swift.Error>) -> Swift.Void)
   func getCampaignItem(cardId: Swift.String, itemId: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.Gift, any Swift.Error>) -> Swift.Void)
   func getCampaignRestrictions(cardId: Swift.String, campaignId: Swift.String, sourceIndex: Swift.Int, completion: @escaping (_ result: Swift.Result<FMSDK.GiftRestrictionsResponse, any Swift.Error>) -> Swift.Void)
+  func purchase3D(args: FMSDK.PurchaseArgs, completion: @escaping (_ result: Swift.Result<FMSDK.BuyResponse, any Swift.Error>) -> Swift.Void)
 }
 public class GiftRestrictionsResponse : Swift.Codable, Swift.Equatable {
   public var restrictions: [FMSDK.CampaignRestriction]
@@ -687,6 +731,22 @@ public class GiftRestrictionsResponse : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.GiftRestrictionsResponse, rhs: FMSDK.GiftRestrictionsResponse) -> Swift.Bool
   @objc deinit
+}
+public enum SuggestionType : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case all
+  case suburb
+  case location
+  case noSuburb
+  case noSuburbGroup
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [FMSDK.SuggestionType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [FMSDK.SuggestionType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public class Suggestion : Swift.Codable {
   public var itemUuid: Swift.String?
@@ -850,6 +910,17 @@ public class SSOToken : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+public class PurchaseArgs : Swift.Codable {
+  public var cardId: Swift.String
+  public var featureId: Swift.String
+  public var productId: Swift.String
+  public var priceId: Swift.String
+  public var fundingId: Swift.String?
+  public init(cardId: Swift.String, featureId: Swift.String, productId: Swift.String, priceId: Swift.String, fundingId: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
 public class Campaign : Swift.Codable, Swift.Equatable {
   public var uuid: Swift.String
   public var imageUrl: Foundation.URL?
@@ -892,6 +963,9 @@ extension FMSDK.OwnerableType : Swift.RawRepresentable {}
 extension FMSDK.FeatureMetadataKeys : Swift.Equatable {}
 extension FMSDK.FeatureMetadataKeys : Swift.Hashable {}
 extension FMSDK.FeatureMetadataKeys : Swift.RawRepresentable {}
+extension FMSDK.OfferType : Swift.Equatable {}
+extension FMSDK.OfferType : Swift.Hashable {}
+extension FMSDK.OfferType : Swift.RawRepresentable {}
 extension FMSDK.FeaturesTypes : Swift.Equatable {}
 extension FMSDK.FeaturesTypes : Swift.Hashable {}
 extension FMSDK.FeaturesTypes : Swift.RawRepresentable {}
@@ -910,6 +984,9 @@ extension FMSDK.RestrictableType : Swift.RawRepresentable {}
 extension FMSDK.RestrictableIdentifierType : Swift.Equatable {}
 extension FMSDK.RestrictableIdentifierType : Swift.Hashable {}
 extension FMSDK.RestrictableIdentifierType : Swift.RawRepresentable {}
+extension FMSDK.SuggestionType : Swift.Equatable {}
+extension FMSDK.SuggestionType : Swift.Hashable {}
+extension FMSDK.SuggestionType : Swift.RawRepresentable {}
 extension FMSDK.CampaignBalanceType : Swift.Equatable {}
 extension FMSDK.CampaignBalanceType : Swift.Hashable {}
 extension FMSDK.CampaignBalanceType : Swift.RawRepresentable {}
