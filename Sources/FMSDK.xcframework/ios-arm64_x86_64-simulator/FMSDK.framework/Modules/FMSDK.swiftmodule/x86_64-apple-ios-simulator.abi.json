@@ -7748,13 +7748,19 @@
           },
           {
             "kind": "Function",
-            "name": "getLocationAutocompleteSuggestions",
-            "printedName": "getLocationAutocompleteSuggestions(uuid:text:type:featuerUuid:completion:)",
+            "name": "getLocationSuggestions",
+            "printedName": "getLocationSuggestions(cardId:featureId:searchText:city:suggestionType:offerType:locationSubscriptionTags:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -7778,6 +7784,34 @@
                     "name": "String",
                     "printedName": "Swift.String",
                     "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.SuggestionType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SuggestionType",
+                    "printedName": "FMSDK.SuggestionType",
+                    "usr": "s:5FMSDK14SuggestionTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.OfferType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OfferType",
+                    "printedName": "FMSDK.OfferType",
+                    "usr": "s:5FMSDK9OfferTypeO"
                   }
                 ],
                 "usr": "s:Sq"
@@ -7830,8 +7864,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:5FMSDK12LocationsApiP34getLocationAutocompleteSuggestions4uuid4text4type11featuerUuid10completionySS_S2SSgAJys6ResultOyAA0G0Cs5Error_pGctF",
-            "mangledName": "$s5FMSDK12LocationsApiP34getLocationAutocompleteSuggestions4uuid4text4type11featuerUuid10completionySS_S2SSgAJys6ResultOyAA0G0Cs5Error_pGctF",
+            "usr": "s:5FMSDK12LocationsApiP22getLocationSuggestions6cardId07featureH010searchText4city14suggestionType05offerN024locationSubscriptionTags10completionySS_S3SSgAA010SuggestionN0OSgAA05OfferN0OSgAMys6ResultOyAA0F0Cs5Error_pGctF",
+            "mangledName": "$s5FMSDK12LocationsApiP22getLocationSuggestions6cardId07featureH010searchText4city14suggestionType05offerN024locationSubscriptionTags10completionySS_S3SSgAA010SuggestionN0OSgAA05OfferN0OSgAMys6ResultOyAA0F0Cs5Error_pGctF",
             "moduleName": "FMSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.LocationsApi>",
             "sugared_genericSig": "<Self where Self : FMSDK.LocationsApi>",
@@ -7892,19 +7926,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(programID:jwts:debugMode:tokenRefreshCallback:loggingCallback:)",
+            "printedName": "init(jwts:debugMode:tokenRefreshCallback:loggingCallback:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "FmArgs",
                 "printedName": "FMSDK.FmArgs",
                 "usr": "s:5FMSDK6FmArgsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -7942,8 +7970,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK6FmArgsV9programID4jwts9debugMode20tokenRefreshCallback07loggingK0ACSS_7CoreSDK4JWTsVSbAA010FMSDKTokenjK0_pAI07LoggingK0_pSgtcfc",
-            "mangledName": "$s5FMSDK6FmArgsV9programID4jwts9debugMode20tokenRefreshCallback07loggingK0ACSS_7CoreSDK4JWTsVSbAA010FMSDKTokenjK0_pAI07LoggingK0_pSgtcfc",
+            "usr": "s:5FMSDK6FmArgsV4jwts9debugMode20tokenRefreshCallback07loggingI0AC7CoreSDK4JWTsV_SbAA010FMSDKTokenhI0_pAH07LoggingI0_pSgtcfc",
+            "mangledName": "$s5FMSDK6FmArgsV4jwts9debugMode20tokenRefreshCallback07loggingI0AC7CoreSDK4JWTsV_SbAA010FMSDKTokenhI0_pAH07LoggingI0_pSgtcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -19325,6 +19353,1852 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "BuyResponse",
+        "printedName": "BuyResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "uuid",
+            "printedName": "uuid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK11BuyResponseC4uuidSSvp",
+            "mangledName": "$s5FMSDK11BuyResponseC4uuidSSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC4uuidSSvg",
+                "mangledName": "$s5FMSDK11BuyResponseC4uuidSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC4uuidSSvs",
+                "mangledName": "$s5FMSDK11BuyResponseC4uuidSSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC4uuidSSvM",
+                "mangledName": "$s5FMSDK11BuyResponseC4uuidSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK11BuyResponseC5titleSSvp",
+            "mangledName": "$s5FMSDK11BuyResponseC5titleSSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC5titleSSvg",
+                "mangledName": "$s5FMSDK11BuyResponseC5titleSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC5titleSSvs",
+                "mangledName": "$s5FMSDK11BuyResponseC5titleSSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC5titleSSvM",
+                "mangledName": "$s5FMSDK11BuyResponseC5titleSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK11BuyResponseC7messageSSvp",
+            "mangledName": "$s5FMSDK11BuyResponseC7messageSSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC7messageSSvg",
+                "mangledName": "$s5FMSDK11BuyResponseC7messageSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC7messageSSvs",
+                "mangledName": "$s5FMSDK11BuyResponseC7messageSSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC7messageSSvM",
+                "mangledName": "$s5FMSDK11BuyResponseC7messageSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardImageUrl",
+            "printedName": "cardImageUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK11BuyResponseC12cardImageUrlSSvp",
+            "mangledName": "$s5FMSDK11BuyResponseC12cardImageUrlSSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC12cardImageUrlSSvg",
+                "mangledName": "$s5FMSDK11BuyResponseC12cardImageUrlSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC12cardImageUrlSSvs",
+                "mangledName": "$s5FMSDK11BuyResponseC12cardImageUrlSSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC12cardImageUrlSSvM",
+                "mangledName": "$s5FMSDK11BuyResponseC12cardImageUrlSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "balances",
+            "printedName": "balances",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[FMSDK.Balance]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[FMSDK.Balance]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Balance",
+                        "printedName": "FMSDK.Balance",
+                        "usr": "s:5FMSDK7BalanceC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK11BuyResponseC8balancesSayAA7BalanceCGSgvp",
+            "mangledName": "$s5FMSDK11BuyResponseC8balancesSayAA7BalanceCGSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[FMSDK.Balance]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[FMSDK.Balance]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Balance",
+                            "printedName": "FMSDK.Balance",
+                            "usr": "s:5FMSDK7BalanceC"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC8balancesSayAA7BalanceCGSgvg",
+                "mangledName": "$s5FMSDK11BuyResponseC8balancesSayAA7BalanceCGSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[FMSDK.Balance]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[FMSDK.Balance]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Balance",
+                            "printedName": "FMSDK.Balance",
+                            "usr": "s:5FMSDK7BalanceC"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC8balancesSayAA7BalanceCGSgvs",
+                "mangledName": "$s5FMSDK11BuyResponseC8balancesSayAA7BalanceCGSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC8balancesSayAA7BalanceCGSgvM",
+                "mangledName": "$s5FMSDK11BuyResponseC8balancesSayAA7BalanceCGSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "giftDetails",
+            "printedName": "giftDetails",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.GiftDetails?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GiftDetails",
+                    "printedName": "FMSDK.GiftDetails",
+                    "usr": "s:5FMSDK11GiftDetailsC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK11BuyResponseC11giftDetailsAA04GiftE0CSgvp",
+            "mangledName": "$s5FMSDK11BuyResponseC11giftDetailsAA04GiftE0CSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FMSDK.GiftDetails?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GiftDetails",
+                        "printedName": "FMSDK.GiftDetails",
+                        "usr": "s:5FMSDK11GiftDetailsC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC11giftDetailsAA04GiftE0CSgvg",
+                "mangledName": "$s5FMSDK11BuyResponseC11giftDetailsAA04GiftE0CSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FMSDK.GiftDetails?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GiftDetails",
+                        "printedName": "FMSDK.GiftDetails",
+                        "usr": "s:5FMSDK11GiftDetailsC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC11giftDetailsAA04GiftE0CSgvs",
+                "mangledName": "$s5FMSDK11BuyResponseC11giftDetailsAA04GiftE0CSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC11giftDetailsAA04GiftE0CSgvM",
+                "mangledName": "$s5FMSDK11BuyResponseC11giftDetailsAA04GiftE0CSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paymentIntent",
+            "printedName": "paymentIntent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.PaymentIntentResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentIntentResponse",
+                    "printedName": "FMSDK.PaymentIntentResponse",
+                    "usr": "s:5FMSDK21PaymentIntentResponseC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK11BuyResponseC13paymentIntentAA07PaymenteC0CSgvp",
+            "mangledName": "$s5FMSDK11BuyResponseC13paymentIntentAA07PaymenteC0CSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FMSDK.PaymentIntentResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentIntentResponse",
+                        "printedName": "FMSDK.PaymentIntentResponse",
+                        "usr": "s:5FMSDK21PaymentIntentResponseC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC13paymentIntentAA07PaymenteC0CSgvg",
+                "mangledName": "$s5FMSDK11BuyResponseC13paymentIntentAA07PaymenteC0CSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FMSDK.PaymentIntentResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentIntentResponse",
+                        "printedName": "FMSDK.PaymentIntentResponse",
+                        "usr": "s:5FMSDK21PaymentIntentResponseC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC13paymentIntentAA07PaymenteC0CSgvs",
+                "mangledName": "$s5FMSDK11BuyResponseC13paymentIntentAA07PaymenteC0CSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BuyResponseC13paymentIntentAA07PaymenteC0CSgvM",
+                "mangledName": "$s5FMSDK11BuyResponseC13paymentIntentAA07PaymenteC0CSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(uuid:title:message:cardImageUrl:balances:giftDetails:paymentIntent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BuyResponse",
+                "printedName": "FMSDK.BuyResponse",
+                "usr": "s:5FMSDK11BuyResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[FMSDK.Balance]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[FMSDK.Balance]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Balance",
+                        "printedName": "FMSDK.Balance",
+                        "usr": "s:5FMSDK7BalanceC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.GiftDetails?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GiftDetails",
+                    "printedName": "FMSDK.GiftDetails",
+                    "usr": "s:5FMSDK11GiftDetailsC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.PaymentIntentResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentIntentResponse",
+                    "printedName": "FMSDK.PaymentIntentResponse",
+                    "usr": "s:5FMSDK21PaymentIntentResponseC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK11BuyResponseC4uuid5title7message12cardImageUrl8balances11giftDetails13paymentIntentACSS_S3SSayAA7BalanceCGSgAA04GiftL0CSgAA07PaymentnC0CSgtcfc",
+            "mangledName": "$s5FMSDK11BuyResponseC4uuid5title7message12cardImageUrl8balances11giftDetails13paymentIntentACSS_S3SSayAA7BalanceCGSgAA04GiftL0CSgAA07PaymentnC0CSgtcfc",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BuyResponse",
+                "printedName": "FMSDK.BuyResponse",
+                "usr": "s:5FMSDK11BuyResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK11BuyResponseC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5FMSDK11BuyResponseC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FMSDK11BuyResponseC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5FMSDK11BuyResponseC6encode2toys7Encoder_p_tKF",
+            "moduleName": "FMSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5FMSDK11BuyResponseC",
+        "mangledName": "$s5FMSDK11BuyResponseC",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Balance",
+        "printedName": "Balance",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK7BalanceC4typeSSvp",
+            "mangledName": "$s5FMSDK7BalanceC4typeSSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BalanceC4typeSSvg",
+                "mangledName": "$s5FMSDK7BalanceC4typeSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BalanceC4typeSSvs",
+                "mangledName": "$s5FMSDK7BalanceC4typeSSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BalanceC4typeSSvM",
+                "mangledName": "$s5FMSDK7BalanceC4typeSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK7BalanceC5valueSSvp",
+            "mangledName": "$s5FMSDK7BalanceC5valueSSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BalanceC5valueSSvg",
+                "mangledName": "$s5FMSDK7BalanceC5valueSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BalanceC5valueSSvs",
+                "mangledName": "$s5FMSDK7BalanceC5valueSSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BalanceC5valueSSvM",
+                "mangledName": "$s5FMSDK7BalanceC5valueSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "customTitle",
+            "printedName": "customTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK7BalanceC11customTitleSSSgvp",
+            "mangledName": "$s5FMSDK7BalanceC11customTitleSSSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BalanceC11customTitleSSSgvg",
+                "mangledName": "$s5FMSDK7BalanceC11customTitleSSSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BalanceC11customTitleSSSgvs",
+                "mangledName": "$s5FMSDK7BalanceC11customTitleSSSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BalanceC11customTitleSSSgvM",
+                "mangledName": "$s5FMSDK7BalanceC11customTitleSSSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(type:value:customTitle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Balance",
+                "printedName": "FMSDK.Balance",
+                "usr": "s:5FMSDK7BalanceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK7BalanceC4type5value11customTitleACSS_S2SSgtcfc",
+            "mangledName": "$s5FMSDK7BalanceC4type5value11customTitleACSS_S2SSgtcfc",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Balance",
+                "printedName": "FMSDK.Balance",
+                "usr": "s:5FMSDK7BalanceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK7BalanceC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5FMSDK7BalanceC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FMSDK7BalanceC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5FMSDK7BalanceC6encode2toys7Encoder_p_tKF",
+            "moduleName": "FMSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5FMSDK7BalanceC",
+        "mangledName": "$s5FMSDK7BalanceC",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GiftDetails",
+        "printedName": "GiftDetails",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK11GiftDetailsC4nameSSvp",
+            "mangledName": "$s5FMSDK11GiftDetailsC4nameSSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11GiftDetailsC4nameSSvg",
+                "mangledName": "$s5FMSDK11GiftDetailsC4nameSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11GiftDetailsC4nameSSvs",
+                "mangledName": "$s5FMSDK11GiftDetailsC4nameSSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11GiftDetailsC4nameSSvM",
+                "mangledName": "$s5FMSDK11GiftDetailsC4nameSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK11GiftDetailsC7messageSSvp",
+            "mangledName": "$s5FMSDK11GiftDetailsC7messageSSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11GiftDetailsC7messageSSvg",
+                "mangledName": "$s5FMSDK11GiftDetailsC7messageSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11GiftDetailsC7messageSSvs",
+                "mangledName": "$s5FMSDK11GiftDetailsC7messageSSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11GiftDetailsC7messageSSvM",
+                "mangledName": "$s5FMSDK11GiftDetailsC7messageSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(name:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GiftDetails",
+                "printedName": "FMSDK.GiftDetails",
+                "usr": "s:5FMSDK11GiftDetailsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK11GiftDetailsC4name7messageACSS_SStcfc",
+            "mangledName": "$s5FMSDK11GiftDetailsC4name7messageACSS_SStcfc",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GiftDetails",
+                "printedName": "FMSDK.GiftDetails",
+                "usr": "s:5FMSDK11GiftDetailsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK11GiftDetailsC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5FMSDK11GiftDetailsC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FMSDK11GiftDetailsC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5FMSDK11GiftDetailsC6encode2toys7Encoder_p_tKF",
+            "moduleName": "FMSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5FMSDK11GiftDetailsC",
+        "mangledName": "$s5FMSDK11GiftDetailsC",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PaymentIntentResponse",
+        "printedName": "PaymentIntentResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "clientSecret",
+            "printedName": "clientSecret",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK21PaymentIntentResponseC12clientSecretSSvp",
+            "mangledName": "$s5FMSDK21PaymentIntentResponseC12clientSecretSSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK21PaymentIntentResponseC12clientSecretSSvg",
+                "mangledName": "$s5FMSDK21PaymentIntentResponseC12clientSecretSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK21PaymentIntentResponseC12clientSecretSSvs",
+                "mangledName": "$s5FMSDK21PaymentIntentResponseC12clientSecretSSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK21PaymentIntentResponseC12clientSecretSSvM",
+                "mangledName": "$s5FMSDK21PaymentIntentResponseC12clientSecretSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(clientSecret:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentIntentResponse",
+                "printedName": "FMSDK.PaymentIntentResponse",
+                "usr": "s:5FMSDK21PaymentIntentResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK21PaymentIntentResponseC12clientSecretACSS_tcfc",
+            "mangledName": "$s5FMSDK21PaymentIntentResponseC12clientSecretACSS_tcfc",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentIntentResponse",
+                "printedName": "FMSDK.PaymentIntentResponse",
+                "usr": "s:5FMSDK21PaymentIntentResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK21PaymentIntentResponseC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5FMSDK21PaymentIntentResponseC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FMSDK21PaymentIntentResponseC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5FMSDK21PaymentIntentResponseC6encode2toys7Encoder_p_tKF",
+            "moduleName": "FMSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5FMSDK21PaymentIntentResponseC",
+        "mangledName": "$s5FMSDK21PaymentIntentResponseC",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "FeatureMetadataKeys",
         "printedName": "FeatureMetadataKeys",
         "children": [
@@ -19533,6 +21407,324 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OfferType",
+        "printedName": "OfferType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "showGo",
+            "printedName": "showGo",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FMSDK.OfferType.Type) -> FMSDK.OfferType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OfferType",
+                    "printedName": "FMSDK.OfferType",
+                    "usr": "s:5FMSDK9OfferTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FMSDK.OfferType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OfferType",
+                        "printedName": "FMSDK.OfferType",
+                        "usr": "s:5FMSDK9OfferTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5FMSDK9OfferTypeO6showGoyA2CmF",
+            "mangledName": "$s5FMSDK9OfferTypeO6showGoyA2CmF",
+            "moduleName": "FMSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "cardLinked",
+            "printedName": "cardLinked",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FMSDK.OfferType.Type) -> FMSDK.OfferType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OfferType",
+                    "printedName": "FMSDK.OfferType",
+                    "usr": "s:5FMSDK9OfferTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FMSDK.OfferType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OfferType",
+                        "printedName": "FMSDK.OfferType",
+                        "usr": "s:5FMSDK9OfferTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5FMSDK9OfferTypeO10cardLinkedyA2CmF",
+            "mangledName": "$s5FMSDK9OfferTypeO10cardLinkedyA2CmF",
+            "moduleName": "FMSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.OfferType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OfferType",
+                    "printedName": "FMSDK.OfferType",
+                    "usr": "s:5FMSDK9OfferTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK9OfferTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s5FMSDK9OfferTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "FMSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK9OfferTypeO8rawValueSSvp",
+            "mangledName": "$s5FMSDK9OfferTypeO8rawValueSSvp",
+            "moduleName": "FMSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK9OfferTypeO8rawValueSSvg",
+                "mangledName": "$s5FMSDK9OfferTypeO8rawValueSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[FMSDK.OfferType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OfferType",
+                    "printedName": "FMSDK.OfferType",
+                    "usr": "s:5FMSDK9OfferTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK9OfferTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s5FMSDK9OfferTypeO8allCasesSayACGvpZ",
+            "moduleName": "FMSDK",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[FMSDK.OfferType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OfferType",
+                        "printedName": "FMSDK.OfferType",
+                        "usr": "s:5FMSDK9OfferTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK9OfferTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s5FMSDK9OfferTypeO8allCasesSayACGvgZ",
+                "moduleName": "FMSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5FMSDK9OfferTypeO",
+        "mangledName": "$s5FMSDK9OfferTypeO",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[FMSDK.OfferType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OfferType",
+                        "printedName": "FMSDK.OfferType",
+                        "usr": "s:5FMSDK9OfferTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },
@@ -27017,7 +29209,7 @@
           {
             "kind": "Function",
             "name": "configure",
-            "printedName": "configure(args:)",
+            "printedName": "configure(jwts:debugMode:tokenRefreshCallback:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -27026,14 +29218,26 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "FmArgs",
-                "printedName": "FMSDK.FmArgs",
-                "usr": "s:5FMSDK6FmArgsV"
+                "name": "JWTs",
+                "printedName": "CoreSDK.JWTs",
+                "usr": "s:7CoreSDK4JWTsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FMSDKTokenRefreshCallback",
+                "printedName": "any FMSDK.FMSDKTokenRefreshCallback",
+                "usr": "s:5FMSDK25FMSDKTokenRefreshCallbackP"
               }
             ],
             "declKind": "Func",
-            "usr": "s:5FMSDK5FmSdkP9configure4argsyAA0B4ArgsV_tF",
-            "mangledName": "$s5FMSDK5FmSdkP9configure4argsyAA0B4ArgsV_tF",
+            "usr": "s:5FMSDK5FmSdkP9configure4jwts9debugMode20tokenRefreshCallbacky7CoreSDK4JWTsV_SbAA010FMSDKTokeniJ0_ptF",
+            "mangledName": "$s5FMSDK5FmSdkP9configure4jwts9debugMode20tokenRefreshCallbacky7CoreSDK4JWTsV_SbAA010FMSDKTokeniJ0_ptF",
             "moduleName": "FMSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.FmSdk>",
             "sugared_genericSig": "<Self where Self : FMSDK.FmSdk>",
@@ -27174,6 +29378,16 @@
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -34012,219 +36226,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "ConvertPointsRequest",
-        "printedName": "ConvertPointsRequest",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "amount",
-            "printedName": "amount",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK20ConvertPointsRequestC6amountSivp",
-            "mangledName": "$s5FMSDK20ConvertPointsRequestC6amountSivp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK20ConvertPointsRequestC6amountSivg",
-                "mangledName": "$s5FMSDK20ConvertPointsRequestC6amountSivg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK20ConvertPointsRequestC6amountSivs",
-                "mangledName": "$s5FMSDK20ConvertPointsRequestC6amountSivs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK20ConvertPointsRequestC6amountSivM",
-                "mangledName": "$s5FMSDK20ConvertPointsRequestC6amountSivM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(amount:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ConvertPointsRequest",
-                "printedName": "FMSDK.ConvertPointsRequest",
-                "usr": "s:5FMSDK20ConvertPointsRequestC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:5FMSDK20ConvertPointsRequestC6amountACSi_tcfc",
-            "mangledName": "$s5FMSDK20ConvertPointsRequestC6amountACSi_tcfc",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ConvertPointsRequest",
-                "printedName": "FMSDK.ConvertPointsRequest",
-                "usr": "s:5FMSDK20ConvertPointsRequestC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:5FMSDK20ConvertPointsRequestC4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s5FMSDK20ConvertPointsRequestC4fromACs7Decoder_p_tKcfc",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "Required",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5FMSDK20ConvertPointsRequestC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s5FMSDK20ConvertPointsRequestC6encode2toys7Encoder_p_tKF",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:5FMSDK20ConvertPointsRequestC",
-        "mangledName": "$s5FMSDK20ConvertPointsRequestC",
-        "moduleName": "FMSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -34760,7 +36761,7 @@
           {
             "kind": "Function",
             "name": "updateCardControls",
-            "printedName": "updateCardControls(cardId:body:completion:)",
+            "printedName": "updateCardControls(cardId:isLocked:autopay:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -34775,9 +36776,15 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "CardControlsRequest",
-                "printedName": "FMSDK.CardControlsRequest",
-                "usr": "s:5FMSDK19CardControlsRequestC"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeFunc",
@@ -34813,8 +36820,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:5FMSDK11FeaturesApiP18updateCardControls6cardId4body10completionySS_AA0eF7RequestCys6ResultOy7CoreSDK0E0Cs5Error_pGctF",
-            "mangledName": "$s5FMSDK11FeaturesApiP18updateCardControls6cardId4body10completionySS_AA0eF7RequestCys6ResultOy7CoreSDK0E0Cs5Error_pGctF",
+            "usr": "s:5FMSDK11FeaturesApiP18updateCardControls6cardId8isLocked7autopay10completionySS_S2bys6ResultOy7CoreSDK0E0Cs5Error_pGctF",
+            "mangledName": "$s5FMSDK11FeaturesApiP18updateCardControls6cardId8isLocked7autopay10completionySS_S2bys6ResultOy7CoreSDK0E0Cs5Error_pGctF",
             "moduleName": "FMSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.FeaturesApi>",
             "sugared_genericSig": "<Self where Self : FMSDK.FeaturesApi>",
@@ -34828,7 +36835,7 @@
           {
             "kind": "Function",
             "name": "convertPoints",
-            "printedName": "convertPoints(cardId:body:completion:)",
+            "printedName": "convertPoints(cardId:numPointsToConvert:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -34843,9 +36850,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ConvertPointsRequest",
-                "printedName": "FMSDK.ConvertPointsRequest",
-                "usr": "s:5FMSDK20ConvertPointsRequestC"
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               },
               {
                 "kind": "TypeFunc",
@@ -34881,8 +36888,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:5FMSDK11FeaturesApiP13convertPoints6cardId4body10completionySS_AA07ConvertE7RequestCys6ResultOyAA0jE0Cs5Error_pGctF",
-            "mangledName": "$s5FMSDK11FeaturesApiP13convertPoints6cardId4body10completionySS_AA07ConvertE7RequestCys6ResultOyAA0jE0Cs5Error_pGctF",
+            "usr": "s:5FMSDK11FeaturesApiP13convertPoints6cardId03numE9ToConvert10completionySS_Siys6ResultOyAA0jE0Cs5Error_pGctF",
+            "mangledName": "$s5FMSDK11FeaturesApiP13convertPoints6cardId03numE9ToConvert10completionySS_Siys6ResultOyAA0jE0Cs5Error_pGctF",
             "moduleName": "FMSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.FeaturesApi>",
             "sugared_genericSig": "<Self where Self : FMSDK.FeaturesApi>",
@@ -35802,6 +37809,68 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "purchase3D",
+            "printedName": "purchase3D(args:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PurchaseArgs",
+                "printedName": "FMSDK.PurchaseArgs",
+                "usr": "s:5FMSDK12PurchaseArgsC"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<FMSDK.BuyResponse, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<FMSDK.BuyResponse, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BuyResponse",
+                        "printedName": "FMSDK.BuyResponse",
+                        "usr": "s:5FMSDK11BuyResponseC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FMSDK11FeaturesApiP10purchase3D4args10completionyAA12PurchaseArgsC_ys6ResultOyAA11BuyResponseCs5Error_pGctF",
+            "mangledName": "$s5FMSDK11FeaturesApiP10purchase3D4args10completionyAA12PurchaseArgsC_ys6ResultOyAA11BuyResponseCs5Error_pGctF",
+            "moduleName": "FMSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.FeaturesApi>",
+            "sugared_genericSig": "<Self where Self : FMSDK.FeaturesApi>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -36250,6 +38319,435 @@
         "moduleName": "FMSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SuggestionType",
+        "printedName": "SuggestionType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "all",
+            "printedName": "all",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FMSDK.SuggestionType.Type) -> FMSDK.SuggestionType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SuggestionType",
+                    "printedName": "FMSDK.SuggestionType",
+                    "usr": "s:5FMSDK14SuggestionTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FMSDK.SuggestionType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SuggestionType",
+                        "printedName": "FMSDK.SuggestionType",
+                        "usr": "s:5FMSDK14SuggestionTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5FMSDK14SuggestionTypeO3allyA2CmF",
+            "mangledName": "$s5FMSDK14SuggestionTypeO3allyA2CmF",
+            "moduleName": "FMSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "suburb",
+            "printedName": "suburb",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FMSDK.SuggestionType.Type) -> FMSDK.SuggestionType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SuggestionType",
+                    "printedName": "FMSDK.SuggestionType",
+                    "usr": "s:5FMSDK14SuggestionTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FMSDK.SuggestionType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SuggestionType",
+                        "printedName": "FMSDK.SuggestionType",
+                        "usr": "s:5FMSDK14SuggestionTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5FMSDK14SuggestionTypeO6suburbyA2CmF",
+            "mangledName": "$s5FMSDK14SuggestionTypeO6suburbyA2CmF",
+            "moduleName": "FMSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "location",
+            "printedName": "location",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FMSDK.SuggestionType.Type) -> FMSDK.SuggestionType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SuggestionType",
+                    "printedName": "FMSDK.SuggestionType",
+                    "usr": "s:5FMSDK14SuggestionTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FMSDK.SuggestionType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SuggestionType",
+                        "printedName": "FMSDK.SuggestionType",
+                        "usr": "s:5FMSDK14SuggestionTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5FMSDK14SuggestionTypeO8locationyA2CmF",
+            "mangledName": "$s5FMSDK14SuggestionTypeO8locationyA2CmF",
+            "moduleName": "FMSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "noSuburb",
+            "printedName": "noSuburb",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FMSDK.SuggestionType.Type) -> FMSDK.SuggestionType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SuggestionType",
+                    "printedName": "FMSDK.SuggestionType",
+                    "usr": "s:5FMSDK14SuggestionTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FMSDK.SuggestionType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SuggestionType",
+                        "printedName": "FMSDK.SuggestionType",
+                        "usr": "s:5FMSDK14SuggestionTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5FMSDK14SuggestionTypeO8noSuburbyA2CmF",
+            "mangledName": "$s5FMSDK14SuggestionTypeO8noSuburbyA2CmF",
+            "moduleName": "FMSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "noSuburbGroup",
+            "printedName": "noSuburbGroup",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FMSDK.SuggestionType.Type) -> FMSDK.SuggestionType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SuggestionType",
+                    "printedName": "FMSDK.SuggestionType",
+                    "usr": "s:5FMSDK14SuggestionTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FMSDK.SuggestionType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SuggestionType",
+                        "printedName": "FMSDK.SuggestionType",
+                        "usr": "s:5FMSDK14SuggestionTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5FMSDK14SuggestionTypeO13noSuburbGroupyA2CmF",
+            "mangledName": "$s5FMSDK14SuggestionTypeO13noSuburbGroupyA2CmF",
+            "moduleName": "FMSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.SuggestionType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SuggestionType",
+                    "printedName": "FMSDK.SuggestionType",
+                    "usr": "s:5FMSDK14SuggestionTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK14SuggestionTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s5FMSDK14SuggestionTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "FMSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK14SuggestionTypeO8rawValueSSvp",
+            "mangledName": "$s5FMSDK14SuggestionTypeO8rawValueSSvp",
+            "moduleName": "FMSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK14SuggestionTypeO8rawValueSSvg",
+                "mangledName": "$s5FMSDK14SuggestionTypeO8rawValueSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[FMSDK.SuggestionType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SuggestionType",
+                    "printedName": "FMSDK.SuggestionType",
+                    "usr": "s:5FMSDK14SuggestionTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK14SuggestionTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s5FMSDK14SuggestionTypeO8allCasesSayACGvpZ",
+            "moduleName": "FMSDK",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[FMSDK.SuggestionType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SuggestionType",
+                        "printedName": "FMSDK.SuggestionType",
+                        "usr": "s:5FMSDK14SuggestionTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK14SuggestionTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s5FMSDK14SuggestionTypeO8allCasesSayACGvgZ",
+                "moduleName": "FMSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5FMSDK14SuggestionTypeO",
+        "mangledName": "$s5FMSDK14SuggestionTypeO",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[FMSDK.SuggestionType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SuggestionType",
+                        "printedName": "FMSDK.SuggestionType",
+                        "usr": "s:5FMSDK14SuggestionTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -44755,6 +47253,626 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "PurchaseArgs",
+        "printedName": "PurchaseArgs",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "cardId",
+            "printedName": "cardId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK12PurchaseArgsC6cardIdSSvp",
+            "mangledName": "$s5FMSDK12PurchaseArgsC6cardIdSSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK12PurchaseArgsC6cardIdSSvg",
+                "mangledName": "$s5FMSDK12PurchaseArgsC6cardIdSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK12PurchaseArgsC6cardIdSSvs",
+                "mangledName": "$s5FMSDK12PurchaseArgsC6cardIdSSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK12PurchaseArgsC6cardIdSSvM",
+                "mangledName": "$s5FMSDK12PurchaseArgsC6cardIdSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "featureId",
+            "printedName": "featureId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK12PurchaseArgsC9featureIdSSvp",
+            "mangledName": "$s5FMSDK12PurchaseArgsC9featureIdSSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK12PurchaseArgsC9featureIdSSvg",
+                "mangledName": "$s5FMSDK12PurchaseArgsC9featureIdSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK12PurchaseArgsC9featureIdSSvs",
+                "mangledName": "$s5FMSDK12PurchaseArgsC9featureIdSSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK12PurchaseArgsC9featureIdSSvM",
+                "mangledName": "$s5FMSDK12PurchaseArgsC9featureIdSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "productId",
+            "printedName": "productId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK12PurchaseArgsC9productIdSSvp",
+            "mangledName": "$s5FMSDK12PurchaseArgsC9productIdSSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK12PurchaseArgsC9productIdSSvg",
+                "mangledName": "$s5FMSDK12PurchaseArgsC9productIdSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK12PurchaseArgsC9productIdSSvs",
+                "mangledName": "$s5FMSDK12PurchaseArgsC9productIdSSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK12PurchaseArgsC9productIdSSvM",
+                "mangledName": "$s5FMSDK12PurchaseArgsC9productIdSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "priceId",
+            "printedName": "priceId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK12PurchaseArgsC7priceIdSSvp",
+            "mangledName": "$s5FMSDK12PurchaseArgsC7priceIdSSvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK12PurchaseArgsC7priceIdSSvg",
+                "mangledName": "$s5FMSDK12PurchaseArgsC7priceIdSSvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK12PurchaseArgsC7priceIdSSvs",
+                "mangledName": "$s5FMSDK12PurchaseArgsC7priceIdSSvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK12PurchaseArgsC7priceIdSSvM",
+                "mangledName": "$s5FMSDK12PurchaseArgsC7priceIdSSvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fundingId",
+            "printedName": "fundingId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK12PurchaseArgsC9fundingIdSSSgvp",
+            "mangledName": "$s5FMSDK12PurchaseArgsC9fundingIdSSSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK12PurchaseArgsC9fundingIdSSSgvg",
+                "mangledName": "$s5FMSDK12PurchaseArgsC9fundingIdSSSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK12PurchaseArgsC9fundingIdSSSgvs",
+                "mangledName": "$s5FMSDK12PurchaseArgsC9fundingIdSSSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK12PurchaseArgsC9fundingIdSSSgvM",
+                "mangledName": "$s5FMSDK12PurchaseArgsC9fundingIdSSSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(cardId:featureId:productId:priceId:fundingId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PurchaseArgs",
+                "printedName": "FMSDK.PurchaseArgs",
+                "usr": "s:5FMSDK12PurchaseArgsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK12PurchaseArgsC6cardId07featureE007productE005priceE007fundingE0ACSS_S4SSgtcfc",
+            "mangledName": "$s5FMSDK12PurchaseArgsC6cardId07featureE007productE005priceE007fundingE0ACSS_S4SSgtcfc",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PurchaseArgs",
+                "printedName": "FMSDK.PurchaseArgs",
+                "usr": "s:5FMSDK12PurchaseArgsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK12PurchaseArgsC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5FMSDK12PurchaseArgsC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FMSDK12PurchaseArgsC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5FMSDK12PurchaseArgsC6encode2toys7Encoder_p_tKF",
+            "moduleName": "FMSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5FMSDK12PurchaseArgsC",
+        "mangledName": "$s5FMSDK12PurchaseArgsC",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Campaign",
         "printedName": "Campaign",
         "children": [
@@ -45986,7 +49104,7 @@
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Models\/FmArgs.swift",
       "kind": "BooleanLiteral",
-      "offset": 899,
+      "offset": 804,
       "length": 5,
       "value": "false"
     },
@@ -46530,6 +49648,104 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/BuyResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 393,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/BuyResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 421,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/BuyResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 451,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/BuyResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 486,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/BuyResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1018,
+      "length": 16,
+      "value": "\"card_image_url\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/BuyResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1084,
+      "length": 14,
+      "value": "\"gift_details\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/BuyResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1128,
+      "length": 16,
+      "value": "\"payment_intent\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/BuyResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 2086,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/BuyResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 2114,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/BuyResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 2382,
+      "length": 14,
+      "value": "\"custom_title\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/BuyResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 2933,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/BuyResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 2963,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/BuyResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 3574,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/BuyResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 3715,
+      "length": 15,
+      "value": "\"client_secret\""
+    },
+    {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
       "offset": 162,
@@ -46546,357 +49762,371 @@
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 305,
+      "offset": 319,
+      "length": 9,
+      "value": "\"show_go\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 351,
+      "length": 13,
+      "value": "\"card_linked\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 474,
       "length": 10,
       "value": "\"exchange\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 336,
+      "offset": 505,
       "length": 14,
       "value": "\"send_balance\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 370,
+      "offset": 539,
       "length": 9,
       "value": "\"webview\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 396,
+      "offset": 565,
       "length": 7,
       "value": "\"gifts\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 428,
+      "offset": 597,
       "length": 15,
       "value": "\"card_controls\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 460,
+      "offset": 629,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 1456,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "Array",
-      "offset": 1594,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 1712,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 1741,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
-      "kind": "StringLiteral",
-      "offset": 1804,
+      "offset": 1625,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "Array",
-      "offset": 1982,
+      "offset": 1763,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 2879,
+      "offset": 1881,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 1910,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 1973,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "Array",
+      "offset": 2151,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
+      "kind": "StringLiteral",
+      "offset": 3048,
       "length": 10,
       "value": "\"category\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 2995,
+      "offset": 3164,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3163,
+      "offset": 3332,
       "length": 8,
       "value": "\"active\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3196,
+      "offset": 3365,
       "length": 10,
       "value": "\"inactive\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3226,
+      "offset": 3395,
       "length": 5,
       "value": "\"all\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3339,
+      "offset": 3508,
       "length": 20,
       "value": "\"originator_program\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3473,
+      "offset": 3642,
       "length": 23,
       "value": "\"marketer_product_uuid\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3563,
+      "offset": 3732,
       "length": 19,
       "value": "\"tandc_landing_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3606,
+      "offset": 3775,
       "length": 18,
       "value": "\"info_landing_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3652,
+      "offset": 3821,
       "length": 14,
       "value": "\"user_feature\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3693,
+      "offset": 3862,
       "length": 19,
       "value": "\"banner_image_urls\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3744,
+      "offset": 3913,
       "length": 18,
       "value": "\"program_metadata\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3799,
+      "offset": 3968,
       "length": 23,
       "value": "\"subscription_required\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 3862,
+      "offset": 4031,
       "length": 27,
       "value": "\"tandc_acceptance_required\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 7308,
+      "offset": 7477,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 7328,
+      "offset": 7497,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 8609,
+      "offset": 8778,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 8674,
+      "offset": 8843,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 8705,
+      "offset": 8874,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 8731,
+      "offset": 8900,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 8765,
+      "offset": 8934,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 8789,
+      "offset": 8958,
       "length": 9,
       "value": "\"#000000\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 9238,
+      "offset": 9407,
       "length": 10,
       "value": "\"icon_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 9281,
+      "offset": 9450,
       "length": 20,
       "value": "\"secondary_icon_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 9327,
+      "offset": 9496,
       "length": 13,
       "value": "\"icon_to_use\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 9366,
+      "offset": 9535,
       "length": 15,
       "value": "\"icon_bg_color\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 9421,
+      "offset": 9590,
       "length": 28,
       "value": "\"feature_campaign_image_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 9543,
+      "offset": 9712,
       "length": 25,
       "value": "\"activation_toggle_title\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 11856,
+      "offset": 12025,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 11875,
+      "offset": 12044,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 12811,
+      "offset": 12980,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 13626,
+      "offset": 13795,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 13646,
+      "offset": 13815,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 13665,
+      "offset": 13834,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 14888,
+      "offset": 15057,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 14914,
+      "offset": 15083,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "Array",
-      "offset": 14943,
+      "offset": 15112,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 15185,
+      "offset": 15354,
       "length": 12,
       "value": "\"tandc_urls\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 16214,
+      "offset": 16383,
       "length": 2,
       "value": "\"\""
     },
@@ -46934,6 +50164,27 @@
       "offset": 2005,
       "length": 20,
       "value": "\"keyword_subfilters\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/PostPurchase3DBody.swift",
+      "kind": "BooleanLiteral",
+      "offset": 621,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/PostPurchase3DBody.swift",
+      "kind": "StringLiteral",
+      "offset": 824,
+      "length": 21,
+      "value": "\"funding_source_uuid\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/PostPurchase3DBody.swift",
+      "kind": "StringLiteral",
+      "offset": 868,
+      "length": 6,
+      "value": "\"gift\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Gifts\/Models\/CampaignItemCard.swift",
@@ -47393,56 +50644,91 @@
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/Suggestion.swift",
       "kind": "StringLiteral",
-      "offset": 1082,
+      "offset": 242,
+      "length": 5,
+      "value": "\"all\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/Suggestion.swift",
+      "kind": "StringLiteral",
+      "offset": 266,
+      "length": 8,
+      "value": "\"suburb\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/Suggestion.swift",
+      "kind": "StringLiteral",
+      "offset": 295,
+      "length": 10,
+      "value": "\"location\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/Suggestion.swift",
+      "kind": "StringLiteral",
+      "offset": 326,
+      "length": 11,
+      "value": "\"no-suburb\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/Suggestion.swift",
+      "kind": "StringLiteral",
+      "offset": 363,
+      "length": 17,
+      "value": "\"no-suburb-group\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/Suggestion.swift",
+      "kind": "StringLiteral",
+      "offset": 1364,
       "length": 11,
       "value": "\"item_uuid\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/Suggestion.swift",
       "kind": "StringLiteral",
-      "offset": 1118,
+      "offset": 1400,
       "length": 11,
       "value": "\"item_type\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/Suggestion.swift",
       "kind": "StringLiteral",
-      "offset": 1155,
+      "offset": 1437,
       "length": 12,
       "value": "\"item_title\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/Suggestion.swift",
       "kind": "StringLiteral",
-      "offset": 1196,
+      "offset": 1478,
       "length": 15,
       "value": "\"item_subtitle\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/Suggestion.swift",
       "kind": "StringLiteral",
-      "offset": 1240,
+      "offset": 1522,
       "length": 15,
       "value": "\"matching_text\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/Suggestion.swift",
       "kind": "StringLiteral",
-      "offset": 1287,
+      "offset": 1569,
       "length": 19,
       "value": "\"item_search_query\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/Suggestion.swift",
       "kind": "StringLiteral",
-      "offset": 1331,
+      "offset": 1613,
       "length": 15,
       "value": "\"item_metadata\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/Suggestion.swift",
       "kind": "StringLiteral",
-      "offset": 2971,
+      "offset": 3253,
       "length": 15,
       "value": "\"parent_record\""
     },
