@@ -7573,7 +7573,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Result<FMSDK.GenerateCodeMetadata, any Swift.Error>) -> ()",
+                "printedName": "(Swift.Result<FMSDK.Barcode, any Swift.Error>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7583,13 +7583,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Result",
-                    "printedName": "Swift.Result<FMSDK.GenerateCodeMetadata, any Swift.Error>",
+                    "printedName": "Swift.Result<FMSDK.Barcode, any Swift.Error>",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "GenerateCodeMetadata",
-                        "printedName": "FMSDK.GenerateCodeMetadata",
-                        "usr": "s:5FMSDK20GenerateCodeMetadataC"
+                        "name": "Barcode",
+                        "printedName": "FMSDK.Barcode",
+                        "usr": "s:5FMSDK7BarcodeC"
                       },
                       {
                         "kind": "TypeNominal",
@@ -7604,8 +7604,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:5FMSDK12LocationsApiP19redeemLocationOffer4uuid12locationUuid05offerI007featureI010completionySS_S3SSgys6ResultOyAA20GenerateCodeMetadataCs5Error_pGctF",
-            "mangledName": "$s5FMSDK12LocationsApiP19redeemLocationOffer4uuid12locationUuid05offerI007featureI010completionySS_S3SSgys6ResultOyAA20GenerateCodeMetadataCs5Error_pGctF",
+            "usr": "s:5FMSDK12LocationsApiP19redeemLocationOffer4uuid12locationUuid05offerI007featureI010completionySS_S3SSgys6ResultOyAA7BarcodeCs5Error_pGctF",
+            "mangledName": "$s5FMSDK12LocationsApiP19redeemLocationOffer4uuid12locationUuid05offerI007featureI010completionySS_S3SSgys6ResultOyAA7BarcodeCs5Error_pGctF",
             "moduleName": "FMSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : FMSDK.LocationsApi>",
             "sugared_genericSig": "<Self where Self : FMSDK.LocationsApi>",
@@ -8571,8 +8571,8 @@
           },
           {
             "kind": "Var",
-            "name": "redeemed",
-            "printedName": "redeemed",
+            "name": "isRedeemed",
+            "printedName": "isRedeemed",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8590,13 +8590,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK24LocationOfferFullDetailsC8redeemedSbSgvp",
-            "mangledName": "$s5FMSDK24LocationOfferFullDetailsC8redeemedSbSgvp",
+            "usr": "s:5FMSDK24LocationOfferFullDetailsC10isRedeemedSbSgvp",
+            "mangledName": "$s5FMSDK24LocationOfferFullDetailsC10isRedeemedSbSgvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -8621,8 +8622,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK24LocationOfferFullDetailsC8redeemedSbSgvg",
-                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC8redeemedSbSgvg",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC10isRedeemedSbSgvg",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC10isRedeemedSbSgvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -8653,8 +8654,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK24LocationOfferFullDetailsC8redeemedSbSgvs",
-                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC8redeemedSbSgvs",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC10isRedeemedSbSgvs",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC10isRedeemedSbSgvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -8671,8 +8672,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK24LocationOfferFullDetailsC8redeemedSbSgvM",
-                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC8redeemedSbSgvM",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC10isRedeemedSbSgvM",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC10isRedeemedSbSgvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -8681,8 +8682,8 @@
           },
           {
             "kind": "Var",
-            "name": "redeemable",
-            "printedName": "redeemable",
+            "name": "isRedeemable",
+            "printedName": "isRedeemable",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8700,8 +8701,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK24LocationOfferFullDetailsC10redeemableSbSgvp",
-            "mangledName": "$s5FMSDK24LocationOfferFullDetailsC10redeemableSbSgvp",
+            "usr": "s:5FMSDK24LocationOfferFullDetailsC12isRedeemableSbSgvp",
+            "mangledName": "$s5FMSDK24LocationOfferFullDetailsC12isRedeemableSbSgvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -8731,8 +8732,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK24LocationOfferFullDetailsC10redeemableSbSgvg",
-                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC10redeemableSbSgvg",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC12isRedeemableSbSgvg",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC12isRedeemableSbSgvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -8763,8 +8764,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK24LocationOfferFullDetailsC10redeemableSbSgvs",
-                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC10redeemableSbSgvs",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC12isRedeemableSbSgvs",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC12isRedeemableSbSgvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -8781,8 +8782,95 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK24LocationOfferFullDetailsC10redeemableSbSgvM",
-                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC10redeemableSbSgvM",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC12isRedeemableSbSgvM",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC12isRedeemableSbSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isExpired",
+            "printedName": "isExpired",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK24LocationOfferFullDetailsC9isExpiredSbvp",
+            "mangledName": "$s5FMSDK24LocationOfferFullDetailsC9isExpiredSbvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC9isExpiredSbvg",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC9isExpiredSbvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC9isExpiredSbvs",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC9isExpiredSbvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC9isExpiredSbvM",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC9isExpiredSbvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -8925,27 +9013,35 @@
           },
           {
             "kind": "Var",
-            "name": "redemptionsAvailable",
-            "printedName": "redemptionsAvailable",
+            "name": "keywords",
+            "printedName": "keywords",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "[FMSDK.Category]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Array",
+                    "printedName": "[FMSDK.Category]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Category",
+                        "printedName": "FMSDK.Category",
+                        "usr": "s:5FMSDK8CategoryC"
+                      }
+                    ],
+                    "usr": "s:Sa"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK24LocationOfferFullDetailsC20redemptionsAvailableSSSgvp",
-            "mangledName": "$s5FMSDK24LocationOfferFullDetailsC20redemptionsAvailableSSSgvp",
+            "usr": "s:5FMSDK24LocationOfferFullDetailsC8keywordsSayAA8CategoryCGSgvp",
+            "mangledName": "$s5FMSDK24LocationOfferFullDetailsC8keywordsSayAA8CategoryCGSgvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -8962,21 +9058,29 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "[FMSDK.Category]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Array",
+                        "printedName": "[FMSDK.Category]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Category",
+                            "printedName": "FMSDK.Category",
+                            "usr": "s:5FMSDK8CategoryC"
+                          }
+                        ],
+                        "usr": "s:Sa"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK24LocationOfferFullDetailsC20redemptionsAvailableSSSgvg",
-                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC20redemptionsAvailableSSSgvg",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC8keywordsSayAA8CategoryCGSgvg",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC8keywordsSayAA8CategoryCGSgvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -8994,21 +9098,29 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "[FMSDK.Category]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Array",
+                        "printedName": "[FMSDK.Category]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Category",
+                            "printedName": "FMSDK.Category",
+                            "usr": "s:5FMSDK8CategoryC"
+                          }
+                        ],
+                        "usr": "s:Sa"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK24LocationOfferFullDetailsC20redemptionsAvailableSSSgvs",
-                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC20redemptionsAvailableSSSgvs",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC8keywordsSayAA8CategoryCGSgvs",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC8keywordsSayAA8CategoryCGSgvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -9025,8 +9137,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK24LocationOfferFullDetailsC20redemptionsAvailableSSSgvM",
-                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC20redemptionsAvailableSSSgvM",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC8keywordsSayAA8CategoryCGSgvM",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC8keywordsSayAA8CategoryCGSgvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -9035,8 +9147,8 @@
           },
           {
             "kind": "Var",
-            "name": "manualRedemptionDetails",
-            "printedName": "manualRedemptionDetails",
+            "name": "redemption",
+            "printedName": "redemption",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9054,13 +9166,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK24LocationOfferFullDetailsC016manualRedemptionE0AA06ManualG0CSgvp",
-            "mangledName": "$s5FMSDK24LocationOfferFullDetailsC016manualRedemptionE0AA06ManualG0CSgvp",
+            "usr": "s:5FMSDK24LocationOfferFullDetailsC10redemptionAA16ManualRedemptionCSgvp",
+            "mangledName": "$s5FMSDK24LocationOfferFullDetailsC10redemptionAA16ManualRedemptionCSgvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -9085,8 +9198,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK24LocationOfferFullDetailsC016manualRedemptionE0AA06ManualG0CSgvg",
-                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC016manualRedemptionE0AA06ManualG0CSgvg",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC10redemptionAA16ManualRedemptionCSgvg",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC10redemptionAA16ManualRedemptionCSgvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -9117,8 +9230,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK24LocationOfferFullDetailsC016manualRedemptionE0AA06ManualG0CSgvs",
-                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC016manualRedemptionE0AA06ManualG0CSgvs",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC10redemptionAA16ManualRedemptionCSgvs",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC10redemptionAA16ManualRedemptionCSgvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -9135,8 +9248,119 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK24LocationOfferFullDetailsC016manualRedemptionE0AA06ManualG0CSgvM",
-                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC016manualRedemptionE0AA06ManualG0CSgvM",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC10redemptionAA16ManualRedemptionCSgvM",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC10redemptionAA16ManualRedemptionCSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "redemptionDetails",
+            "printedName": "redemptionDetails",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.Barcode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Barcode",
+                    "printedName": "FMSDK.Barcode",
+                    "usr": "s:5FMSDK7BarcodeC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK24LocationOfferFullDetailsC010redemptionE0AA7BarcodeCSgvp",
+            "mangledName": "$s5FMSDK24LocationOfferFullDetailsC010redemptionE0AA7BarcodeCSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FMSDK.Barcode?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Barcode",
+                        "printedName": "FMSDK.Barcode",
+                        "usr": "s:5FMSDK7BarcodeC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC010redemptionE0AA7BarcodeCSgvg",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC010redemptionE0AA7BarcodeCSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FMSDK.Barcode?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Barcode",
+                        "printedName": "FMSDK.Barcode",
+                        "usr": "s:5FMSDK7BarcodeC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC010redemptionE0AA7BarcodeCSgvs",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC010redemptionE0AA7BarcodeCSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK24LocationOfferFullDetailsC010redemptionE0AA7BarcodeCSgvM",
+                "mangledName": "$s5FMSDK24LocationOfferFullDetailsC010redemptionE0AA7BarcodeCSgvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -9146,7 +9370,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(uuid:title:subtitle:summary:imageUrl:redeemed:redeemable:rules:manualRedemptionDetails:redemptionsAvailable:)",
+            "printedName": "init(uuid:title:subtitle:summary:imageUrl:isRedeemed:isRedeemable:isExpired:rules:keywords:redemption:redemptionDetails:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9261,6 +9485,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Optional",
                 "printedName": "[Swift.String]?",
                 "children": [
@@ -9274,6 +9505,29 @@
                         "name": "String",
                         "printedName": "Swift.String",
                         "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[FMSDK.Category]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[FMSDK.Category]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Category",
+                        "printedName": "FMSDK.Category",
+                        "usr": "s:5FMSDK8CategoryC"
                       }
                     ],
                     "usr": "s:Sa"
@@ -9300,13 +9554,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "FMSDK.Barcode?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Barcode",
+                    "printedName": "FMSDK.Barcode",
+                    "usr": "s:5FMSDK7BarcodeC"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -9314,8 +9568,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK24LocationOfferFullDetailsC4uuid5title8subtitle7summary8imageUrl8redeemed10redeemable5rules016manualRedemptionE020redemptionsAvailableACSSSg_A4NSbSgAOSaySSGSgAA06ManualP0CSgANtcfc",
-            "mangledName": "$s5FMSDK24LocationOfferFullDetailsC4uuid5title8subtitle7summary8imageUrl8redeemed10redeemable5rules016manualRedemptionE020redemptionsAvailableACSSSg_A4NSbSgAOSaySSGSgAA06ManualP0CSgANtcfc",
+            "usr": "s:5FMSDK24LocationOfferFullDetailsC4uuid5title8subtitle7summary8imageUrl10isRedeemed0L10Redeemable0L7Expired5rules8keywords10redemption0rE0ACSSSg_A4PSbSgAQSbSaySSGSgSayAA8CategoryCGSgAA16ManualRedemptionCSgAA7BarcodeCSgtcfc",
+            "mangledName": "$s5FMSDK24LocationOfferFullDetailsC4uuid5title8subtitle7summary8imageUrl10isRedeemed0L10Redeemable0L7Expired5rules8keywords10redemption0rE0ACSSSg_A4PSbSgAQSbSaySSGSgSayAA8CategoryCGSgAA16ManualRedemptionCSgAA7BarcodeCSgtcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -9503,43 +9757,6 @@
                 "moduleName": "FMSDK"
               },
               {
-                "kind": "Var",
-                "name": "none",
-                "printedName": "none",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(FMSDK.ManualRedemption.Action.Type) -> FMSDK.ManualRedemption.Action",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Action",
-                        "printedName": "FMSDK.ManualRedemption.Action",
-                        "usr": "s:5FMSDK16ManualRedemptionC6ActionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "FMSDK.ManualRedemption.Action.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Action",
-                            "printedName": "FMSDK.ManualRedemption.Action",
-                            "usr": "s:5FMSDK16ManualRedemptionC6ActionO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:5FMSDK16ManualRedemptionC6ActionO4noneyA2EmF",
-                "mangledName": "$s5FMSDK16ManualRedemptionC6ActionO4noneyA2EmF",
-                "moduleName": "FMSDK"
-              },
-              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(rawValue:)",
@@ -9684,116 +9901,6 @@
                 "printedName": "Encodable",
                 "usr": "s:SE",
                 "mangledName": "$sSE"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "uuid",
-            "printedName": "uuid",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK16ManualRedemptionC4uuidSSSgvp",
-            "mangledName": "$s5FMSDK16ManualRedemptionC4uuidSSSgvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK16ManualRedemptionC4uuidSSSgvg",
-                "mangledName": "$s5FMSDK16ManualRedemptionC4uuidSSSgvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK16ManualRedemptionC4uuidSSSgvs",
-                "mangledName": "$s5FMSDK16ManualRedemptionC4uuidSSSgvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK16ManualRedemptionC4uuidSSSgvM",
-                "mangledName": "$s5FMSDK16ManualRedemptionC4uuidSSSgvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -10019,32 +10126,33 @@
           },
           {
             "kind": "Var",
-            "name": "generateCodeMetadata",
-            "printedName": "generateCodeMetadata",
+            "name": "webhook",
+            "printedName": "webhook",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "FMSDK.GenerateCodeMetadata?",
+                "printedName": "FMSDK.Webhook?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "GenerateCodeMetadata",
-                    "printedName": "FMSDK.GenerateCodeMetadata",
-                    "usr": "s:5FMSDK20GenerateCodeMetadataC"
+                    "name": "Webhook",
+                    "printedName": "FMSDK.Webhook",
+                    "usr": "s:5FMSDK7WebhookC"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK16ManualRedemptionC20generateCodeMetadataAA08GenerateeF0CSgvp",
-            "mangledName": "$s5FMSDK16ManualRedemptionC20generateCodeMetadataAA08GenerateeF0CSgvp",
+            "usr": "s:5FMSDK16ManualRedemptionC7webhookAA7WebhookCSgvp",
+            "mangledName": "$s5FMSDK16ManualRedemptionC7webhookAA7WebhookCSgvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -10056,21 +10164,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "FMSDK.GenerateCodeMetadata?",
+                    "printedName": "FMSDK.Webhook?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "GenerateCodeMetadata",
-                        "printedName": "FMSDK.GenerateCodeMetadata",
-                        "usr": "s:5FMSDK20GenerateCodeMetadataC"
+                        "name": "Webhook",
+                        "printedName": "FMSDK.Webhook",
+                        "usr": "s:5FMSDK7WebhookC"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK16ManualRedemptionC20generateCodeMetadataAA08GenerateeF0CSgvg",
-                "mangledName": "$s5FMSDK16ManualRedemptionC20generateCodeMetadataAA08GenerateeF0CSgvg",
+                "usr": "s:5FMSDK16ManualRedemptionC7webhookAA7WebhookCSgvg",
+                "mangledName": "$s5FMSDK16ManualRedemptionC7webhookAA7WebhookCSgvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -10088,21 +10196,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "FMSDK.GenerateCodeMetadata?",
+                    "printedName": "FMSDK.Webhook?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "GenerateCodeMetadata",
-                        "printedName": "FMSDK.GenerateCodeMetadata",
-                        "usr": "s:5FMSDK20GenerateCodeMetadataC"
+                        "name": "Webhook",
+                        "printedName": "FMSDK.Webhook",
+                        "usr": "s:5FMSDK7WebhookC"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK16ManualRedemptionC20generateCodeMetadataAA08GenerateeF0CSgvs",
-                "mangledName": "$s5FMSDK16ManualRedemptionC20generateCodeMetadataAA08GenerateeF0CSgvs",
+                "usr": "s:5FMSDK16ManualRedemptionC7webhookAA7WebhookCSgvs",
+                "mangledName": "$s5FMSDK16ManualRedemptionC7webhookAA7WebhookCSgvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -10119,8 +10227,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK16ManualRedemptionC20generateCodeMetadataAA08GenerateeF0CSgvM",
-                "mangledName": "$s5FMSDK16ManualRedemptionC20generateCodeMetadataAA08GenerateeF0CSgvM",
+                "usr": "s:5FMSDK16ManualRedemptionC7webhookAA7WebhookCSgvM",
+                "mangledName": "$s5FMSDK16ManualRedemptionC7webhookAA7WebhookCSgvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -10129,252 +10237,8 @@
           },
           {
             "kind": "Var",
-            "name": "webhookMetadata",
-            "printedName": "webhookMetadata",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "FMSDK.WebhookMetadata?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "WebhookMetadata",
-                    "printedName": "FMSDK.WebhookMetadata",
-                    "usr": "s:5FMSDK15WebhookMetadataC"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK16ManualRedemptionC15webhookMetadataAA07WebhookE0CSgvp",
-            "mangledName": "$s5FMSDK16ManualRedemptionC15webhookMetadataAA07WebhookE0CSgvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "FMSDK.WebhookMetadata?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "WebhookMetadata",
-                        "printedName": "FMSDK.WebhookMetadata",
-                        "usr": "s:5FMSDK15WebhookMetadataC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK16ManualRedemptionC15webhookMetadataAA07WebhookE0CSgvg",
-                "mangledName": "$s5FMSDK16ManualRedemptionC15webhookMetadataAA07WebhookE0CSgvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "FMSDK.WebhookMetadata?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "WebhookMetadata",
-                        "printedName": "FMSDK.WebhookMetadata",
-                        "usr": "s:5FMSDK15WebhookMetadataC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK16ManualRedemptionC15webhookMetadataAA07WebhookE0CSgvs",
-                "mangledName": "$s5FMSDK16ManualRedemptionC15webhookMetadataAA07WebhookE0CSgvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK16ManualRedemptionC15webhookMetadataAA07WebhookE0CSgvM",
-                "mangledName": "$s5FMSDK16ManualRedemptionC15webhookMetadataAA07WebhookE0CSgvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "promoCodesMetadata",
-            "printedName": "promoCodesMetadata",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[FMSDK.PromoCodeMetadata]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[FMSDK.PromoCodeMetadata]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PromoCodeMetadata",
-                        "printedName": "FMSDK.PromoCodeMetadata",
-                        "usr": "s:5FMSDK17PromoCodeMetadataC"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK16ManualRedemptionC18promoCodesMetadataSayAA09PromoCodeF0CGSgvp",
-            "mangledName": "$s5FMSDK16ManualRedemptionC18promoCodesMetadataSayAA09PromoCodeF0CGSgvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[FMSDK.PromoCodeMetadata]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[FMSDK.PromoCodeMetadata]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "PromoCodeMetadata",
-                            "printedName": "FMSDK.PromoCodeMetadata",
-                            "usr": "s:5FMSDK17PromoCodeMetadataC"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK16ManualRedemptionC18promoCodesMetadataSayAA09PromoCodeF0CGSgvg",
-                "mangledName": "$s5FMSDK16ManualRedemptionC18promoCodesMetadataSayAA09PromoCodeF0CGSgvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[FMSDK.PromoCodeMetadata]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[FMSDK.PromoCodeMetadata]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "PromoCodeMetadata",
-                            "printedName": "FMSDK.PromoCodeMetadata",
-                            "usr": "s:5FMSDK17PromoCodeMetadataC"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK16ManualRedemptionC18promoCodesMetadataSayAA09PromoCodeF0CGSgvs",
-                "mangledName": "$s5FMSDK16ManualRedemptionC18promoCodesMetadataSayAA09PromoCodeF0CGSgvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK16ManualRedemptionC18promoCodesMetadataSayAA09PromoCodeF0CGSgvM",
-                "mangledName": "$s5FMSDK16ManualRedemptionC18promoCodesMetadataSayAA09PromoCodeF0CGSgvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "showCountdownTimer",
-            "printedName": "showCountdownTimer",
+            "name": "showCountdown",
+            "printedName": "showCountdown",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10392,8 +10256,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK16ManualRedemptionC18showCountdownTimerSbSgvp",
-            "mangledName": "$s5FMSDK16ManualRedemptionC18showCountdownTimerSbSgvp",
+            "usr": "s:5FMSDK16ManualRedemptionC13showCountdownSbSgvp",
+            "mangledName": "$s5FMSDK16ManualRedemptionC13showCountdownSbSgvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -10423,8 +10287,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK16ManualRedemptionC18showCountdownTimerSbSgvg",
-                "mangledName": "$s5FMSDK16ManualRedemptionC18showCountdownTimerSbSgvg",
+                "usr": "s:5FMSDK16ManualRedemptionC13showCountdownSbSgvg",
+                "mangledName": "$s5FMSDK16ManualRedemptionC13showCountdownSbSgvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -10455,8 +10319,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK16ManualRedemptionC18showCountdownTimerSbSgvs",
-                "mangledName": "$s5FMSDK16ManualRedemptionC18showCountdownTimerSbSgvs",
+                "usr": "s:5FMSDK16ManualRedemptionC13showCountdownSbSgvs",
+                "mangledName": "$s5FMSDK16ManualRedemptionC13showCountdownSbSgvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -10473,8 +10337,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK16ManualRedemptionC18showCountdownTimerSbSgvM",
-                "mangledName": "$s5FMSDK16ManualRedemptionC18showCountdownTimerSbSgvM",
+                "usr": "s:5FMSDK16ManualRedemptionC13showCountdownSbSgvM",
+                "mangledName": "$s5FMSDK16ManualRedemptionC13showCountdownSbSgvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -10484,28 +10348,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(uuid:buttonText:action:generateCodeMetadata:webhookMetadata:promoCodesMetadata:showCountdownTimer:)",
+            "printedName": "init(buttonText:action:webhook:showCountdown:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "ManualRedemption",
                 "printedName": "FMSDK.ManualRedemption",
                 "usr": "s:5FMSDK16ManualRedemptionC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -10540,51 +10389,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "FMSDK.GenerateCodeMetadata?",
+                "printedName": "FMSDK.Webhook?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "GenerateCodeMetadata",
-                    "printedName": "FMSDK.GenerateCodeMetadata",
-                    "usr": "s:5FMSDK20GenerateCodeMetadataC"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "FMSDK.WebhookMetadata?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "WebhookMetadata",
-                    "printedName": "FMSDK.WebhookMetadata",
-                    "usr": "s:5FMSDK15WebhookMetadataC"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[FMSDK.PromoCodeMetadata]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[FMSDK.PromoCodeMetadata]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PromoCodeMetadata",
-                        "printedName": "FMSDK.PromoCodeMetadata",
-                        "usr": "s:5FMSDK17PromoCodeMetadataC"
-                      }
-                    ],
-                    "usr": "s:Sa"
+                    "name": "Webhook",
+                    "printedName": "FMSDK.Webhook",
+                    "usr": "s:5FMSDK7WebhookC"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -10607,8 +10418,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK16ManualRedemptionC4uuid10buttonText6action20generateCodeMetadata07webhookJ0010promoCodesJ018showCountdownTimerACSSSg_AkC6ActionOSgAA08GenerateiJ0CSgAA07WebhookJ0CSgSayAA05PromoiJ0CGSgSbSgtcfc",
-            "mangledName": "$s5FMSDK16ManualRedemptionC4uuid10buttonText6action20generateCodeMetadata07webhookJ0010promoCodesJ018showCountdownTimerACSSSg_AkC6ActionOSgAA08GenerateiJ0CSgAA07WebhookJ0CSgSayAA05PromoiJ0CGSgSbSgtcfc",
+            "usr": "s:5FMSDK16ManualRedemptionC10buttonText6action7webhook13showCountdownACSSSg_AC6ActionOSgAA7WebhookCSgSbSgtcfc",
+            "mangledName": "$s5FMSDK16ManualRedemptionC10buttonText6action7webhook13showCountdownACSSSg_AC6ActionOSgAA7WebhookCSgSbSgtcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -10677,7 +10488,8 @@
         "mangledName": "$s5FMSDK16ManualRedemptionC",
         "moduleName": "FMSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -10937,116 +10749,6 @@
           },
           {
             "kind": "Var",
-            "name": "barcode",
-            "printedName": "barcode",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "FMSDK.Barcode?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Barcode",
-                    "printedName": "FMSDK.Barcode",
-                    "usr": "s:5FMSDK7BarcodeC"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK20GenerateCodeMetadataC7barcodeAA7BarcodeCSgvp",
-            "mangledName": "$s5FMSDK20GenerateCodeMetadataC7barcodeAA7BarcodeCSgvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "FMSDK.Barcode?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Barcode",
-                        "printedName": "FMSDK.Barcode",
-                        "usr": "s:5FMSDK7BarcodeC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK20GenerateCodeMetadataC7barcodeAA7BarcodeCSgvg",
-                "mangledName": "$s5FMSDK20GenerateCodeMetadataC7barcodeAA7BarcodeCSgvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "FMSDK.Barcode?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Barcode",
-                        "printedName": "FMSDK.Barcode",
-                        "usr": "s:5FMSDK7BarcodeC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK20GenerateCodeMetadataC7barcodeAA7BarcodeCSgvs",
-                "mangledName": "$s5FMSDK20GenerateCodeMetadataC7barcodeAA7BarcodeCSgvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK20GenerateCodeMetadataC7barcodeAA7BarcodeCSgvM",
-                "mangledName": "$s5FMSDK20GenerateCodeMetadataC7barcodeAA7BarcodeCSgvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "iconImageUrl",
             "printedName": "iconImageUrl",
             "children": [
@@ -11072,7 +10774,8 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -11158,7 +10861,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(uuid:title:barcode:iconImageUrl:)",
+            "printedName": "init(uuid:title:iconImageUrl:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11199,21 +10902,6 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "FMSDK.Barcode?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Barcode",
-                    "printedName": "FMSDK.Barcode",
-                    "usr": "s:5FMSDK7BarcodeC"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
                 "printedName": "Swift.String?",
                 "children": [
                   {
@@ -11228,8 +10916,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK20GenerateCodeMetadataC4uuid5title7barcode12iconImageUrlACSSSg_AhA7BarcodeCSgAHtcfc",
-            "mangledName": "$s5FMSDK20GenerateCodeMetadataC4uuid5title7barcode12iconImageUrlACSSSg_AhA7BarcodeCSgAHtcfc",
+            "usr": "s:5FMSDK20GenerateCodeMetadataC4uuid5title12iconImageUrlACSSSg_A2Gtcfc",
+            "mangledName": "$s5FMSDK20GenerateCodeMetadataC4uuid5title12iconImageUrlACSSSg_A2Gtcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -11954,18 +11642,125 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "WebhookMetadata",
-        "printedName": "WebhookMetadata",
+        "name": "Webhook",
+        "printedName": "Webhook",
         "children": [
           {
-            "kind": "Var",
-            "name": "url",
-            "printedName": "url",
+            "kind": "TypeDecl",
+            "name": "AuthMethod",
+            "printedName": "AuthMethod",
             "children": [
               {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
+                "kind": "Var",
+                "name": "bearerToken",
+                "printedName": "bearerToken",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(FMSDK.Webhook.AuthMethod.Type) -> FMSDK.Webhook.AuthMethod",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthMethod",
+                        "printedName": "FMSDK.Webhook.AuthMethod",
+                        "usr": "s:5FMSDK7WebhookC10AuthMethodO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "FMSDK.Webhook.AuthMethod.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthMethod",
+                            "printedName": "FMSDK.Webhook.AuthMethod",
+                            "usr": "s:5FMSDK7WebhookC10AuthMethodO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:5FMSDK7WebhookC10AuthMethodO11bearerTokenyA2EmF",
+                "mangledName": "$s5FMSDK7WebhookC10AuthMethodO11bearerTokenyA2EmF",
+                "moduleName": "FMSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "none",
+                "printedName": "none",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(FMSDK.Webhook.AuthMethod.Type) -> FMSDK.Webhook.AuthMethod",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthMethod",
+                        "printedName": "FMSDK.Webhook.AuthMethod",
+                        "usr": "s:5FMSDK7WebhookC10AuthMethodO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "FMSDK.Webhook.AuthMethod.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthMethod",
+                            "printedName": "FMSDK.Webhook.AuthMethod",
+                            "usr": "s:5FMSDK7WebhookC10AuthMethodO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:5FMSDK7WebhookC10AuthMethodO4noneyA2EmF",
+                "mangledName": "$s5FMSDK7WebhookC10AuthMethodO4noneyA2EmF",
+                "moduleName": "FMSDK"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FMSDK.Webhook.AuthMethod?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthMethod",
+                        "printedName": "FMSDK.Webhook.AuthMethod",
+                        "usr": "s:5FMSDK7WebhookC10AuthMethodO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:5FMSDK7WebhookC10AuthMethodO8rawValueAESgSS_tcfc",
+                "mangledName": "$s5FMSDK7WebhookC10AuthMethodO8rawValueAESgSS_tcfc",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -11974,29 +11769,80 @@
                     "usr": "s:SS"
                   }
                 ],
-                "usr": "s:Sq"
+                "declKind": "Var",
+                "usr": "s:5FMSDK7WebhookC10AuthMethodO8rawValueSSvp",
+                "mangledName": "$s5FMSDK7WebhookC10AuthMethodO8rawValueSSvp",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:5FMSDK7WebhookC10AuthMethodO8rawValueSSvg",
+                    "mangledName": "$s5FMSDK7WebhookC10AuthMethodO8rawValueSSvg",
+                    "moduleName": "FMSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
               }
             ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK15WebhookMetadataC3urlSSSgvp",
-            "mangledName": "$s5FMSDK15WebhookMetadataC3urlSSSgvp",
+            "declKind": "Enum",
+            "usr": "s:5FMSDK7WebhookC10AuthMethodO",
+            "mangledName": "$s5FMSDK7WebhookC10AuthMethodO",
             "moduleName": "FMSDK",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
               "AccessControl"
             ],
-            "hasStorage": true,
-            "accessors": [
+            "enumRawTypeName": "String",
+            "conformances": [
               {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
                 "children": [
                   {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -12004,176 +11850,25 @@
                         "printedName": "Swift.String",
                         "usr": "s:SS"
                       }
-                    ],
-                    "usr": "s:Sq"
+                    ]
                   }
                 ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK15WebhookMetadataC3urlSSSgvg",
-                "mangledName": "$s5FMSDK15WebhookMetadataC3urlSSSgvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
+                "usr": "s:SY",
+                "mangledName": "$sSY"
               },
               {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK15WebhookMetadataC3urlSSSgvs",
-                "mangledName": "$s5FMSDK15WebhookMetadataC3urlSSSgvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
               },
               {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK15WebhookMetadataC3urlSSSgvM",
-                "mangledName": "$s5FMSDK15WebhookMetadataC3urlSSSgvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "authenticationMethod",
-            "printedName": "authenticationMethod",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK15WebhookMetadataC20authenticationMethodSSSgvp",
-            "mangledName": "$s5FMSDK15WebhookMetadataC20authenticationMethodSSSgvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK15WebhookMetadataC20authenticationMethodSSSgvg",
-                "mangledName": "$s5FMSDK15WebhookMetadataC20authenticationMethodSSSgvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK15WebhookMetadataC20authenticationMethodSSSgvs",
-                "mangledName": "$s5FMSDK15WebhookMetadataC20authenticationMethodSSSgvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK15WebhookMetadataC20authenticationMethodSSSgvM",
-                "mangledName": "$s5FMSDK15WebhookMetadataC20authenticationMethodSSSgvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
               }
             ]
           },
@@ -12198,8 +11893,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK15WebhookMetadataC8linkTextSSSgvp",
-            "mangledName": "$s5FMSDK15WebhookMetadataC8linkTextSSSgvp",
+            "usr": "s:5FMSDK7WebhookC8linkTextSSSgvp",
+            "mangledName": "$s5FMSDK7WebhookC8linkTextSSSgvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -12229,8 +11924,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK15WebhookMetadataC8linkTextSSSgvg",
-                "mangledName": "$s5FMSDK15WebhookMetadataC8linkTextSSSgvg",
+                "usr": "s:5FMSDK7WebhookC8linkTextSSSgvg",
+                "mangledName": "$s5FMSDK7WebhookC8linkTextSSSgvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -12261,8 +11956,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK15WebhookMetadataC8linkTextSSSgvs",
-                "mangledName": "$s5FMSDK15WebhookMetadataC8linkTextSSSgvs",
+                "usr": "s:5FMSDK7WebhookC8linkTextSSSgvs",
+                "mangledName": "$s5FMSDK7WebhookC8linkTextSSSgvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -12279,8 +11974,228 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK15WebhookMetadataC8linkTextSSSgvM",
-                "mangledName": "$s5FMSDK15WebhookMetadataC8linkTextSSSgvM",
+                "usr": "s:5FMSDK7WebhookC8linkTextSSSgvM",
+                "mangledName": "$s5FMSDK7WebhookC8linkTextSSSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK7WebhookC3urlSSSgvp",
+            "mangledName": "$s5FMSDK7WebhookC3urlSSSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7WebhookC3urlSSSgvg",
+                "mangledName": "$s5FMSDK7WebhookC3urlSSSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7WebhookC3urlSSSgvs",
+                "mangledName": "$s5FMSDK7WebhookC3urlSSSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7WebhookC3urlSSSgvM",
+                "mangledName": "$s5FMSDK7WebhookC3urlSSSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authMethod",
+            "printedName": "authMethod",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.Webhook.AuthMethod?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthMethod",
+                    "printedName": "FMSDK.Webhook.AuthMethod",
+                    "usr": "s:5FMSDK7WebhookC10AuthMethodO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK7WebhookC10authMethodAC04AuthD0OSgvp",
+            "mangledName": "$s5FMSDK7WebhookC10authMethodAC04AuthD0OSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FMSDK.Webhook.AuthMethod?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthMethod",
+                        "printedName": "FMSDK.Webhook.AuthMethod",
+                        "usr": "s:5FMSDK7WebhookC10AuthMethodO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7WebhookC10authMethodAC04AuthD0OSgvg",
+                "mangledName": "$s5FMSDK7WebhookC10authMethodAC04AuthD0OSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FMSDK.Webhook.AuthMethod?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthMethod",
+                        "printedName": "FMSDK.Webhook.AuthMethod",
+                        "usr": "s:5FMSDK7WebhookC10AuthMethodO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7WebhookC10authMethodAC04AuthD0OSgvs",
+                "mangledName": "$s5FMSDK7WebhookC10authMethodAC04AuthD0OSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7WebhookC10authMethodAC04AuthD0OSgvM",
+                "mangledName": "$s5FMSDK7WebhookC10authMethodAC04AuthD0OSgvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -12290,13 +12205,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(url:authenticationMethod:linkText:)",
+            "printedName": "init(linkText:url:authMethod:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "WebhookMetadata",
-                "printedName": "FMSDK.WebhookMetadata",
-                "usr": "s:5FMSDK15WebhookMetadataC"
+                "name": "Webhook",
+                "printedName": "FMSDK.Webhook",
+                "usr": "s:5FMSDK7WebhookC"
               },
               {
                 "kind": "TypeNominal",
@@ -12331,13 +12246,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "FMSDK.Webhook.AuthMethod?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "AuthMethod",
+                    "printedName": "FMSDK.Webhook.AuthMethod",
+                    "usr": "s:5FMSDK7WebhookC10AuthMethodO"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -12345,8 +12260,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK15WebhookMetadataC3url20authenticationMethod8linkTextACSSSg_A2Gtcfc",
-            "mangledName": "$s5FMSDK15WebhookMetadataC3url20authenticationMethod8linkTextACSSSg_A2Gtcfc",
+            "usr": "s:5FMSDK7WebhookC8linkText3url10authMethodACSSSg_AgC04AuthG0OSgtcfc",
+            "mangledName": "$s5FMSDK7WebhookC8linkText3url10authMethodACSSSg_AgC04AuthG0OSgtcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -12360,9 +12275,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "WebhookMetadata",
-                "printedName": "FMSDK.WebhookMetadata",
-                "usr": "s:5FMSDK15WebhookMetadataC"
+                "name": "Webhook",
+                "printedName": "FMSDK.Webhook",
+                "usr": "s:5FMSDK7WebhookC"
               },
               {
                 "kind": "TypeNominal",
@@ -12372,8 +12287,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK15WebhookMetadataC4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s5FMSDK15WebhookMetadataC4fromACs7Decoder_p_tKcfc",
+            "usr": "s:5FMSDK7WebhookC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5FMSDK7WebhookC4fromACs7Decoder_p_tKcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "Required",
@@ -12400,8 +12315,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:5FMSDK15WebhookMetadataC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s5FMSDK15WebhookMetadataC6encode2toys7Encoder_p_tKF",
+            "usr": "s:5FMSDK7WebhookC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5FMSDK7WebhookC6encode2toys7Encoder_p_tKF",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -12411,11 +12326,12 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:5FMSDK15WebhookMetadataC",
-        "mangledName": "$s5FMSDK15WebhookMetadataC",
+        "usr": "s:5FMSDK7WebhookC",
+        "mangledName": "$s5FMSDK7WebhookC",
         "moduleName": "FMSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -12454,9 +12370,632 @@
         "printedName": "Barcode",
         "children": [
           {
+            "kind": "Var",
+            "name": "uuid",
+            "printedName": "uuid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK7BarcodeC4uuidSSSgvp",
+            "mangledName": "$s5FMSDK7BarcodeC4uuidSSSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BarcodeC4uuidSSSgvg",
+                "mangledName": "$s5FMSDK7BarcodeC4uuidSSSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BarcodeC4uuidSSSgvs",
+                "mangledName": "$s5FMSDK7BarcodeC4uuidSSSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BarcodeC4uuidSSSgvM",
+                "mangledName": "$s5FMSDK7BarcodeC4uuidSSSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageUrl",
+            "printedName": "imageUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK7BarcodeC8imageUrlSSSgvp",
+            "mangledName": "$s5FMSDK7BarcodeC8imageUrlSSSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BarcodeC8imageUrlSSSgvg",
+                "mangledName": "$s5FMSDK7BarcodeC8imageUrlSSSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BarcodeC8imageUrlSSSgvs",
+                "mangledName": "$s5FMSDK7BarcodeC8imageUrlSSSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BarcodeC8imageUrlSSSgvM",
+                "mangledName": "$s5FMSDK7BarcodeC8imageUrlSSSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK7BarcodeC5titleSSSgvp",
+            "mangledName": "$s5FMSDK7BarcodeC5titleSSSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BarcodeC5titleSSSgvg",
+                "mangledName": "$s5FMSDK7BarcodeC5titleSSSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BarcodeC5titleSSSgvs",
+                "mangledName": "$s5FMSDK7BarcodeC5titleSSSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BarcodeC5titleSSSgvM",
+                "mangledName": "$s5FMSDK7BarcodeC5titleSSSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.BarcodeData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BarcodeData",
+                    "printedName": "FMSDK.BarcodeData",
+                    "usr": "s:5FMSDK11BarcodeDataC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK7BarcodeC4dataAA0B4DataCSgvp",
+            "mangledName": "$s5FMSDK7BarcodeC4dataAA0B4DataCSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FMSDK.BarcodeData?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BarcodeData",
+                        "printedName": "FMSDK.BarcodeData",
+                        "usr": "s:5FMSDK11BarcodeDataC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BarcodeC4dataAA0B4DataCSgvg",
+                "mangledName": "$s5FMSDK7BarcodeC4dataAA0B4DataCSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FMSDK.BarcodeData?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BarcodeData",
+                        "printedName": "FMSDK.BarcodeData",
+                        "usr": "s:5FMSDK11BarcodeDataC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BarcodeC4dataAA0B4DataCSgvs",
+                "mangledName": "$s5FMSDK7BarcodeC4dataAA0B4DataCSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK7BarcodeC4dataAA0B4DataCSgvM",
+                "mangledName": "$s5FMSDK7BarcodeC4dataAA0B4DataCSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(uuid:imageUrl:title:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Barcode",
+                "printedName": "FMSDK.Barcode",
+                "usr": "s:5FMSDK7BarcodeC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FMSDK.BarcodeData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BarcodeData",
+                    "printedName": "FMSDK.BarcodeData",
+                    "usr": "s:5FMSDK11BarcodeDataC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK7BarcodeC4uuid8imageUrl5title4dataACSSSg_A2hA0B4DataCSgtcfc",
+            "mangledName": "$s5FMSDK7BarcodeC4uuid8imageUrl5title4dataACSSSg_A2hA0B4DataCSgtcfc",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Barcode",
+                "printedName": "FMSDK.Barcode",
+                "usr": "s:5FMSDK7BarcodeC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5FMSDK7BarcodeC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5FMSDK7BarcodeC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5FMSDK7BarcodeC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5FMSDK7BarcodeC6encode2toys7Encoder_p_tKF",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5FMSDK7BarcodeC",
+        "mangledName": "$s5FMSDK7BarcodeC",
+        "moduleName": "FMSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BarcodeData",
+        "printedName": "BarcodeData",
+        "children": [
+          {
             "kind": "TypeDecl",
-            "name": "ModelType",
-            "printedName": "ModelType",
+            "name": "BarcodeType",
+            "printedName": "BarcodeType",
             "children": [
               {
                 "kind": "Var",
@@ -12466,24 +13005,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(FMSDK.Barcode.ModelType.Type) -> FMSDK.Barcode.ModelType",
+                    "printedName": "(FMSDK.BarcodeData.BarcodeType.Type) -> FMSDK.BarcodeData.BarcodeType",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ModelType",
-                        "printedName": "FMSDK.Barcode.ModelType",
-                        "usr": "s:5FMSDK7BarcodeC9ModelTypeO"
+                        "name": "BarcodeType",
+                        "printedName": "FMSDK.BarcodeData.BarcodeType",
+                        "usr": "s:5FMSDK11BarcodeDataC0B4TypeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "FMSDK.Barcode.ModelType.Type",
+                        "printedName": "FMSDK.BarcodeData.BarcodeType.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "ModelType",
-                            "printedName": "FMSDK.Barcode.ModelType",
-                            "usr": "s:5FMSDK7BarcodeC9ModelTypeO"
+                            "name": "BarcodeType",
+                            "printedName": "FMSDK.BarcodeData.BarcodeType",
+                            "usr": "s:5FMSDK11BarcodeDataC0B4TypeO"
                           }
                         ]
                       }
@@ -12491,8 +13030,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:5FMSDK7BarcodeC9ModelTypeO6qrCodeyA2EmF",
-                "mangledName": "$s5FMSDK7BarcodeC9ModelTypeO6qrCodeyA2EmF",
+                "usr": "s:5FMSDK11BarcodeDataC0B4TypeO6qrCodeyA2EmF",
+                "mangledName": "$s5FMSDK11BarcodeDataC0B4TypeO6qrCodeyA2EmF",
                 "moduleName": "FMSDK"
               },
               {
@@ -12503,24 +13042,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(FMSDK.Barcode.ModelType.Type) -> FMSDK.Barcode.ModelType",
+                    "printedName": "(FMSDK.BarcodeData.BarcodeType.Type) -> FMSDK.BarcodeData.BarcodeType",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ModelType",
-                        "printedName": "FMSDK.Barcode.ModelType",
-                        "usr": "s:5FMSDK7BarcodeC9ModelTypeO"
+                        "name": "BarcodeType",
+                        "printedName": "FMSDK.BarcodeData.BarcodeType",
+                        "usr": "s:5FMSDK11BarcodeDataC0B4TypeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "FMSDK.Barcode.ModelType.Type",
+                        "printedName": "FMSDK.BarcodeData.BarcodeType.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "ModelType",
-                            "printedName": "FMSDK.Barcode.ModelType",
-                            "usr": "s:5FMSDK7BarcodeC9ModelTypeO"
+                            "name": "BarcodeType",
+                            "printedName": "FMSDK.BarcodeData.BarcodeType",
+                            "usr": "s:5FMSDK11BarcodeDataC0B4TypeO"
                           }
                         ]
                       }
@@ -12528,36 +13067,36 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:5FMSDK7BarcodeC9ModelTypeO7barcodeyA2EmF",
-                "mangledName": "$s5FMSDK7BarcodeC9ModelTypeO7barcodeyA2EmF",
+                "usr": "s:5FMSDK11BarcodeDataC0B4TypeO7barcodeyA2EmF",
+                "mangledName": "$s5FMSDK11BarcodeDataC0B4TypeO7barcodeyA2EmF",
                 "moduleName": "FMSDK"
               },
               {
                 "kind": "Var",
-                "name": "plainText",
-                "printedName": "plainText",
+                "name": "text",
+                "printedName": "text",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(FMSDK.Barcode.ModelType.Type) -> FMSDK.Barcode.ModelType",
+                    "printedName": "(FMSDK.BarcodeData.BarcodeType.Type) -> FMSDK.BarcodeData.BarcodeType",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ModelType",
-                        "printedName": "FMSDK.Barcode.ModelType",
-                        "usr": "s:5FMSDK7BarcodeC9ModelTypeO"
+                        "name": "BarcodeType",
+                        "printedName": "FMSDK.BarcodeData.BarcodeType",
+                        "usr": "s:5FMSDK11BarcodeDataC0B4TypeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "FMSDK.Barcode.ModelType.Type",
+                        "printedName": "FMSDK.BarcodeData.BarcodeType.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "ModelType",
-                            "printedName": "FMSDK.Barcode.ModelType",
-                            "usr": "s:5FMSDK7BarcodeC9ModelTypeO"
+                            "name": "BarcodeType",
+                            "printedName": "FMSDK.BarcodeData.BarcodeType",
+                            "usr": "s:5FMSDK11BarcodeDataC0B4TypeO"
                           }
                         ]
                       }
@@ -12565,8 +13104,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:5FMSDK7BarcodeC9ModelTypeO9plainTextyA2EmF",
-                "mangledName": "$s5FMSDK7BarcodeC9ModelTypeO9plainTextyA2EmF",
+                "usr": "s:5FMSDK11BarcodeDataC0B4TypeO4textyA2EmF",
+                "mangledName": "$s5FMSDK11BarcodeDataC0B4TypeO4textyA2EmF",
                 "moduleName": "FMSDK"
               },
               {
@@ -12577,13 +13116,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "FMSDK.Barcode.ModelType?",
+                    "printedName": "FMSDK.BarcodeData.BarcodeType?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ModelType",
-                        "printedName": "FMSDK.Barcode.ModelType",
-                        "usr": "s:5FMSDK7BarcodeC9ModelTypeO"
+                        "name": "BarcodeType",
+                        "printedName": "FMSDK.BarcodeData.BarcodeType",
+                        "usr": "s:5FMSDK11BarcodeDataC0B4TypeO"
                       }
                     ],
                     "usr": "s:Sq"
@@ -12596,8 +13135,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:5FMSDK7BarcodeC9ModelTypeO8rawValueAESgSS_tcfc",
-                "mangledName": "$s5FMSDK7BarcodeC9ModelTypeO8rawValueAESgSS_tcfc",
+                "usr": "s:5FMSDK11BarcodeDataC0B4TypeO8rawValueAESgSS_tcfc",
+                "mangledName": "$s5FMSDK11BarcodeDataC0B4TypeO8rawValueAESgSS_tcfc",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "init_kind": "Designated"
@@ -12615,8 +13154,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:5FMSDK7BarcodeC9ModelTypeO8rawValueSSvp",
-                "mangledName": "$s5FMSDK7BarcodeC9ModelTypeO8rawValueSSvp",
+                "usr": "s:5FMSDK11BarcodeDataC0B4TypeO8rawValueSSvp",
+                "mangledName": "$s5FMSDK11BarcodeDataC0B4TypeO8rawValueSSvp",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessors": [
@@ -12633,8 +13172,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:5FMSDK7BarcodeC9ModelTypeO8rawValueSSvg",
-                    "mangledName": "$s5FMSDK7BarcodeC9ModelTypeO8rawValueSSvg",
+                    "usr": "s:5FMSDK11BarcodeDataC0B4TypeO8rawValueSSvg",
+                    "mangledName": "$s5FMSDK11BarcodeDataC0B4TypeO8rawValueSSvg",
                     "moduleName": "FMSDK",
                     "implicit": true,
                     "accessorKind": "get"
@@ -12643,8 +13182,8 @@
               }
             ],
             "declKind": "Enum",
-            "usr": "s:5FMSDK7BarcodeC9ModelTypeO",
-            "mangledName": "$s5FMSDK7BarcodeC9ModelTypeO",
+            "usr": "s:5FMSDK11BarcodeDataC0B4TypeO",
+            "mangledName": "$s5FMSDK11BarcodeDataC0B4TypeO",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -12725,21 +13264,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "FMSDK.Barcode.ModelType?",
+                "printedName": "FMSDK.BarcodeData.BarcodeType?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ModelType",
-                    "printedName": "FMSDK.Barcode.ModelType",
-                    "usr": "s:5FMSDK7BarcodeC9ModelTypeO"
+                    "name": "BarcodeType",
+                    "printedName": "FMSDK.BarcodeData.BarcodeType",
+                    "usr": "s:5FMSDK11BarcodeDataC0B4TypeO"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK7BarcodeC4typeAC9ModelTypeOSgvp",
-            "mangledName": "$s5FMSDK7BarcodeC4typeAC9ModelTypeOSgvp",
+            "usr": "s:5FMSDK11BarcodeDataC4typeAC0B4TypeOSgvp",
+            "mangledName": "$s5FMSDK11BarcodeDataC4typeAC0B4TypeOSgvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -12756,21 +13295,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "FMSDK.Barcode.ModelType?",
+                    "printedName": "FMSDK.BarcodeData.BarcodeType?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ModelType",
-                        "printedName": "FMSDK.Barcode.ModelType",
-                        "usr": "s:5FMSDK7BarcodeC9ModelTypeO"
+                        "name": "BarcodeType",
+                        "printedName": "FMSDK.BarcodeData.BarcodeType",
+                        "usr": "s:5FMSDK11BarcodeDataC0B4TypeO"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7BarcodeC4typeAC9ModelTypeOSgvg",
-                "mangledName": "$s5FMSDK7BarcodeC4typeAC9ModelTypeOSgvg",
+                "usr": "s:5FMSDK11BarcodeDataC4typeAC0B4TypeOSgvg",
+                "mangledName": "$s5FMSDK11BarcodeDataC4typeAC0B4TypeOSgvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -12788,21 +13327,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "FMSDK.Barcode.ModelType?",
+                    "printedName": "FMSDK.BarcodeData.BarcodeType?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ModelType",
-                        "printedName": "FMSDK.Barcode.ModelType",
-                        "usr": "s:5FMSDK7BarcodeC9ModelTypeO"
+                        "name": "BarcodeType",
+                        "printedName": "FMSDK.BarcodeData.BarcodeType",
+                        "usr": "s:5FMSDK11BarcodeDataC0B4TypeO"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7BarcodeC4typeAC9ModelTypeOSgvs",
-                "mangledName": "$s5FMSDK7BarcodeC4typeAC9ModelTypeOSgvs",
+                "usr": "s:5FMSDK11BarcodeDataC4typeAC0B4TypeOSgvs",
+                "mangledName": "$s5FMSDK11BarcodeDataC4typeAC0B4TypeOSgvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -12819,8 +13358,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7BarcodeC4typeAC9ModelTypeOSgvM",
-                "mangledName": "$s5FMSDK7BarcodeC4typeAC9ModelTypeOSgvM",
+                "usr": "s:5FMSDK11BarcodeDataC4typeAC0B4TypeOSgvM",
+                "mangledName": "$s5FMSDK11BarcodeDataC4typeAC0B4TypeOSgvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -12848,8 +13387,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK7BarcodeC4textSSSgvp",
-            "mangledName": "$s5FMSDK7BarcodeC4textSSSgvp",
+            "usr": "s:5FMSDK11BarcodeDataC4textSSSgvp",
+            "mangledName": "$s5FMSDK11BarcodeDataC4textSSSgvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -12879,8 +13418,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7BarcodeC4textSSSgvg",
-                "mangledName": "$s5FMSDK7BarcodeC4textSSSgvg",
+                "usr": "s:5FMSDK11BarcodeDataC4textSSSgvg",
+                "mangledName": "$s5FMSDK11BarcodeDataC4textSSSgvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -12911,8 +13450,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7BarcodeC4textSSSgvs",
-                "mangledName": "$s5FMSDK7BarcodeC4textSSSgvs",
+                "usr": "s:5FMSDK11BarcodeDataC4textSSSgvs",
+                "mangledName": "$s5FMSDK11BarcodeDataC4textSSSgvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -12929,228 +13468,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7BarcodeC4textSSSgvM",
-                "mangledName": "$s5FMSDK7BarcodeC4textSSSgvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "createdAt",
-            "printedName": "createdAt",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Date?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK7BarcodeC9createdAt10Foundation4DateVSgvp",
-            "mangledName": "$s5FMSDK7BarcodeC9createdAt10Foundation4DateVSgvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.Date?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Date",
-                        "printedName": "Foundation.Date",
-                        "usr": "s:10Foundation4DateV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7BarcodeC9createdAt10Foundation4DateVSgvg",
-                "mangledName": "$s5FMSDK7BarcodeC9createdAt10Foundation4DateVSgvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.Date?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Date",
-                        "printedName": "Foundation.Date",
-                        "usr": "s:10Foundation4DateV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7BarcodeC9createdAt10Foundation4DateVSgvs",
-                "mangledName": "$s5FMSDK7BarcodeC9createdAt10Foundation4DateVSgvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7BarcodeC9createdAt10Foundation4DateVSgvM",
-                "mangledName": "$s5FMSDK7BarcodeC9createdAt10Foundation4DateVSgvM",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "expiresAt",
-            "printedName": "expiresAt",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Date?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Date",
-                    "printedName": "Foundation.Date",
-                    "usr": "s:10Foundation4DateV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5FMSDK7BarcodeC9expiresAt10Foundation4DateVSgvp",
-            "mangledName": "$s5FMSDK7BarcodeC9expiresAt10Foundation4DateVSgvp",
-            "moduleName": "FMSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.Date?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Date",
-                        "printedName": "Foundation.Date",
-                        "usr": "s:10Foundation4DateV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7BarcodeC9expiresAt10Foundation4DateVSgvg",
-                "mangledName": "$s5FMSDK7BarcodeC9expiresAt10Foundation4DateVSgvg",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.Date?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Date",
-                        "printedName": "Foundation.Date",
-                        "usr": "s:10Foundation4DateV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7BarcodeC9expiresAt10Foundation4DateVSgvs",
-                "mangledName": "$s5FMSDK7BarcodeC9expiresAt10Foundation4DateVSgvs",
-                "moduleName": "FMSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5FMSDK7BarcodeC9expiresAt10Foundation4DateVSgvM",
-                "mangledName": "$s5FMSDK7BarcodeC9expiresAt10Foundation4DateVSgvM",
+                "usr": "s:5FMSDK11BarcodeDataC4textSSSgvM",
+                "mangledName": "$s5FMSDK11BarcodeDataC4textSSSgvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -13178,8 +13497,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5FMSDK7BarcodeC11isPromoCodeSbSgvp",
-            "mangledName": "$s5FMSDK7BarcodeC11isPromoCodeSbSgvp",
+            "usr": "s:5FMSDK11BarcodeDataC11isPromoCodeSbSgvp",
+            "mangledName": "$s5FMSDK11BarcodeDataC11isPromoCodeSbSgvp",
             "moduleName": "FMSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -13209,8 +13528,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7BarcodeC11isPromoCodeSbSgvg",
-                "mangledName": "$s5FMSDK7BarcodeC11isPromoCodeSbSgvg",
+                "usr": "s:5FMSDK11BarcodeDataC11isPromoCodeSbSgvg",
+                "mangledName": "$s5FMSDK11BarcodeDataC11isPromoCodeSbSgvg",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -13241,8 +13560,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7BarcodeC11isPromoCodeSbSgvs",
-                "mangledName": "$s5FMSDK7BarcodeC11isPromoCodeSbSgvs",
+                "usr": "s:5FMSDK11BarcodeDataC11isPromoCodeSbSgvs",
+                "mangledName": "$s5FMSDK11BarcodeDataC11isPromoCodeSbSgvs",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -13259,8 +13578,450 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5FMSDK7BarcodeC11isPromoCodeSbSgvM",
-                "mangledName": "$s5FMSDK7BarcodeC11isPromoCodeSbSgvM",
+                "usr": "s:5FMSDK11BarcodeDataC11isPromoCodeSbSgvM",
+                "mangledName": "$s5FMSDK11BarcodeDataC11isPromoCodeSbSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "createdAt",
+            "printedName": "createdAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK11BarcodeDataC9createdAtSSSgvp",
+            "mangledName": "$s5FMSDK11BarcodeDataC9createdAtSSSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BarcodeDataC9createdAtSSSgvg",
+                "mangledName": "$s5FMSDK11BarcodeDataC9createdAtSSSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BarcodeDataC9createdAtSSSgvs",
+                "mangledName": "$s5FMSDK11BarcodeDataC9createdAtSSSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BarcodeDataC9createdAtSSSgvM",
+                "mangledName": "$s5FMSDK11BarcodeDataC9createdAtSSSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expiresAt",
+            "printedName": "expiresAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK11BarcodeDataC9expiresAtSSSgvp",
+            "mangledName": "$s5FMSDK11BarcodeDataC9expiresAtSSSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BarcodeDataC9expiresAtSSSgvg",
+                "mangledName": "$s5FMSDK11BarcodeDataC9expiresAtSSSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BarcodeDataC9expiresAtSSSgvs",
+                "mangledName": "$s5FMSDK11BarcodeDataC9expiresAtSSSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BarcodeDataC9expiresAtSSSgvM",
+                "mangledName": "$s5FMSDK11BarcodeDataC9expiresAtSSSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "formattedCreatedAt",
+            "printedName": "formattedCreatedAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK11BarcodeDataC18formattedCreatedAt10Foundation4DateVSgvp",
+            "mangledName": "$s5FMSDK11BarcodeDataC18formattedCreatedAt10Foundation4DateVSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BarcodeDataC18formattedCreatedAt10Foundation4DateVSgvg",
+                "mangledName": "$s5FMSDK11BarcodeDataC18formattedCreatedAt10Foundation4DateVSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BarcodeDataC18formattedCreatedAt10Foundation4DateVSgvs",
+                "mangledName": "$s5FMSDK11BarcodeDataC18formattedCreatedAt10Foundation4DateVSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BarcodeDataC18formattedCreatedAt10Foundation4DateVSgvM",
+                "mangledName": "$s5FMSDK11BarcodeDataC18formattedCreatedAt10Foundation4DateVSgvM",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "formattedExpiresAt",
+            "printedName": "formattedExpiresAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5FMSDK11BarcodeDataC18formattedExpiresAt10Foundation4DateVSgvp",
+            "mangledName": "$s5FMSDK11BarcodeDataC18formattedExpiresAt10Foundation4DateVSgvp",
+            "moduleName": "FMSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BarcodeDataC18formattedExpiresAt10Foundation4DateVSgvg",
+                "mangledName": "$s5FMSDK11BarcodeDataC18formattedExpiresAt10Foundation4DateVSgvg",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BarcodeDataC18formattedExpiresAt10Foundation4DateVSgvs",
+                "mangledName": "$s5FMSDK11BarcodeDataC18formattedExpiresAt10Foundation4DateVSgvs",
+                "moduleName": "FMSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5FMSDK11BarcodeDataC18formattedExpiresAt10Foundation4DateVSgvM",
+                "mangledName": "$s5FMSDK11BarcodeDataC18formattedExpiresAt10Foundation4DateVSgvM",
                 "moduleName": "FMSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -13270,24 +14031,69 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(type:text:createdAt:expiresAt:isPromoCode:)",
+            "printedName": "init(type:text:isPromoCode:createdAt:expiresAt:formattedCreatedAt:formattedExpiresAt:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Barcode",
-                "printedName": "FMSDK.Barcode",
-                "usr": "s:5FMSDK7BarcodeC"
+                "name": "BarcodeData",
+                "printedName": "FMSDK.BarcodeData",
+                "usr": "s:5FMSDK11BarcodeDataC"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "FMSDK.Barcode.ModelType?",
+                "printedName": "FMSDK.BarcodeData.BarcodeType?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ModelType",
-                    "printedName": "FMSDK.Barcode.ModelType",
-                    "usr": "s:5FMSDK7BarcodeC9ModelTypeO"
+                    "name": "BarcodeType",
+                    "printedName": "FMSDK.BarcodeData.BarcodeType",
+                    "usr": "s:5FMSDK11BarcodeDataC0B4TypeO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -13337,26 +14143,11 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK7BarcodeC4type4text9createdAt07expiresF011isPromoCodeA2C9ModelTypeOSg_SSSg10Foundation4DateVSgAPSbSgtcfc",
-            "mangledName": "$s5FMSDK7BarcodeC4type4text9createdAt07expiresF011isPromoCodeA2C9ModelTypeOSg_SSSg10Foundation4DateVSgAPSbSgtcfc",
+            "usr": "s:5FMSDK11BarcodeDataC4type4text11isPromoCode9createdAt07expiresJ0016formattedCreatedJ00l7ExpiresJ0A2C0B4TypeOSg_SSSgSbSgA2N10Foundation4DateVSgAStcfc",
+            "mangledName": "$s5FMSDK11BarcodeDataC4type4text11isPromoCode9createdAt07expiresJ0016formattedCreatedJ00l7ExpiresJ0A2C0B4TypeOSg_SSSgSbSgA2N10Foundation4DateVSgAStcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -13370,9 +14161,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Barcode",
-                "printedName": "FMSDK.Barcode",
-                "usr": "s:5FMSDK7BarcodeC"
+                "name": "BarcodeData",
+                "printedName": "FMSDK.BarcodeData",
+                "usr": "s:5FMSDK11BarcodeDataC"
               },
               {
                 "kind": "TypeNominal",
@@ -13382,8 +14173,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5FMSDK7BarcodeC4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s5FMSDK7BarcodeC4fromACs7Decoder_p_tKcfc",
+            "usr": "s:5FMSDK11BarcodeDataC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s5FMSDK11BarcodeDataC4fromACs7Decoder_p_tKcfc",
             "moduleName": "FMSDK",
             "declAttributes": [
               "Required",
@@ -13410,8 +14201,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:5FMSDK7BarcodeC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s5FMSDK7BarcodeC6encode2toys7Encoder_p_tKF",
+            "usr": "s:5FMSDK11BarcodeDataC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s5FMSDK11BarcodeDataC6encode2toys7Encoder_p_tKF",
             "moduleName": "FMSDK",
             "declAttributes": [
               "AccessControl"
@@ -13421,11 +14212,12 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:5FMSDK7BarcodeC",
-        "mangledName": "$s5FMSDK7BarcodeC",
+        "usr": "s:5FMSDK11BarcodeDataC",
+        "mangledName": "$s5FMSDK11BarcodeDataC",
         "moduleName": "FMSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -31511,7 +32303,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                 "usr": "c:@S@CLLocationCoordinate2D"
               }
             ],
@@ -31531,7 +32323,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocationCoordinate2D",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                     "usr": "c:@S@CLLocationCoordinate2D"
                   }
                 ],
@@ -45253,7 +46045,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CLLocationCoordinate2D",
-                "printedName": "CoreLocation.CLLocationCoordinate2D",
+                "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                 "usr": "c:@S@CLLocationCoordinate2D"
               }
             ],
@@ -45273,7 +46065,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocationCoordinate2D",
-                    "printedName": "CoreLocation.CLLocationCoordinate2D",
+                    "printedName": "_LocationEssentials.CLLocationCoordinate2D",
                     "usr": "c:@S@CLLocationCoordinate2D"
                   }
                 ],
@@ -49110,150 +49902,192 @@
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
+      "kind": "BooleanLiteral",
+      "offset": 629,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1265,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 1478,
+      "offset": 2000,
       "length": 11,
       "value": "\"image_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 1572,
-      "length": 23,
-      "value": "\"redemptions_available\""
+      "offset": 2038,
+      "length": 10,
+      "value": "\"redeemed\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 1654,
+      "offset": 2077,
+      "length": 12,
+      "value": "\"redeemable\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 2157,
       "length": 27,
       "value": "\"manual_redemption_details\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 3615,
+      "offset": 2218,
+      "length": 20,
+      "value": "\"redemption_details\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 4425,
       "length": 9,
       "value": "\"webhook\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 3653,
+      "offset": 4463,
       "length": 15,
       "value": "\"generate_code\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 3689,
-      "length": 6,
-      "value": "\"none\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
-      "kind": "StringLiteral",
-      "offset": 4739,
+      "offset": 5269,
       "length": 13,
       "value": "\"button_text\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 4809,
-      "length": 24,
-      "value": "\"generate_code_metadata\""
+      "offset": 5305,
+      "length": 8,
+      "value": "\"action\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 4865,
+      "offset": 5337,
       "length": 18,
       "value": "\"webhook_metadata\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 4918,
-      "length": 22,
-      "value": "\"promo_codes_metadata\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
-      "kind": "StringLiteral",
-      "offset": 4975,
+      "offset": 5385,
       "length": 22,
       "value": "\"show_countdown_timer\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 7041,
+      "offset": 6875,
       "length": 16,
       "value": "\"icon_image_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 8339,
+      "offset": 8179,
       "length": 16,
       "value": "\"icon_image_url\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 9688,
-      "length": 23,
-      "value": "\"authentication_method\""
+      "offset": 9197,
+      "length": 14,
+      "value": "\"bearer_token\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 9736,
+      "offset": 9232,
+      "length": 19,
+      "value": "\"no_authentication\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 9645,
       "length": 11,
       "value": "\"link_text\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 10600,
-      "length": 4,
-      "value": "\"qr\""
+      "offset": 9700,
+      "length": 23,
+      "value": "\"authentication_method\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 10628,
+      "offset": 11052,
+      "length": 16,
+      "value": "\"icon_image_url\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 11108,
       "length": 9,
       "value": "\"barcode\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 10663,
+      "offset": 12088,
+      "length": 4,
+      "value": "\"qr\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 12116,
+      "length": 9,
+      "value": "\"barcode\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 12146,
       "length": 12,
       "value": "\"plain_text\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 11286,
+      "offset": 13253,
+      "length": 15,
+      "value": "\"is_promo_code\""
+    },
+    {
+      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 13294,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
       "kind": "StringLiteral",
-      "offset": 11324,
+      "offset": 13332,
       "length": 12,
       "value": "\"expires_at\""
-    },
-    {
-      "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Locations\/Models\/LocationOfferFullDetails.swift",
-      "kind": "StringLiteral",
-      "offset": 11364,
-      "length": 15,
-      "value": "\"is_promo_code\""
     },
     {
       "filePath": "\/Users\/yaro\/Work\/MCards\/FMSDK\/Sources\/FMSDK\/Sources\/Networking\/APIs\/Features\/Models\/ActivateFeatureRequest.swift",
