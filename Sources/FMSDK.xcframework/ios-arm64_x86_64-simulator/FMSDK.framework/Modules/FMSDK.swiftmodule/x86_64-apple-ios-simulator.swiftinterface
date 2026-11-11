@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
-// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FMSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FMSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import CoreLocation
 import CoreSDK
 import Foundation
@@ -62,9 +62,7 @@ public class PriceDisplay : Swift.Codable {
   public var backgroundColor: Swift.String
   public var currencySymbol: Swift.String
   public var iconImageUrl: Foundation.URL?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(title: Swift.String = "", shortTitle: Swift.String = "", subtitle: Swift.String = "", priceSubscript: Swift.String = "", offerText: Swift.String = "", backgroundColor: Swift.String = "", currencySymbol: Swift.String = "", iconImageUrl: Foundation.URL? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -74,9 +72,7 @@ public class SendMcashRequest : Swift.Codable {
   public var gift: Swift.Bool?
   public var giftDetails: FMSDK.McashRequestGiftDetails?
   public var accountID: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(balances: [FMSDK.McashRequestBalance]? = nil, gift: Swift.Bool? = nil, giftDetails: FMSDK.McashRequestGiftDetails? = nil, accountID: Swift.String? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -84,9 +80,7 @@ public class SendMcashRequest : Swift.Codable {
 public class McashRequestBalance : Swift.Codable {
   public var type: Swift.String?
   public var value: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(type: Swift.String? = nil, value: Swift.String? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -94,9 +88,7 @@ public class McashRequestBalance : Swift.Codable {
 public class McashRequestGiftDetails : Swift.Codable {
   public var recipient: FMSDK.McashRequestRecipient?
   public var message: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(recipient: FMSDK.McashRequestRecipient? = nil, message: Swift.String? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -105,9 +97,7 @@ public class McashRequestRecipient : Swift.Codable {
   public var name: Swift.String?
   public var email: Swift.String?
   public var phone: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(name: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -119,9 +109,7 @@ public class LocationCustomBalance : Swift.Codable {
   public var formattedHeldBalance: Swift.String?
   public var pointsBalance: Swift.Double?
   public var formattedPointsBalance: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(availableBalance: Swift.Double? = nil, formattedAvailableBalance: Swift.String? = nil, heldBalance: Swift.Double? = nil, formattedHeldBalance: Swift.String? = nil, iconImageUrl: Swift.String? = nil, pointsImageUrl: Swift.String? = nil, mcashTitle: Swift.String? = nil, pointsTitle: Swift.String? = nil, pointBalance: Swift.Double? = nil, formattedPointBalance: Swift.String? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -135,9 +123,7 @@ public class LocationFilter : Swift.Equatable, Swift.Codable {
   public var url: Foundation.URL?
   public var authenticationMethod: Swift.String
   public var categories: [Swift.String]
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(uuid: Swift.String = "", value: Swift.String = "", displayValue: Swift.String = "", imageUrl: Foundation.URL? = nil, displayType: Swift.String = "", url: Foundation.URL? = nil, authenticationMethod: Swift.String = "", categories: [Swift.String] = [])
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public static func == (lhs: FMSDK.LocationFilter, rhs: FMSDK.LocationFilter) -> Swift.Bool
   @objc deinit
@@ -147,41 +133,23 @@ public enum ApiEnv : Swift.String {
   case staging
   case uat
   case production
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
 public protocol LocationsApi {
-  #if compiler(>=5.3) && $NonescapableTypes
   func getLocationsByCard(args: FMSDK.LocationArgs, completion: @escaping (_ result: Swift.Result<FMSDK.LocationsResponse, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getCardLocationById(uuid: Swift.String?, locationUuid: Swift.String?, latitude: Swift.String?, longitude: Swift.String?, offerType: Swift.String?, featureUuid: Swift.String?, completion: @escaping (_ result: Swift.Result<FMSDK.LocationDetails, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getLocationProfile(uuid: Swift.String, locationUuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.LocationProfile, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func redeemLocationOffer(uuid: Swift.String, locationUuid: Swift.String, offerUuid: Swift.String, featureUuid: Swift.String?, completion: @escaping (_ result: Swift.Result<FMSDK.Barcode, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getLocationFilter(uuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.LocationFilters, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getLocationSubfilter(uuid: Swift.String, filterUuid: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.LocationSubFilters, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getLocationSuggestions(cardId: Swift.String, featureId: Swift.String, searchText: Swift.String, city: Swift.String?, suggestionType: FMSDK.SuggestionType?, offerType: FMSDK.OfferType?, locationSubscriptionTags: Swift.String?, completion: @escaping (_ result: Swift.Result<FMSDK.Suggestions, any Swift.Error>) -> Swift.Void)
-  #endif
 }
 public struct FmArgs {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(jwts: CoreSDK.JWTs, debugMode: Swift.Bool = false, tokenRefreshCallback: any FMSDK.FMSDKTokenRefreshCallback, loggingCallback: (any CoreSDK.LoggingCallback)? = nil)
-  #endif
 }
 public class LocationOfferFullDetails : Swift.Codable {
   public var uuid: Swift.String?
@@ -196,9 +164,7 @@ public class LocationOfferFullDetails : Swift.Codable {
   public var keywords: [FMSDK.Category]?
   public var redemption: FMSDK.ManualRedemption?
   public var redemptionDetails: FMSDK.Barcode?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(uuid: Swift.String? = nil, title: Swift.String? = nil, subtitle: Swift.String? = nil, summary: Swift.String? = nil, imageUrl: Swift.String? = nil, isRedeemed: Swift.Bool? = nil, isRedeemable: Swift.Bool? = nil, isExpired: Swift.Bool = false, rules: [Swift.String]? = nil, keywords: [FMSDK.Category]? = nil, redemption: FMSDK.ManualRedemption? = nil, redemptionDetails: FMSDK.Barcode? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -207,9 +173,7 @@ public class ManualRedemption : Swift.Codable {
   public enum Action : Swift.String, Swift.Codable {
     case webhook
     case generateCode
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -219,9 +183,7 @@ public class ManualRedemption : Swift.Codable {
   public var action: FMSDK.ManualRedemption.Action?
   public var webhook: FMSDK.Webhook?
   public var showCountdown: Swift.Bool?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(buttonText: Swift.String? = nil, action: FMSDK.ManualRedemption.Action? = nil, webhook: FMSDK.Webhook? = nil, showCountdown: Swift.Bool? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -230,9 +192,7 @@ public class GenerateCodeMetadata : Swift.Codable {
   public var uuid: Swift.String?
   public var title: Swift.String?
   public var iconImageUrl: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(uuid: Swift.String? = nil, title: Swift.String? = nil, iconImageUrl: Swift.String? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -242,9 +202,7 @@ public class PromoCodeMetadata : Swift.Codable {
   public var title: Swift.String?
   public var value: Swift.String?
   public var iconImageUrl: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(uuid: Swift.String? = nil, title: Swift.String? = nil, value: Swift.String? = nil, iconImageUrl: Swift.String? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -253,9 +211,7 @@ public class Webhook : Swift.Codable {
   public enum AuthMethod : Swift.String, Swift.Codable {
     case bearerToken
     case none
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -264,9 +220,7 @@ public class Webhook : Swift.Codable {
   public var linkText: Swift.String?
   public var url: Swift.String?
   public var authMethod: FMSDK.Webhook.AuthMethod?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(linkText: Swift.String? = nil, url: Swift.String? = nil, authMethod: FMSDK.Webhook.AuthMethod? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -276,9 +230,7 @@ public class Barcode : Swift.Codable {
   public var imageUrl: Swift.String?
   public var title: Swift.String?
   public var data: FMSDK.BarcodeData?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(uuid: Swift.String? = nil, imageUrl: Swift.String? = nil, title: Swift.String? = nil, data: FMSDK.BarcodeData? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -288,9 +240,7 @@ public class BarcodeData : Swift.Codable {
     case qrCode
     case barcode
     case text
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -303,9 +253,7 @@ public class BarcodeData : Swift.Codable {
   public var expiresAt: Swift.String?
   public var formattedCreatedAt: Foundation.Date?
   public var formattedExpiresAt: Foundation.Date?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(type: FMSDK.BarcodeData.BarcodeType? = nil, text: Swift.String? = nil, isPromoCode: Swift.Bool? = nil, createdAt: Swift.String? = nil, expiresAt: Swift.String? = nil, formattedCreatedAt: Foundation.Date? = nil, formattedExpiresAt: Foundation.Date? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -317,9 +265,7 @@ public class ActivateFeatureRequest : Swift.Encodable {
   @objc deinit
 }
 public class LocationArgs {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(uuid: Swift.String?, page: Swift.Int?, perPage: Swift.Int?, latitude: Swift.String?, longitude: Swift.String?, searchText: Swift.String?, filter: Swift.String?, subfilter: [Swift.String]?, primaryFilter: Swift.String?, tag: Swift.String?, keywords: [Swift.String]?, offersSubfilters: [Swift.String]?, locationGroupUuid: Swift.String?, city: Swift.String?, searchLatitude: Swift.String?, searchLongitude: Swift.String?, displayType: Swift.String?, offerType: Swift.String?, featureUuid: Swift.String?)
-  #endif
   @objc deinit
 }
 public class Restrictable : Swift.Codable, Swift.Equatable {
@@ -341,9 +287,7 @@ public class Restrictable : Swift.Codable, Swift.Equatable {
   public var state: Swift.String
   public var country: Swift.String
   public var postalCode: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(uuid: Swift.String = "", name: Swift.String = "", icon: Foundation.URL? = nil, formattedPhone: Swift.String = "", internationalPhone: Swift.String = "", formattedAddress: Swift.String = "", website: Swift.String = "", latitude: Swift.String = "", longitude: Swift.String = "", hours: [Swift.String] = [], googlePlaceId: Swift.String = "", rating: Swift.String = "", street: Swift.String = "", streetNumber: Swift.String = "", city: Swift.String = "", state: Swift.String = "", country: Swift.String = "", postalCode: Swift.String = "")
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.Restrictable, rhs: FMSDK.Restrictable) -> Swift.Bool
@@ -385,9 +329,7 @@ public class Gift : Swift.Codable, Swift.Equatable {
   public var balances: [FMSDK.CampaignBalance]
   public var deliveryStatus: FMSDK.DeliveryStatus
   public var processingErrors: [Swift.String]
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(uuid: Swift.String = "", originatorIdentifier: Swift.String = "", campaign: FMSDK.Campaign = Campaign(), card: FMSDK.CampaignItemCard = CampaignItemCard(), senderName: Swift.String = "", receivedDate: Foundation.Date = Date(), ownerableType: FMSDK.OwnerableType = .none, firstName: Swift.String = "", lastName: Swift.String = "", phone: Swift.String = "", email: Swift.String = "", deliveryMethod: FMSDK.DeliveryMethod = .none, title: Swift.String = "", message: Swift.String = "", sentAt: Foundation.Date = Date(), acceptedAt: Foundation.Date = Date(), voided: Swift.Bool? = nil, balances: [FMSDK.CampaignBalance] = [], deliveryStatus: FMSDK.DeliveryStatus = .none, processingErrors: [Swift.String] = [])
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.Gift, rhs: FMSDK.Gift) -> Swift.Bool
@@ -396,9 +338,7 @@ public class Gift : Swift.Codable, Swift.Equatable {
 public enum DeliveryMethod : Swift.String, Swift.Codable {
   case sms
   case none
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -408,9 +348,7 @@ public enum DeliveryStatus : Swift.String, Swift.Codable {
   case queued
   case delivered
   case none
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -420,9 +358,7 @@ public enum OwnerableType : Swift.String, Swift.Codable {
   case sender
   case recipient
   case none
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -436,9 +372,7 @@ public class BuyResponse : Swift.Codable {
   public var balances: [FMSDK.Balance]?
   public var giftDetails: FMSDK.GiftDetails?
   public var paymentIntent: FMSDK.PaymentIntentResponse?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(uuid: Swift.String = "", title: Swift.String = "", message: Swift.String = "", cardImageUrl: Swift.String = "", balances: [FMSDK.Balance]? = nil, giftDetails: FMSDK.GiftDetails? = nil, paymentIntent: FMSDK.PaymentIntentResponse? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -447,9 +381,7 @@ public class Balance : Swift.Codable {
   public var type: Swift.String
   public var value: Swift.String
   public var customTitle: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(type: Swift.String = "", value: Swift.String = "", customTitle: Swift.String? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -472,9 +404,7 @@ public class PaymentIntentResponse : Swift.Codable {
 public enum FeatureMetadataKeys : Swift.String {
   case offerType
   case url
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -483,9 +413,7 @@ public enum FeatureMetadataKeys : Swift.String {
 public enum OfferType : Swift.String, Swift.CaseIterable, Swift.Codable {
   case showGo
   case cardLinked
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias AllCases = [FMSDK.OfferType]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [FMSDK.OfferType] {
@@ -503,9 +431,7 @@ public enum FeaturesTypes : Swift.String, Swift.CaseIterable, Swift.Decodable, S
   case gift
   case cardControls
   case none
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias AllCases = [FMSDK.FeaturesTypes]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [FMSDK.FeaturesTypes] {
@@ -535,15 +461,11 @@ public class Feature : Swift.Equatable, Swift.Codable {
   public var metadataOfferType: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(uuid: Swift.String = "", program: FMSDK.FeatureProgram = FeatureProgram(), type: FMSDK.FeaturesTypes = .none, featureMetadata: [FMSDK.FeatureMetadata] = [], url: Swift.String? = nil, featureDisplay: FMSDK.FeatureDisplay = FeatureDisplay(), category: Swift.String = "", status: Swift.String = "", termsUrl: Swift.String? = nil, infoUrl: Swift.String = "", marketerProductUuid: Swift.String? = nil, userFeature: FMSDK.UserFeature = UserFeature(), bannerUrls: [Foundation.URL?]? = nil, programMetadata: [FMSDK.FeatureMetadata] = [], subscriptionRequired: FMSDK.SubscriptionRequired? = nil, tandcAcceptanceRequired: FMSDK.TandcAcceptanceRequired? = nil)
-  #endif
   public enum Sort : Swift.String, Swift.Codable {
     case category
     case user
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -553,9 +475,7 @@ public class Feature : Swift.Equatable, Swift.Codable {
     case active
     case inactive
     case all
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -585,9 +505,7 @@ public class FeatureDisplay : Swift.Equatable, Swift.Codable {
   public var subtitle: Swift.String
   public var description: Swift.String
   public var toggleTitle: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(icon: Foundation.URL? = nil, secondaryIconURL: Foundation.URL? = nil, iconToUse: Swift.String = "", featureCampaignImageURL: Foundation.URL? = nil, title: Swift.String = "", subtitle: Swift.String = "", description: Swift.String = "", toggleTitle: Swift.String = "", iconColor: Swift.String = "#000000")
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.FeatureDisplay, rhs: FMSDK.FeatureDisplay) -> Swift.Bool
@@ -633,9 +551,7 @@ public class TandcAcceptanceRequired : Swift.Equatable, Swift.Codable {
 public class TandcUrls : Swift.Equatable, Swift.Codable {
   public var title: Swift.String
   public var url: Foundation.URL?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(title: Swift.String = "", url: Foundation.URL? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.TandcUrls, rhs: FMSDK.TandcUrls) -> Swift.Bool
@@ -644,9 +560,7 @@ public class TandcUrls : Swift.Equatable, Swift.Codable {
 public class LocationFilters : Swift.Codable {
   public var filters: [FMSDK.LocationFilter]?
   public var primaryFilters: [FMSDK.LocationFilter]?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(filters: [FMSDK.LocationFilter]? = nil, primaryFilters: [FMSDK.LocationFilter]? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -655,9 +569,7 @@ public class LocationSubFilters : Swift.Codable {
   public var locationsSubfilters: [FMSDK.LocationFilter]?
   public var offersSubfilters: [FMSDK.LocationFilter]?
   public var keywordsSubfilters: [FMSDK.LocationFilter]?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(locationsSubfilters: [FMSDK.LocationFilter]? = nil, offersSubfilters: [FMSDK.LocationFilter]? = nil, keywordsSubfilters: [FMSDK.LocationFilter]? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -666,17 +578,13 @@ public protocol FmSdk {
   var features: any FMSDK.FeaturesApi { get }
   var locations: any FMSDK.LocationsApi { get }
   func configure(jwts: CoreSDK.JWTs, debugMode: Swift.Bool, tokenRefreshCallback: any FMSDK.FMSDKTokenRefreshCallback)
-  #if compiler(>=5.3) && $NonescapableTypes
   func getCampaignItems(uuid: Swift.String, ownerableType: FMSDK.OwnerableType, page: Swift.Int?, completion: @escaping (_ result: Swift.Result<FMSDK.GiftCampaignItemsResponse, any Swift.Error>) -> Swift.Void)
-  #endif
   func logout()
 }
 public class CampaignItemCard : Swift.Codable, Swift.Equatable {
   public var uuid: Swift.String
   public var imageUrl: Foundation.URL?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(uuid: Swift.String = "", imageUrl: Foundation.URL? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.CampaignItemCard, rhs: FMSDK.CampaignItemCard) -> Swift.Bool
@@ -704,9 +612,7 @@ public class LocationDetails : Swift.Codable {
   public var coordinates: _LocationEssentials.CLLocationCoordinate2D {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(uuid: Swift.String = "", name: Swift.String = "", address: Swift.String = "", phone: Swift.String = "", website: Swift.String = "", hours: [Swift.String] = [], latitude: Swift.Double = 0.0, longitude: Swift.Double = 0.0, distance: Swift.Double = 0.0, formattedDistance: Swift.String = "", favourite: Swift.Bool = false, offers: [FMSDK.LocationOfferFullDetails]? = nil, noPhysicalAddress: Swift.Bool = false, categories: [FMSDK.Category] = [], subCategories: [FMSDK.Category] = [], editorial: Swift.String = "", smallImageUrl: Foundation.URL? = nil, smallBannerImageUrls: [Swift.String] = [])
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -715,9 +621,7 @@ public class Category : Swift.Codable {
   public var value: Swift.String?
   public var displayValue: Swift.String?
   public var icon: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(value: Swift.String? = nil, displayValue: Swift.String? = nil, icon: Swift.String? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -742,9 +646,7 @@ public enum RestrictionType : Swift.String, Swift.Codable {
   case googlePlaceIdRestriction
   case mccRestriction
   case none
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -755,9 +657,7 @@ public enum RestrictableType : Swift.String, Swift.Codable {
   case locationGroup
   case googlePlaceID
   case none
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -767,9 +667,7 @@ public enum RestrictableIdentifierType : Swift.String, Swift.Codable {
   case uuid
   case originatorIdentifier
   case none
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -795,9 +693,7 @@ public class LocationReview : Swift.Codable {
   public var text: Swift.String
   public var formattedTimeAgo: Swift.String
   public var profilePhotoUrl: Foundation.URL?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(rating: Swift.Double = 0.0, authorName: Swift.String = "", authorUrl: Foundation.URL? = nil, text: Swift.String = "", formattedTimeAgo: Swift.String = "", profilePhotoUrl: Foundation.URL? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -823,59 +719,27 @@ public protocol FMSDKTokenRefreshCallback {
 public class LocationsResponse : Swift.Codable {
   public var locations: [FMSDK.Location]?
   public var pagination: CoreSDK.Pagination?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(locations: [FMSDK.Location]? = nil, pagination: CoreSDK.Pagination? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public protocol FeaturesApi {
-  #if compiler(>=5.3) && $NonescapableTypes
   func updateCardControls(cardId: Swift.String, isLocked: Swift.Bool, autopay: Swift.Bool, completion: @escaping (_ result: Swift.Result<CoreSDK.Card, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func convertPoints(cardId: Swift.String, numPointsToConvert: Swift.Int, completion: @escaping (_ result: Swift.Result<FMSDK.ConvertPoints, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getFeatures(cardId: Swift.String, status: FMSDK.Feature.Status, sort: FMSDK.Feature.Sort, completion: @escaping (_ result: Swift.Result<[FMSDK.Feature], any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getFeatureCampaign(cardId: Swift.String, completion: @escaping (_ result: Swift.Result<[FMSDK.Feature], any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func deactivateFeature(cardId: Swift.String, featureId: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func acceptFeatureTermAndConditions(cardId: Swift.String, featureId: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func activateFeatureByCard(cardId: Swift.String, featureId: Swift.String, body: FMSDK.ActivateFeatureRequest, completion: @escaping (_ result: Swift.Result<FMSDK.Feature, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func reorderFeatures(cardId: Swift.String, featureIds: [Swift.String], completion: @escaping (_ result: Swift.Result<Swift.Bool, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getProductsByCard(cardId: Swift.String, featureId: Swift.String, productId: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.Product, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func sendMCashBalance(cardId: Swift.String, featureId: Swift.String, priceId: Swift.String?, productId: Swift.String?, body: FMSDK.SendMcashRequest, completion: @escaping (_ result: Swift.Result<FMSDK.McashSuccess, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func sendMoney(cardId: Swift.String, accountId: Swift.String, recipientPhone: Swift.String, recipientName: Swift.String, amount: Swift.Int, completion: @escaping (_ result: Swift.Result<FMSDK.McashSuccess, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getSSOToken(cardId: Swift.String, userFeatureId: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.SSOToken, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getCampaignItem(cardId: Swift.String, itemId: Swift.String, completion: @escaping (_ result: Swift.Result<FMSDK.Gift, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getCampaignRestrictions(cardId: Swift.String, campaignId: Swift.String, sourceIndex: Swift.Int, completion: @escaping (_ result: Swift.Result<FMSDK.GiftRestrictionsResponse, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func purchase3D(args: FMSDK.PurchaseArgs, completion: @escaping (_ result: Swift.Result<FMSDK.BuyResponse, any Swift.Error>) -> Swift.Void)
-  #endif
 }
 public class GiftRestrictionsResponse : Swift.Codable, Swift.Equatable {
   public var restrictions: [FMSDK.CampaignRestriction]
@@ -892,9 +756,7 @@ public enum SuggestionType : Swift.String, Swift.CaseIterable, Swift.Codable {
   case location
   case noSuburb
   case noSuburbGroup
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias AllCases = [FMSDK.SuggestionType]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [FMSDK.SuggestionType] {
@@ -912,27 +774,21 @@ public class Suggestion : Swift.Codable {
   public var matchingText: Swift.String?
   public var itemSearchQuery: Swift.String?
   public var metadata: FMSDK.Metadata?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(itemUuid: Swift.String? = nil, itemType: Swift.String? = nil, itemTitle: Swift.String? = nil, itemSubtitle: Swift.String? = nil, matchingText: Swift.String? = nil, itemSearchQuery: Swift.String? = nil, metadata: FMSDK.Metadata? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class Metadata : Swift.Codable {
   public var record: FMSDK.Suggestion?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(record: FMSDK.Suggestion? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 public class ConvertPoints : Swift.Codable {
   public var balances: [CoreSDK.CardBalances]?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(balances: [CoreSDK.CardBalances]? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -945,9 +801,7 @@ public class McashSuccess : Swift.Codable, Swift.Equatable {
   public var balances: [FMSDK.McashBalances]
   public var giftDetails: FMSDK.McashGiftDetails
   public var paymentIntent: FMSDK.PaymentIntent
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(uuid: Swift.String = "", title: Swift.String = "", message: Swift.String = "", cardImageUrl: Foundation.URL? = nil, balances: [FMSDK.McashBalances] = [], giftDetails: FMSDK.McashGiftDetails = McashGiftDetails(), paymentIntent: FMSDK.PaymentIntent = PaymentIntent())
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.McashSuccess, rhs: FMSDK.McashSuccess) -> Swift.Bool
@@ -997,9 +851,7 @@ public enum CampaignBalanceType : Swift.String, Swift.Codable {
   case mcash
   case points
   case none
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1034,9 +886,7 @@ public class Location : Swift.Codable, Swift.Equatable {
     get
   }
   public func getFormattedDistance(distance: Swift.String) -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(uuid: Swift.String = "", name: Swift.String? = nil, address: Swift.String = "", phone: Swift.String? = nil, website: Swift.String? = nil, hours: [Swift.String]? = nil, latitude: Swift.Double = 0.0, longitude: Swift.Double = 0.0, distance: Swift.Double = 0.0, formattedDistance: Swift.String = "", favourite: Swift.Bool = false, noPhysicalAddress: Swift.Bool = false, editorial: Swift.String = "", smallImageUrl: Foundation.URL? = nil, smallBannerImageUrls: [Swift.String] = [], city: Swift.String = "", featuredOffer: FMSDK.FeaturedOffer? = nil, categories: [FMSDK.Category] = [], subCategories: [FMSDK.Category] = [])
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.Location, rhs: FMSDK.Location) -> Swift.Bool
@@ -1051,9 +901,7 @@ public struct CustomBalances : Swift.Codable, Swift.Equatable {
   public let availible: FMSDK.CustomBalances.Balance<Swift.Double>
   public let held: FMSDK.CustomBalances.Balance<Swift.Double>
   public let points: FMSDK.CustomBalances.Balance<Swift.Int>
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(balance: FMSDK.LocationCustomBalance?)
-  #endif
   public static func == (a: FMSDK.CustomBalances, b: FMSDK.CustomBalances) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -1061,9 +909,7 @@ public struct CustomBalances : Swift.Codable, Swift.Equatable {
 public class FeaturedOffer : Swift.Codable {
   public var title: Swift.String?
   public var subtitle: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(title: Swift.String? = nil, subtitle: Swift.String? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -1077,9 +923,7 @@ public class FeaturedOffer : Swift.Codable {
 }
 public class SSOToken : Swift.Codable {
   public var ssoToken: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(ssoToken: Swift.String? = nil)
-  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -1090,9 +934,7 @@ public class PurchaseArgs : Swift.Codable {
   public var productId: Swift.String
   public var priceId: Swift.String
   public var fundingId: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(cardId: Swift.String, featureId: Swift.String, productId: Swift.String, priceId: Swift.String, fundingId: Swift.String? = nil)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -1101,9 +943,7 @@ public class Campaign : Swift.Codable, Swift.Equatable {
   public var uuid: Swift.String
   public var imageUrl: Foundation.URL?
   public var restrictionsCount: Swift.Int
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(uuid: Swift.String = "", imageUrl: Foundation.URL? = nil, restrictionsCount: Swift.Int = 0)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (lhs: FMSDK.Campaign, rhs: FMSDK.Campaign) -> Swift.Bool
@@ -1115,9 +955,7 @@ public class Campaign : Swift.Codable, Swift.Equatable {
 }
 public class Suggestions : Swift.Codable {
   public var suggestions: [FMSDK.Suggestion]?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(suggestions: [FMSDK.Suggestion]?)
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
